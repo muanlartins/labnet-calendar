@@ -1,0 +1,22 @@
+id: usenix-atc-2026
+series_id: usenix-atc
+name: "USENIX ATC"
+full_name: "USENIX Annual Technical Conference 2026"
+edition: "2026"
+type: conference
+society: USENIX
+areas: [systems]
+region: world
+tier:
+  qualis: A1
+  core: A
+  custom: top
+url: https://www.usenix.org/conference/atc26
+cfp_url: https://www.usenix.org/conference/atc26/call-for-papers
+tags: [top-tier, usenix, transition]
+notes: "ATC 2026 is a transition edition (USENIX announced sunsetting ATC; SIGOPS taking over). Transitional schedule is reported as a June submission deadline and November conference dates. USENIX CFP page returned 403 on fetch; specific 2026 deadlines not confirmable from official site as of 2026-04-18."
+sources:
+  - url: https://www.usenix.org/conference/atc26/call-for-papers
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

@@ -1,0 +1,36 @@
+id: pam-2026
+series_id: pam
+name: PAM
+full_name: "Passive and Active Measurement Conference 2026"
+edition: "2026"
+edition_number: 27
+type: conference
+society: Springer
+areas: [networking]
+subareas: [measurement]
+region: world
+tier:
+  qualis: A4
+  core: A
+  custom: top
+location:
+  mode: virtual
+url: https://pam2026.at/
+cfp_url: https://pam2026.at/cfp/
+deadlines:
+  - kind: abstract
+    date: "2025-10-08"
+    note: "Extended abstract deadline — already passed."
+  - kind: paper
+    date: "2025-10-15"
+    note: "Extended paper deadline — already passed."
+event_dates:
+  start: "2026-03-23"
+  end: "2026-03-25"
+tags: [springer]
+notes: "27th edition. Held as a virtual event. Past deadlines retained for reference."
+sources:
+  - url: https://pam2026.at/cfp/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

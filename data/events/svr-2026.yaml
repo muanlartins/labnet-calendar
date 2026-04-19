@@ -1,0 +1,20 @@
+id: svr-2026
+series_id: svr
+name: SVR
+full_name: "Symposium on Virtual and Augmented Reality 2026"
+edition: "2026"
+type: symposium
+society: SBC
+areas: [graphics, hci]
+subareas: [ar-vr]
+region: br
+tier:
+  custom: regional
+url: https://svr.sbc.org.br/2026/
+tags: [sbc]
+notes: "Official 2026 site accessible but content not yet populated as of 2026-04-18; CFP and dates not yet published."
+sources:
+  - url: https://svr.sbc.org.br/2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

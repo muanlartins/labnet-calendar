@@ -1,0 +1,45 @@
+id: eccv-2026
+series_id: eccv
+name: ECCV
+full_name: "European Conference on Computer Vision 2026"
+edition: "2026"
+type: conference
+society: Springer
+areas: [ml]
+subareas: [vision]
+region: eu
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Malmö
+  country: Sweden
+  mode: in-person
+url: https://eccv.ecva.net/Conferences/2026
+deadlines:
+  - kind: paper
+    date: "2026-02-26"
+    note: "Paper registration deadline — already passed."
+  - kind: rebuttal
+    date: "2026-05-11T23:00:00"
+    timezone: Europe/Berlin
+    note: "CEST."
+  - kind: notification
+    date: "2026-06-17"
+  - kind: camera_ready
+    date: "2026-06-26"
+  - kind: tutorial_proposal
+    date: "2026-02-15"
+  - kind: workshop_proposal
+    date: "2026-02-27"
+event_dates:
+  start: "2026-09-08"
+  end: "2026-09-13"
+tags: [top-tier, springer, vision]
+notes: "ECCV is biannual (even years). Workshops and tutorials 2026-09-08 to 2026-09-09; expo 2026-09-10 to 2026-09-12; main conference 2026-09-10 to 2026-09-13."
+sources:
+  - url: https://eccv.ecva.net/Conferences/2026
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

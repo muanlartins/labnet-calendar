@@ -1,0 +1,38 @@
+id: sbsc-2026
+series_id: sbsc
+name: SBSC
+full_name: "Simpósio Brasileiro de Sistemas Colaborativos 2026"
+edition: "2026"
+edition_number: 21
+type: symposium
+society: SBC
+areas: [hci]
+subareas: [cscw]
+region: br
+tier:
+  custom: regional
+location:
+  city: Porto Alegre
+  country: Brazil
+  mode: in-person
+url: https://sbsc.sbc.org.br/2026/
+deadlines:
+  - kind: paper
+    date: "2026-02-09"
+    note: "Deadline already passed."
+  - kind: notification
+    date: "2026-03-31"
+  - kind: camera_ready
+    date: "2026-04-10"
+event_dates:
+  start: "2026-06-08"
+  end: "2026-06-12"
+tags: [sbc]
+notes: "21st edition, hosted by UFRGS in Porto Alegre. Deadlines taken from the UFRGS announcement of the SBSC 2026 CFP."
+sources:
+  - url: https://sbsc.sbc.org.br/2026/
+    fetched_at: "2026-04-18"
+  - url: https://www.inf.ufrgs.br/site/noticia/chamada-de-trabalhos-sbsc-2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

@@ -1,0 +1,47 @@
+id: fast-2026
+series_id: fast
+name: FAST
+full_name: "USENIX Conference on File and Storage Technologies 2026"
+edition: "2026"
+edition_number: 24
+type: conference
+society: USENIX
+areas: [systems]
+subareas: [storage]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Santa Clara
+  country: USA
+  venue: Hyatt Regency Santa Clara
+  mode: in-person
+url: https://www.usenix.org/conference/fast26
+cfp_url: https://www.usenix.org/conference/fast26/call-for-papers
+deadlines:
+  - kind: paper
+    date: "2025-03-18"
+    timezone: AoE
+    note: "Spring cycle — already passed."
+  - kind: paper
+    date: "2025-09-16"
+    timezone: AoE
+    note: "Fall cycle — already passed."
+  - kind: notification
+    date: "2025-12-08"
+    note: "Fall cycle notification."
+  - kind: camera_ready
+    date: "2026-01-27"
+    timezone: AoE
+event_dates:
+  start: "2026-02-24"
+  end: "2026-02-26"
+tags: [top-tier, usenix, multi-cycle]
+notes: "24th edition. USENIX CFP page returned 403; dates confirmed via USENIX FAST 2026 CFP PDF (fast26_cfp_011425_v2.pdf) and the USENIX conference listing."
+sources:
+  - url: https://www.usenix.org/conference/fast26/call-for-papers
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

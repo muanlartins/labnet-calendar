@@ -1,0 +1,33 @@
+id: wperformance-2026
+series_id: wperformance
+name: WPerformance
+full_name: "Workshop em Desempenho de Sistemas Computacionais e de Comunicação 2026"
+edition: "2026"
+type: workshop
+parent_id: csbc-2026
+society: SBC
+areas: [networking, systems]
+subareas: [performance]
+region: br
+tier:
+  custom: regional
+location:
+  city: Gramado
+  country: Brazil
+  mode: in-person
+url: https://csbc.sbc.org.br/2026/wperformance/
+deadlines:
+  - kind: paper
+    date: "2026-03-30"
+    note: "Final deadline for manuscript submission."
+  - kind: notification
+    date: "2026-05-04"
+  - kind: camera_ready
+    date: "2026-05-18"
+tags: [sbc, csbc]
+notes: "Held under CSBC 2026 in Gramado. Submissions via JEMS; papers in Portuguese or English (12 pages full, 6 pages short)."
+sources:
+  - url: https://csbc.sbc.org.br/2026/wperformance/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

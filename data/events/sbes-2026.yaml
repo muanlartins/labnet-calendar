@@ -1,0 +1,44 @@
+id: sbes-2026
+series_id: sbes
+name: SBES
+full_name: "Simpósio Brasileiro de Engenharia de Software 2026"
+edition: "2026"
+edition_number: 40
+type: symposium
+society: SBC
+areas: [se]
+region: br
+tier:
+  qualis: B1
+  custom: regional
+location:
+  city: São Paulo
+  country: Brazil
+  mode: in-person
+url: https://cbsoft.sbc.org.br/2026/
+cfp_url: https://cbsoft.sbc.org.br/2026/pt/symposiums/sbes/call/
+deadlines:
+  - kind: abstract
+    date: "2026-04-27"
+    note: "Paper registration (hard deadline)."
+  - kind: paper
+    date: "2026-05-04"
+    note: "Full paper submission (hard deadline)."
+  - kind: notification
+    date: "2026-06-16"
+    note: "First notification; rebuttal 2026-06-16 to 2026-06-24."
+  - kind: notification
+    date: "2026-07-03"
+    note: "Second (final) notification."
+  - kind: camera_ready
+    date: "2026-07-17"
+event_dates:
+  start: "2026-09-08"
+  end: "2026-09-11"
+tags: [sbc, cbsoft]
+notes: "40th edition. Held under the CBSoft umbrella. CBSoft page indicates 2026-09-08 to 2026-09-11."
+sources:
+  - url: https://cbsoft.sbc.org.br/2026/pt/symposiums/sbes/call/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

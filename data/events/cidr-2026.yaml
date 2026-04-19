@@ -1,0 +1,29 @@
+id: cidr-2026
+series_id: cidr
+name: CIDR
+full_name: "Conference on Innovative Data Systems Research 2026"
+edition: "2026"
+type: conference
+society: other
+areas: [data]
+region: world
+tier:
+  qualis: A1
+  core: A
+  custom: top
+location:
+  city: Santa Cruz
+  country: USA
+  venue: Chaminade Resort & Spa
+  mode: in-person
+url: https://www.cidrdb.org/cidr2026/
+event_dates:
+  start: "2026-01-18"
+  end: "2026-01-21"
+tags: [top-tier]
+notes: "Biennial conference (but series.yaml lists annual). Event already concluded at time of refresh. Specific submission deadlines not listed on the CIDR 2026 homepage as of 2026-04-18."
+sources:
+  - url: https://www.cidrdb.org/cidr2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

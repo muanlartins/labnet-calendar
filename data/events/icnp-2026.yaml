@@ -1,0 +1,33 @@
+id: icnp-2026
+series_id: icnp
+name: ICNP
+full_name: "IEEE International Conference on Network Protocols 2026"
+edition: "2026"
+edition_number: 34
+type: conference
+society: IEEE
+areas: [networking]
+region: world
+tier:
+  qualis: A2
+  core: A
+  custom: top
+location:
+  city: Tempe
+  country: USA
+  mode: in-person
+url: https://icnp26.cs.ucr.edu/
+deadlines:
+  - kind: paper
+    date: "2026-05-15"
+    note: "11:00 PM (timezone not specified on the site)."
+event_dates:
+  start: "2026-10-05"
+  end: "2026-10-08"
+tags: [ieee]
+notes: "34th edition. Official URL in series.yaml (icnp{year}.cs.ucr.edu) is a typo; actual site is icnp26.cs.ucr.edu. Arizona State University announcement confirms the deadline."
+sources:
+  - url: https://icnp26.cs.ucr.edu/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

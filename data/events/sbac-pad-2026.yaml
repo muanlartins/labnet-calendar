@@ -1,0 +1,29 @@
+id: sbac-pad-2026
+series_id: sbac-pad
+name: SBAC-PAD
+full_name: "International Symposium on Computer Architecture and High Performance Computing 2026"
+edition: "2026"
+edition_number: 39
+type: symposium
+society: SBC
+areas: [architecture, systems]
+subareas: [hpc]
+region: br
+tier:
+  qualis: A4
+  custom: regional
+location:
+  city: Madrid
+  country: Spain
+  mode: in-person
+url: https://sbac-pad.org/2026/
+event_dates:
+  start: "2026-10-14"
+  end: "2026-10-16"
+tags: [sbc, ieee]
+notes: "39th edition, hosted in Madrid. Official site unreachable as of 2026-04-18; dates confirmed via SBC/ConfRoll announcement. CFP submission deadline not yet published on official site."
+sources:
+  - url: https://sbac-pad.org/2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

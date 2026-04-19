@@ -1,0 +1,31 @@
+id: mobicom-2026
+series_id: mobicom
+name: MobiCom
+full_name: "ACM International Conference on Mobile Computing and Networking 2026"
+edition: "2026"
+edition_number: 32
+type: conference
+society: ACM
+areas: [networking]
+subareas: [mobile, wireless]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Austin
+  country: USA
+  mode: in-person
+url: https://www.sigmobile.org/mobicom/2026/
+cfp_url: https://www.sigmobile.org/mobicom/2026/cfp.html
+event_dates:
+  start: "2026-10-26"
+  end: "2026-10-30"
+tags: [top-tier, acm]
+notes: "32nd edition. SIGMOBILE CFP page timed out during fetch. Conference dates from ACM/SIGMOBILE announcement; specific 2026 paper deadlines were not recoverable from the official site in this refresh."
+sources:
+  - url: https://www.sigmobile.org/mobicom/2026/cfp.html
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

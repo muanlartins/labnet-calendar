@@ -1,0 +1,26 @@
+id: sblp-2026
+series_id: sblp
+name: SBLP
+full_name: "Simpósio Brasileiro de Linguagens de Programação 2026"
+edition: "2026"
+type: symposium
+society: SBC
+areas: [pl]
+region: br
+tier:
+  custom: regional
+location:
+  city: São Paulo
+  country: Brazil
+  mode: in-person
+url: https://cbsoft.sbc.org.br/2026/sblp/
+event_dates:
+  start: "2026-09-08"
+  end: "2026-09-11"
+tags: [sbc, cbsoft]
+notes: "30th edition (expected). Held under CBSoft 2026 umbrella in São Paulo. CFP page unreachable as of 2026-04-18; specific deadlines not yet published."
+sources:
+  - url: https://cbsoft.sbc.org.br/2026/sblp/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

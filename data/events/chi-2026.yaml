@@ -1,0 +1,48 @@
+id: chi-2026
+series_id: chi
+name: CHI
+full_name: "ACM CHI Conference on Human Factors in Computing Systems 2026"
+edition: "2026"
+type: conference
+society: ACM
+areas: [hci]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Barcelona
+  country: Spain
+  venue: Centre de Convencions Internacional de Barcelona
+  mode: in-person
+url: https://chi2026.acm.org/
+cfp_url: https://chi2026.acm.org/authors/papers/
+deadlines:
+  - kind: abstract
+    date: "2025-09-04"
+    timezone: AoE
+    note: "Papers metadata/abstract — already passed."
+  - kind: paper
+    date: "2025-09-11"
+    timezone: AoE
+    note: "Full paper submission — already passed."
+  - kind: camera_ready
+    date: "2026-02-06"
+    note: "Publication-ready deadline."
+  - kind: paper
+    date: "2026-01-22"
+    note: "Interactive Demos submission."
+  - kind: paper
+    date: "2026-02-12"
+    note: "Workshops participant submissions (approximate)."
+event_dates:
+  start: "2026-04-13"
+  end: "2026-04-17"
+tags: [top-tier, acm]
+notes: "Official CHI 2026 paper page timed out on fetch; dates confirmed via search results referencing official chi2026.acm.org CFPs."
+sources:
+  - url: https://chi2026.acm.org/authors/papers/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

@@ -1,0 +1,39 @@
+id: globecom-2026
+series_id: globecom
+name: GLOBECOM
+full_name: "IEEE Global Communications Conference 2026"
+edition: "2026"
+type: conference
+society: IEEE
+areas: [networking]
+region: world
+tier:
+  qualis: A2
+  core: B
+  custom: mid
+location:
+  city: Macau
+  country: China
+  mode: in-person
+url: https://globecom2026.ieee-globecom.org/
+deadlines:
+  - kind: paper
+    date: "2026-05-03"
+    note: "Main symposium papers firm deadline."
+  - kind: workshop_proposal
+    date: "2026-02-15"
+  - kind: tutorial_proposal
+    date: "2026-05-15"
+  - kind: paper
+    date: "2026-07-15"
+    note: "Workshop paper deadline."
+event_dates:
+  start: "2026-12-07"
+  end: "2026-12-11"
+tags: [ieee]
+notes: "Official site returned HTTP 418 on fetch; dates cross-checked via IEEE ComSoc announcements."
+sources:
+  - url: https://globecom2026.ieee-globecom.org/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

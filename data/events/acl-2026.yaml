@@ -1,0 +1,46 @@
+id: acl-2026
+series_id: acl
+name: ACL
+full_name: "Annual Meeting of the Association for Computational Linguistics 2026"
+edition: "2026"
+edition_number: 64
+type: conference
+society: other
+areas: [ml]
+subareas: [nlp]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: San Diego
+  country: USA
+  mode: in-person
+url: https://2026.aclweb.org/
+deadlines:
+  - kind: paper
+    date: "2026-01-05T23:59:00"
+    timezone: AoE
+    note: "Main submission (ARR route). Already passed."
+  - kind: notification
+    date: "2026-03-10"
+    note: "ARR reviews available to authors."
+  - kind: paper
+    date: "2026-03-14"
+    note: "Commitment deadline."
+  - kind: notification
+    date: "2026-04-04"
+    note: "Acceptance notification."
+  - kind: camera_ready
+    date: "2026-04-19"
+event_dates:
+  start: "2026-07-02"
+  end: "2026-07-07"
+tags: [top-tier, nlp]
+notes: "64th edition. Tutorials 2026-07-02; workshops 2026-07-03 to 2026-07-04; main sessions 2026-07-05 to 2026-07-07. Uses ACL Rolling Review."
+sources:
+  - url: https://2026.aclweb.org/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

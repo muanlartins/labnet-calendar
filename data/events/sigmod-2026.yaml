@@ -1,0 +1,55 @@
+id: sigmod-2026
+series_id: sigmod
+name: SIGMOD
+full_name: "ACM SIGMOD International Conference on Management of Data 2026"
+edition: "2026"
+type: conference
+society: ACM
+areas: [data]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Bengaluru
+  country: India
+  venue: Sheraton Grand Bengaluru Whitefield Hotel & Convention Center
+  mode: in-person
+url: https://2026.sigmod.org/
+cfp_url: https://2026.sigmod.org/calls_papers_important_dates.shtml
+deadlines:
+  - kind: abstract
+    date: "2025-01-10"
+    note: "Round 1 abstract — already passed."
+  - kind: paper
+    date: "2025-01-17"
+    note: "Round 1 submission — already passed."
+  - kind: abstract
+    date: "2025-04-10"
+    note: "Round 2 abstract — already passed."
+  - kind: paper
+    date: "2025-04-17"
+    note: "Round 2 submission — already passed."
+  - kind: abstract
+    date: "2025-07-10"
+    note: "Round 3 abstract — already passed."
+  - kind: paper
+    date: "2025-07-17"
+    note: "Round 3 submission — already passed."
+  - kind: abstract
+    date: "2025-10-10"
+    note: "Round 4 abstract — already passed."
+  - kind: paper
+    date: "2025-10-17"
+    note: "Round 4 submission — already passed."
+event_dates:
+  start: "2026-05-31"
+  end: "2026-06-05"
+tags: [top-tier, acm, multi-cycle]
+notes: "Four submission rounds. Official important-dates page timed out on fetch; round dates confirmed via SIGMOD 2026 research-track CFP tweets and calls page."
+sources:
+  - url: https://2026.sigmod.org/calls_papers_important_dates.shtml
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

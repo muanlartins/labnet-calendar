@@ -1,0 +1,22 @@
+id: iccv-2027
+series_id: iccv
+name: ICCV
+full_name: "IEEE/CVF International Conference on Computer Vision 2027"
+edition: "2027"
+type: conference
+society: IEEE
+areas: [ml]
+subareas: [vision]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+url: https://iccv.thecvf.com/Conferences/2027
+tags: [top-tier, ieee, vision]
+notes: "ICCV is biannual (odd years); 2026 is off-cycle. ICCV 2027 dates, location, and submission deadlines have not yet been publicly announced as of 2026-04-18."
+sources:
+  - url: https://iccv.thecvf.com/Conferences/2027
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

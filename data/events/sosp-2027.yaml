@@ -1,0 +1,22 @@
+id: sosp-2027
+series_id: sosp
+name: SOSP
+full_name: "ACM Symposium on Operating Systems Principles 2027"
+edition: "2027"
+type: symposium
+society: ACM
+areas: [systems]
+subareas: [distributed]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+url: https://sigops.org/s/conferences/sosp/2027/
+tags: [top-tier, acm]
+notes: "SOSP is biannual (odd years). SOSP 2027 dates and deadlines have not been announced as of 2026-04-18. SOSP 2026 in Prague, Czechia is organized at sigops.org/s/conferences/sosp/2026/ and alternates in this cycle; tracking 2027 per series cadence."
+sources:
+  - url: https://sigops.org/s/conferences/sosp/2027/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

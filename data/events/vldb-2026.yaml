@@ -1,0 +1,36 @@
+id: vldb-2026
+series_id: vldb
+name: VLDB
+full_name: "International Conference on Very Large Data Bases 2026"
+edition: "2026"
+edition_number: 52
+type: conference
+society: other
+areas: [data]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Boston
+  country: USA
+  mode: in-person
+url: https://vldb.org/2026/
+deadlines:
+  - kind: paper
+    date: "2026-03-29T23:59:00"
+    note: "Demonstration track submission."
+  - kind: paper
+    date: "2026-06-15"
+    note: "Research track PVLDB Volume 19 acceptance cutoff (monthly rolling submissions)."
+event_dates:
+  start: "2026-08-31"
+  end: "2026-09-04"
+tags: [top-tier]
+notes: "52nd edition. Research track uses monthly rolling submissions via PVLDB; papers accepted into Volume 19 by 2026-06-15 form the VLDB 2026 program. Specific monthly dates not recovered from important-dates page in this refresh."
+sources:
+  - url: https://vldb.org/2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

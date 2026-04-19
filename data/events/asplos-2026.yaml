@@ -1,0 +1,22 @@
+id: asplos-2026
+series_id: asplos
+name: ASPLOS
+full_name: "ACM International Conference on Architectural Support for Programming Languages and Operating Systems 2026"
+edition: "2026"
+type: conference
+society: ACM
+areas: [architecture, systems]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+url: https://www.asplos-conference.org/asplos2026/
+cfp_url: https://www.asplos-conference.org/asplos2026/cfp/
+tags: [top-tier, acm, multi-cycle]
+notes: "ASPLOS 2026 moved to a two-deadline (Spring/Summer) submission structure. Official CFP page timed out on fetch; specific 2026 dates not recovered from the official site as of 2026-04-18. Spring cycle deadline has already passed per conference announcements."
+sources:
+  - url: https://www.asplos-conference.org/asplos2026/cfp/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

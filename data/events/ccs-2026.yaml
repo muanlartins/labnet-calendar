@@ -1,0 +1,44 @@
+id: ccs-2026
+series_id: ccs
+name: CCS
+full_name: "ACM Conference on Computer and Communications Security 2026"
+edition: "2026"
+type: conference
+society: ACM
+areas: [security]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: The Hague
+  country: Netherlands
+  mode: in-person
+url: https://www.sigsac.org/ccs/CCS2026/
+cfp_url: https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html
+deadlines:
+  - kind: abstract
+    date: "2026-01-07T23:59:59"
+    timezone: AoE
+    note: "Cycle 1 registration — already passed."
+  - kind: paper
+    date: "2026-01-14T23:59:59"
+    timezone: AoE
+    note: "Cycle 1 submission — already passed."
+  - kind: abstract
+    date: "2026-04-22"
+    note: "Cycle 2 abstract."
+  - kind: paper
+    date: "2026-04-29"
+    note: "Cycle 2 submission."
+event_dates:
+  start: "2026-11-15"
+  end: "2026-11-19"
+tags: [top-tier, acm, multi-cycle]
+notes: "Two review cycles. Official CFP page timed out during fetch; deadlines confirmed via SigSec CCS 2026 HotCRP and security-deadlines trackers."
+sources:
+  - url: https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

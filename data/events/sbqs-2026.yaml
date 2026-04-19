@@ -1,0 +1,37 @@
+id: sbqs-2026
+series_id: sbqs
+name: SBQS
+full_name: "Simpósio Brasileiro de Qualidade de Software 2026"
+edition: "2026"
+type: symposium
+society: SBC
+areas: [se]
+region: br
+tier:
+  custom: regional
+location:
+  city: Maringá
+  country: Brazil
+  venue: Universidade Estadual de Maringá (UEM)
+  mode: in-person
+url: https://sbqs.sbc.org.br/2026/
+deadlines:
+  - kind: abstract
+    date: "2026-06-22"
+    note: "Technical tracks abstract submission (year inferred)."
+  - kind: paper
+    date: "2026-06-29"
+    note: "Technical tracks full paper submission (year inferred)."
+  - kind: notification
+    date: "2026-07-04"
+    note: "Technical tracks acceptance notification (year inferred)."
+event_dates:
+  start: "2026-11-10"
+  end: "2026-11-13"
+tags: [sbc]
+notes: "Hosted by UEM in Maringá. Secondary tracks (WTDQS/CTDQS/CTICQS) have later deadlines (abstract 2026-07-20, paper 2026-07-27, notification 2026-08-26). Years inferred from event date (2026-11)."
+sources:
+  - url: https://sbqs.sbc.org.br/2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

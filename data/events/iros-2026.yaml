@@ -1,0 +1,42 @@
+id: iros-2026
+series_id: iros
+name: IROS
+full_name: "IEEE/RSJ International Conference on Intelligent Robots and Systems 2026"
+edition: "2026"
+type: conference
+society: IEEE
+areas: [ml]
+subareas: [robotics]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Pittsburgh
+  country: USA
+  venue: David L. Lawrence Convention Center
+  mode: in-person
+url: https://2026.ieee-iros.org/
+cfp_url: https://2026.ieee-iros.org/contribute/call-for-papers/
+deadlines:
+  - kind: paper
+    date: "2026-03-02"
+    note: "Paper submission."
+  - kind: paper
+    date: "2026-03-05"
+    note: "Paper video submission."
+  - kind: notification
+    date: "2026-06-16"
+  - kind: camera_ready
+    date: "2026-07-10"
+event_dates:
+  start: "2026-09-27"
+  end: "2026-10-01"
+tags: [top-tier, ieee, robotics]
+notes: "Official site gave limited content; dates cross-checked via IROS 2026 CFP track and Pittsburgh convention calendar."
+sources:
+  - url: https://2026.ieee-iros.org/contribute/call-for-papers/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

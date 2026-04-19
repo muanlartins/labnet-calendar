@@ -1,0 +1,39 @@
+id: aaai-2026
+series_id: aaai
+name: AAAI
+full_name: "AAAI Conference on Artificial Intelligence 2026 (AAAI-26)"
+edition: "2026"
+edition_number: 40
+type: conference
+society: AAAI
+areas: [ml]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Singapore
+  country: Singapore
+  venue: Singapore EXPO
+  mode: in-person
+url: https://aaai.org/conference/aaai/aaai-26/
+deadlines:
+  - kind: abstract
+    date: "2025-07-25T23:59:00"
+    timezone: AoE
+    note: "Main track abstract — already passed."
+  - kind: paper
+    date: "2025-08-01T23:59:00"
+    timezone: AoE
+    note: "Main track full paper — already passed."
+event_dates:
+  start: "2026-01-20"
+  end: "2026-01-27"
+tags: [top-tier, aaai]
+notes: "40th annual AAAI. Main technical program 2026-01-22 to 2026-01-25. Event has already concluded at time of refresh."
+sources:
+  - url: https://aaai.org/conference/aaai/aaai-26/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

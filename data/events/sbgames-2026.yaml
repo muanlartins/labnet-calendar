@@ -1,0 +1,27 @@
+id: sbgames-2026
+series_id: sbgames
+name: SBGames
+full_name: "Simpósio Brasileiro de Jogos e Entretenimento Digital 2026"
+edition: "2026"
+edition_number: 25
+type: symposium
+society: SBC
+areas: [hci, graphics]
+region: br
+tier:
+  custom: regional
+location:
+  city: Goiânia
+  country: Brazil
+  mode: in-person
+url: https://sbgames.org/2026/
+event_dates:
+  start: "2026-09-29"
+  end: "2026-10-02"
+tags: [sbc]
+notes: "25th edition. Portal points to the 2026 site; detailed paper/track deadlines not fully published on the homepage as of 2026-04-18."
+sources:
+  - url: https://sbgames.org/2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

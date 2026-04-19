@@ -1,0 +1,49 @@
+id: emnlp-2026
+series_id: emnlp
+name: EMNLP
+full_name: "Conference on Empirical Methods in Natural Language Processing 2026"
+edition: "2026"
+type: conference
+society: other
+areas: [ml]
+subareas: [nlp]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Budapest
+  country: Hungary
+  mode: hybrid
+url: https://2026.emnlp.org/
+deadlines:
+  - kind: paper
+    date: "2026-05-25"
+    timezone: AoE
+    note: "ARR submission deadline."
+  - kind: rebuttal
+    date: "2026-07-13"
+    timezone: AoE
+    note: "Author response window 2026-07-07 to 2026-07-13."
+  - kind: notification
+    date: "2026-07-30"
+    note: "Meta review release."
+  - kind: paper
+    date: "2026-08-02"
+    note: "EMNLP commitment deadline."
+  - kind: notification
+    date: "2026-08-20"
+    note: "Acceptance notifications."
+  - kind: camera_ready
+    date: "2026-09-20"
+event_dates:
+  start: "2026-10-24"
+  end: "2026-10-29"
+tags: [top-tier, nlp]
+notes: "Held as a hybrid conference in Budapest. All deadlines 23:59 UTC-12 (AoE)."
+sources:
+  - url: https://2026.emnlp.org/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

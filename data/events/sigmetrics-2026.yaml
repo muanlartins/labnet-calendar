@@ -1,0 +1,31 @@
+id: sigmetrics-2026
+series_id: sigmetrics
+name: SIGMETRICS
+full_name: "ACM SIGMETRICS / IFIP Performance 2026"
+edition: "2026"
+type: conference
+society: ACM
+areas: [networking, systems]
+subareas: [performance]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Ann Arbor
+  country: USA
+  venue: University of Michigan
+  mode: in-person
+url: https://www.sigmetrics.org/sigmetrics2026/
+cfp_url: https://www.sigmetrics.org/sigmetrics2026/call_for_papers.html
+event_dates:
+  start: "2026-06-08"
+  end: "2026-06-12"
+tags: [top-tier, acm, multi-cycle]
+notes: "Multi-cycle review (Winter/Summer/Fall). Winter cycle deadline was 2026-01-13. Official CFP fetch timed out; specific cycle dates not all recovered from official site on 2026-04-18."
+sources:
+  - url: https://www.sigmetrics.org/sigmetrics2026/call_for_papers.html
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

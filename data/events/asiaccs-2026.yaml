@@ -1,0 +1,38 @@
+id: asiaccs-2026
+series_id: asiaccs
+name: AsiaCCS
+full_name: "ACM Asia Conference on Computer and Communications Security 2026"
+edition: "2026"
+type: conference
+society: ACM
+areas: [security]
+region: asia
+tier:
+  qualis: A2
+  core: A
+  custom: top
+location:
+  city: Bangalore
+  country: India
+  mode: in-person
+url: https://asiaccs2026.cse.iitkgp.ac.in/
+cfp_url: https://asiaccs2026.cse.iitkgp.ac.in/call-for-papers/
+deadlines:
+  - kind: paper
+    date: "2025-08-25T23:59:00"
+    timezone: AoE
+    note: "Cycle 1 — already passed."
+  - kind: paper
+    date: "2025-12-12T23:59:00"
+    timezone: AoE
+    note: "Cycle 2 — already passed."
+event_dates:
+  start: "2026-06-01"
+  end: "2026-06-05"
+tags: [top-tier, acm, multi-cycle]
+notes: "Hosted by IIT Kharagpur in Bangalore. Official site timed out during fetch; deadlines cross-checked via AsiaCCS HotCRP and Twitter announcements."
+sources:
+  - url: https://asiaccs2026.cse.iitkgp.ac.in/call-for-papers/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

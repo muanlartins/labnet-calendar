@@ -1,0 +1,20 @@
+id: wtdr-2026
+series_id: wtdr
+name: WTDR
+full_name: "Workshop de Teses e Dissertações em Redes 2026"
+edition: "2026"
+type: workshop
+parent_id: sbrc-2026
+society: SBC
+areas: [networking]
+region: br
+tier:
+  custom: regional
+url: https://sbrc.sbc.org.br/2026/wtdr/
+tags: [sbc, sbrc]
+notes: "Student workshop co-located with SBRC 2026 (Praia do Forte, BA). Official WTDR 2026 page unreachable as of 2026-04-18; deadlines not yet published."
+sources:
+  - url: https://sbrc.sbc.org.br/2026/wtdr/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

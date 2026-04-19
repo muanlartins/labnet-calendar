@@ -1,0 +1,43 @@
+id: iclr-2026
+series_id: iclr
+name: ICLR
+full_name: "International Conference on Learning Representations 2026"
+edition: "2026"
+type: conference
+society: other
+areas: [ml]
+subareas: [neural-architectures, generative]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Rio de Janeiro
+  country: Brazil
+  venue: Riocentro Convention and Event Center
+  mode: in-person
+url: https://iclr.cc/Conferences/2026
+deadlines:
+  - kind: abstract
+    date: "2025-09-19"
+    timezone: AoE
+    note: "Already passed."
+  - kind: paper
+    date: "2025-09-24"
+    timezone: AoE
+    note: "Already passed."
+  - kind: notification
+    date: "2026-01-25"
+    timezone: AoE
+    note: "Decision notification."
+event_dates:
+  start: "2026-04-23"
+  end: "2026-04-27"
+tags: [top-tier]
+notes: "Held in Rio de Janeiro. Reviews to authors 2025-11-11; author-reviewer discussion ended 2025-12-03. Workshop mandatory accept/reject 2026-02-28. Camera-ready/final version deadline not listed on the ICLR dates page as of 2026-04-18."
+sources:
+  - url: https://iclr.cc/Conferences/2026/Dates
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

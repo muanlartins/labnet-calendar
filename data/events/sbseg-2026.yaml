@@ -1,0 +1,26 @@
+id: sbseg-2026
+series_id: sbseg
+name: SBSeg
+full_name: "Simpósio Brasileiro em Segurança da Informação e de Sistemas Computacionais 2026"
+edition: "2026"
+type: symposium
+society: SBC
+areas: [security]
+region: br
+tier:
+  qualis: B2
+  custom: regional
+location:
+  city: Niterói
+  country: Brazil
+  venue: Universidade Federal Fluminense (UFF)
+  mode: in-person
+url: https://www.sbseg2026.uff.br/
+cfp_url: https://www.sbseg2026.uff.br/chamadas/trilha-principal/
+tags: [sbc]
+notes: "Hosted by UFF in Niterói. Main track CFP is published but specific submission dates on the site are placeholder (XXXX) as of 2026-04-18; deadlines pending."
+sources:
+  - url: https://www.sbseg2026.uff.br/chamadas/trilha-principal/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

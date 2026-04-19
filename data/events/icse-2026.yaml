@@ -1,0 +1,48 @@
+id: icse-2026
+series_id: icse
+name: ICSE
+full_name: "International Conference on Software Engineering 2026"
+edition: "2026"
+type: conference
+society: ACM
+areas: [se]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Rio de Janeiro
+  country: Brazil
+  venue: Windsor Convention Center and Hotels
+  mode: in-person
+url: https://conf.researchr.org/home/icse-2026
+deadlines:
+  - kind: abstract
+    date: "2025-03-07"
+    note: "Research track Cycle 1 abstract — already passed."
+  - kind: paper
+    date: "2025-03-14"
+    note: "Research track Cycle 1 paper — already passed."
+  - kind: notification
+    date: "2025-06-20"
+    note: "Cycle 1 initial decisions."
+  - kind: paper
+    date: "2025-07-18"
+    note: "Cycle 1 revisions / Cycle 2 paper submissions — already passed."
+  - kind: notification
+    date: "2025-10-17"
+    note: "Cycle 2 decisions."
+  - kind: camera_ready
+    date: "2026-01-16"
+    note: "Cycle 2 revised papers camera-ready."
+event_dates:
+  start: "2026-04-12"
+  end: "2026-04-18"
+tags: [top-tier, acm, multi-cycle]
+notes: "Core conference days 2026-04-15 to 2026-04-17. Research track uses two submission cycles with author response and revision phases. Event already concluded at time of refresh."
+sources:
+  - url: https://conf.researchr.org/dates/icse-2026
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

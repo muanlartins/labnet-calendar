@@ -1,0 +1,28 @@
+id: sbcas-2026
+series_id: sbcas
+name: SBCAS
+full_name: "Simpósio Brasileiro de Computação Aplicada à Saúde 2026"
+edition: "2026"
+edition_number: 26
+type: symposium
+society: SBC
+areas: [bio, ml]
+region: br
+tier:
+  custom: regional
+location:
+  city: Ouro Preto
+  country: Brazil
+  venue: Centro de Artes e Convenções da UFOP
+  mode: in-person
+url: https://www.sbcas2026.com/
+event_dates:
+  start: "2026-06-01"
+  end: "2026-06-04"
+tags: [sbc]
+notes: "26th edition, hosted by DECOM/UFOP. Track CFP pages list submission tracks (Main, CTIC, FA@SBCAS, Workshops) but specific deadlines were not published on the homepage as of 2026-04-18."
+sources:
+  - url: https://www.sbcas2026.com/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude
