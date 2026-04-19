@@ -1,0 +1,29 @@
+{
+  "name": "labnet-calendar",
+  "version": "0.1.0",
+  "description": "Academic event calendar for LabNet (PESC/COPPE UFRJ) — conferences, workshops, journals; refreshed by Claude Code on a 15-day cadence.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "homepage": "https://muanlartins.github.io/labnet-calendar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muanlartins/labnet-calendar.git"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/build.mjs",
+    "ical": "node scripts/ical.mjs",
+    "all": "npm run validate && npm run build && npm run ical",
+    "dev": "npm run all && python3 -m http.server 8000 -d web"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "ics": "^3.8.1",
+    "js-yaml": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

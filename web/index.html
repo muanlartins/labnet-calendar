@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LabNet Calendar — academic events</title>
+  <meta name="description" content="Academic conference, workshop, and journal calendar for LabNet (PESC/COPPE/UFRJ). Refreshed by Claude Code.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+            mono: ["JetBrains Mono", "ui-monospace", "monospace"],
+          },
+          colors: {
+            accent: {
+              400: "#2dd4bf",
+              500: "#14b8a6",
+              600: "#0d9488",
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="https://unpkg.com/alpinejs@3.13.10/dist/cdn.min.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased min-h-screen" x-data="calendarApp()" x-init="init()" x-cloak>
+
+  <header class="border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur sticky top-0 z-30">
+    <div class="max-w-[1600px] mx-auto px-6 py-4 flex flex-wrap items-center gap-4">
+      <a href="/" class="flex items-center gap-3 shrink-0">
+        <div class="w-9 h-9 rounded-md bg-accent-500/15 ring-1 ring-accent-500/40 grid place-items-center">
+          <span class="font-mono text-accent-400 text-sm font-semibold tracking-tight">lc</span>
+        </div>
+        <div class="leading-tight">
+          <div class="font-semibold tracking-tight">LabNet Calendar</div>
+          <div class="text-[11px] uppercase tracking-wider text-zinc-500">PESC · COPPE · UFRJ</div>
+        </div>
+      </a>
+
+      <div class="grow flex items-center gap-2 max-w-md">
+        <input type="search" placeholder="Search conferences, journals, tags…"
+          x-model.debounce.150ms="q"
+          class="w-full bg-zinc-900 border border-zinc-800 rounded-md px-3 py-2 text-sm placeholder:text-zinc-600 focus:border-accent-500 focus:ring-2 focus:ring-accent-500/30 outline-none transition">
+      </div>
+
+      <div class="flex items-center gap-2">
+        <div class="hidden sm:flex bg-zinc-900 border border-zinc-800 rounded-md p-0.5">
+          <button @click="view='list'" :class="view==='list' ? 'bg-zinc-800 text-zinc-100' : 'text-zinc-500'" class="px-3 py-1.5 text-xs rounded font-medium transition">List</button>
+          <button @click="view='calendar'" :class="view==='calendar' ? 'bg-zinc-800 text-zinc-100' : 'text-zinc-500'" class="px-3 py-1.5 text-xs rounded font-medium transition">Calendar</button>
+        </div>
+        <button @click="filtersOpen=!filtersOpen" class="md:hidden bg-zinc-900 border border-zinc-800 rounded-md px-3 py-2 text-xs font-medium">Filters</button>
+      </div>
+    </div>
+
+    <template x-if="data && data.meta">
+      <div :class="data.meta.refresh_overdue ? 'bg-rose-500/10 border-rose-500/30 text-rose-200' : 'bg-zinc-900/60 border-zinc-800 text-zinc-400'"
+           class="border-t text-xs px-6 py-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+        <span>
+          Last refreshed
+          <span class="font-mono text-zinc-200" x-text="data.meta.last_refresh"></span>
+          · next due
+          <span class="font-mono text-zinc-200" x-text="data.meta.next_refresh"></span>
+        </span>
+        <template x-if="data.meta.refresh_overdue">
+          <span class="font-medium">Refresh overdue — open in Claude Code and run <code class="bg-zinc-900 px-1.5 py-0.5 rounded text-rose-200 font-mono">/refresh-events</code></span>
+        </template>
+      </div>
+    </template>
+  </header>
+
+  <main class="max-w-[1600px] mx-auto px-6 py-6 grid grid-cols-1 md:grid-cols-[260px_1fr] gap-6">
+
+    <aside :class="filtersOpen ? 'block' : 'hidden md:block'" class="space-y-6 md:sticky md:top-[140px] md:self-start md:max-h-[calc(100vh-160px)] md:overflow-y-auto md:pr-2">
+      <section>
+        <h3 class="text-[11px] uppercase tracking-wider text-zinc-500 font-semibold mb-2">Date window</h3>
+        <div class="flex flex-wrap gap-1.5">
+          <template x-for="w in [{label:'All',v:null},{label:'30d',v:30},{label:'60d',v:60},{label:'90d',v:90},{label:'180d',v:180}]" :key="w.label">
+            <button @click="window=w.v" :class="window===w.v ? 'bg-accent-500/20 text-accent-400 border-accent-500/40' : 'bg-zinc-900 text-zinc-400 border-zinc-800 hover:border-zinc-700'"
+              class="text-xs px-2.5 py-1 rounded border transition" x-text="w.label"></button>
+          </template>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="text-[11px] uppercase tracking-wider text-zinc-500 font-semibold mb-2">Areas</h3>
+        <div class="space-y-1">
+          <template x-for="a in data.tags.areas" :key="a.id">
+            <label class="flex items-center gap-2 text-sm cursor-pointer group">
+              <input type="checkbox" :value="a.id" x-model="filters.areas" class="accent-accent-500">
+              <span class="grow truncate" :class="filters.areas.includes(a.id) ? 'text-zinc-100' : 'text-zinc-400 group-hover:text-zinc-200'" x-text="a.name"></span>
+              <span class="text-xs font-mono text-zinc-600" x-text="data.counts.by_area[a.id] || 0"></span>
+            </label>
+          </template>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="text-[11px] uppercase tracking-wider text-zinc-500 font-semibold mb-2">Region</h3>
+        <div class="space-y-1">
+          <template x-for="r in data.tags.regions" :key="r.id">
+            <label class="flex items-center gap-2 text-sm cursor-pointer">
+              <input type="checkbox" :value="r.id" x-model="filters.regions" class="accent-accent-500">
+              <span class="grow truncate" x-text="r.name"></span>
+              <span class="text-xs font-mono text-zinc-600" x-text="data.counts.by_region[r.id] || 0"></span>
+            </label>
+          </template>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="text-[11px] uppercase tracking-wider text-zinc-500 font-semibold mb-2">Type</h3>
+        <div class="space-y-1">
+          <template x-for="t in ['conference','workshop','symposium','journal','special_issue']" :key="t">
+            <label class="flex items-center gap-2 text-sm cursor-pointer">
+              <input type="checkbox" :value="t" x-model="filters.types" class="accent-accent-500">
+              <span class="capitalize" x-text="t.replace('_',' ')"></span>
+            </label>
+          </template>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="text-[11px] uppercase tracking-wider text-zinc-500 font-semibold mb-2">Society</h3>
+        <div class="space-y-1">
+          <template x-for="s in data.tags.societies" :key="s">
+            <label class="flex items-center gap-2 text-sm cursor-pointer">
+              <input type="checkbox" :value="s" x-model="filters.societies" class="accent-accent-500">
+              <span x-text="s"></span>
+            </label>
+          </template>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="text-[11px] uppercase tracking-wider text-zinc-500 font-semibold mb-2">Tier (Qualis)</h3>
+        <div class="flex flex-wrap gap-1.5">
+          <template x-for="q in data.tags.tiers.qualis" :key="q">
+            <button @click="toggleQualis(q)" :class="filters.qualis.includes(q) ? 'bg-accent-500/20 text-accent-400 border-accent-500/40' : 'bg-zinc-900 text-zinc-400 border-zinc-800 hover:border-zinc-700'"
+              class="text-xs px-2 py-0.5 rounded border font-mono transition" x-text="q"></button>
+          </template>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="text-[11px] uppercase tracking-wider text-zinc-500 font-semibold mb-2">Mode</h3>
+        <div class="flex flex-wrap gap-1.5">
+          <template x-for="m in data.tags.modes" :key="m">
+            <button @click="toggleMode(m)" :class="filters.modes.includes(m) ? 'bg-accent-500/20 text-accent-400 border-accent-500/40' : 'bg-zinc-900 text-zinc-400 border-zinc-800 hover:border-zinc-700'"
+              class="text-xs px-2 py-0.5 rounded border transition capitalize" x-text="m"></button>
+          </template>
+        </div>
+      </section>
+
+      <button @click="resetFilters()" class="text-xs text-zinc-500 hover:text-zinc-200 transition">Clear filters</button>
+    </aside>
+
+    <section class="min-w-0">
+      <div class="flex items-center justify-between mb-3 px-1 text-xs text-zinc-500">
+        <div>
+          <span class="text-zinc-300 font-mono" x-text="filtered.length"></span> / <span class="font-mono" x-text="data.events.length"></span> events
+        </div>
+        <div class="flex items-center gap-2">
+          <span>Sort:</span>
+          <select x-model="sort" class="bg-zinc-900 border border-zinc-800 rounded px-2 py-1 text-xs">
+            <option value="next_deadline">Next deadline</option>
+            <option value="event_start">Event date</option>
+            <option value="name">Name</option>
+          </select>
+        </div>
+      </div>
+
+      <div x-show="!data.events.length" class="border border-zinc-800 rounded-lg p-12 text-center text-zinc-500">Loading…</div>
+
+      <div x-show="data.events.length && !filtered.length" class="border border-zinc-800 rounded-lg p-12 text-center text-zinc-500">
+        No events match the current filters.
+      </div>
+
+      <div x-show="view==='list' && filtered.length" class="border border-zinc-800 rounded-lg overflow-hidden divide-y divide-zinc-800/80">
+        <template x-for="e in filtered" :key="e.id">
+          <article class="bg-zinc-900/30 hover:bg-zinc-900/60 transition px-4 py-3 grid grid-cols-12 gap-4 items-center">
+
+            <div class="col-span-12 md:col-span-4 min-w-0">
+              <div class="flex items-baseline gap-2">
+                <a :href="e.url || e.cfp_url" target="_blank" rel="noopener" class="font-semibold text-zinc-100 hover:text-accent-400 transition truncate" x-text="e.name"></a>
+                <span class="text-xs font-mono text-zinc-600 shrink-0" x-text="e.edition"></span>
+              </div>
+              <div class="flex flex-wrap gap-1.5 mt-1.5 items-center">
+                <template x-for="a in e.areas" :key="a">
+                  <span class="text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded font-medium"
+                    :class="areaColor(a)" x-text="areaName(a)"></span>
+                </template>
+                <template x-if="e.society">
+                  <span class="text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-zinc-800/60 text-zinc-400" x-text="e.society"></span>
+                </template>
+                <template x-if="e.tier?.qualis">
+                  <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-zinc-800/60 text-zinc-300" x-text="'Qualis ' + e.tier.qualis"></span>
+                </template>
+                <template x-if="e.tier?.core">
+                  <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-zinc-800/60 text-zinc-300" x-text="'CORE ' + e.tier.core"></span>
+                </template>
+              </div>
+            </div>
+
+            <div class="col-span-6 md:col-span-3 text-xs text-zinc-400 min-w-0">
+              <template x-if="e.location?.city || e.location?.country">
+                <div class="truncate">
+                  <span x-text="[e.location.city, e.location.country].filter(Boolean).join(', ')"></span>
+                  <template x-if="e.location.mode && e.location.mode !== 'in-person'">
+                    <span class="ml-1 text-[10px] uppercase tracking-wider text-zinc-500" x-text="e.location.mode"></span>
+                  </template>
+                </div>
+              </template>
+              <template x-if="!e.location?.city && !e.location?.country">
+                <span class="text-zinc-600">Location TBA</span>
+              </template>
+              <template x-if="e.event_dates?.start">
+                <div class="text-zinc-500 mt-0.5 font-mono">
+                  <span x-text="formatDateRange(e.event_dates.start, e.event_dates.end)"></span>
+                </div>
+              </template>
+            </div>
+
+            <div class="col-span-6 md:col-span-4 min-w-0">
+              <template x-if="e.derived?.next_deadline">
+                <div class="flex items-center gap-2">
+                  <div class="text-xs">
+                    <div class="text-zinc-500 capitalize" x-text="e.derived.next_deadline.kind.replace('_',' ') + ' deadline'"></div>
+                    <div class="font-mono text-zinc-200" x-text="e.derived.next_deadline.date.slice(0,10) + (e.derived.next_deadline.timezone ? ' · ' + e.derived.next_deadline.timezone : '')"></div>
+                  </div>
+                  <div class="ml-auto text-right">
+                    <div class="text-2xl font-mono font-semibold tabular-nums leading-none" :class="countdownColor(e.derived.next_deadline.days_until)" x-text="e.derived.next_deadline.days_until + 'd'"></div>
+                  </div>
+                </div>
+              </template>
+              <template x-if="!e.derived?.next_deadline">
+                <div class="text-xs text-zinc-600" x-text="e.derived?.status === 'past' ? 'Event has passed' : 'No open deadline'"></div>
+              </template>
+            </div>
+
+            <div class="col-span-12 md:col-span-1 flex justify-end">
+              <button @click="selectedEvent = e" class="text-xs text-zinc-500 hover:text-accent-400 transition">Details →</button>
+            </div>
+
+          </article>
+        </template>
+      </div>
+
+      <div x-show="view==='calendar' && filtered.length" class="space-y-6">
+        <template x-for="m in calendarMonths" :key="m.key">
+          <div class="border border-zinc-800 rounded-lg overflow-hidden">
+            <header class="bg-zinc-900/60 px-4 py-2 border-b border-zinc-800 flex items-baseline justify-between">
+              <h3 class="text-sm font-semibold tracking-tight" x-text="m.label"></h3>
+              <span class="text-[11px] text-zinc-500 font-mono" x-text="m.eventCount + ' deadline' + (m.eventCount === 1 ? '' : 's')"></span>
+            </header>
+            <div class="grid grid-cols-7 text-[10px] uppercase tracking-wider text-zinc-500 border-b border-zinc-800/60">
+              <template x-for="d in ['Mon','Tue','Wed','Thu','Fri','Sat','Sun']" :key="d">
+                <div class="px-2 py-1.5 text-center" x-text="d"></div>
+              </template>
+            </div>
+            <div class="grid grid-cols-7">
+              <template x-for="cell in m.cells" :key="cell.key">
+                <div class="aspect-[5/4] border-r border-b border-zinc-800/60 p-1.5 relative min-h-[68px]"
+                     :class="cell.day ? (cell.isToday ? 'bg-accent-500/5' : '') : 'bg-zinc-950/40'">
+                  <template x-if="cell.day">
+                    <div class="h-full flex flex-col">
+                      <div class="text-[11px] font-mono" :class="cell.isToday ? 'text-accent-400 font-semibold' : 'text-zinc-500'" x-text="cell.day"></div>
+                      <div class="flex flex-wrap gap-0.5 mt-1">
+                        <template x-for="(item, i) in cell.deadlines.slice(0, 5)" :key="i">
+                          <button @click="selectedEvent = item.event"
+                                  :title="item.event.name + ' — ' + item.deadline.kind"
+                                  class="w-2 h-2 rounded-full hover:scale-150 transition-transform cursor-pointer"
+                                  :class="dotColor(item.event.areas[0])"></button>
+                        </template>
+                        <span x-show="cell.deadlines.length > 5" class="text-[9px] text-zinc-500 font-mono ml-0.5" x-text="'+' + (cell.deadlines.length - 5)"></span>
+                      </div>
+                      <template x-for="(span, i) in cell.eventSpans" :key="i">
+                        <button @click="selectedEvent = span.event"
+                                class="absolute left-0 right-0 h-1 hover:h-1.5 transition-all cursor-pointer"
+                                :class="dotColor(span.event.areas[0])"
+                                :style="'bottom: ' + (4 + i * 6) + 'px; opacity: 0.7;'"
+                                :title="span.event.name"></button>
+                      </template>
+                    </div>
+                  </template>
+                </div>
+              </template>
+            </div>
+          </div>
+        </template>
+      </div>
+
+    </section>
+  </main>
+
+  <div x-show="selectedEvent" x-transition.opacity @keydown.escape.window="selectedEvent = null"
+       class="fixed inset-0 z-40 bg-zinc-950/80 backdrop-blur-sm grid place-items-center p-4 sm:p-8" @click.self="selectedEvent = null">
+    <article x-show="selectedEvent" x-transition
+             class="bg-zinc-900 border border-zinc-800 rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto" @click.stop>
+      <template x-if="selectedEvent">
+        <div>
+          <header class="px-6 pt-6 pb-4 border-b border-zinc-800 flex items-start justify-between gap-4">
+            <div class="min-w-0">
+              <div class="flex items-baseline gap-2 flex-wrap">
+                <h2 class="text-xl font-semibold tracking-tight" x-text="selectedEvent.name"></h2>
+                <span class="text-sm font-mono text-zinc-500" x-text="selectedEvent.edition"></span>
+              </div>
+              <p class="text-sm text-zinc-400 mt-1" x-text="selectedEvent.full_name"></p>
+              <div class="flex flex-wrap gap-1.5 mt-3 items-center">
+                <template x-for="a in selectedEvent.areas" :key="a">
+                  <span class="text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded font-medium" :class="areaColor(a)" x-text="areaName(a)"></span>
+                </template>
+                <template x-for="s in selectedEvent.subareas || []" :key="s">
+                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-zinc-800/60 text-zinc-400 capitalize" x-text="s.replace('-',' ')"></span>
+                </template>
+              </div>
+            </div>
+            <button @click="selectedEvent = null" class="shrink-0 text-zinc-500 hover:text-zinc-100 transition" aria-label="Close">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 5l10 10M15 5l-10 10"/></svg>
+            </button>
+          </header>
+
+          <section class="px-6 py-4 space-y-4 text-sm">
+            <div class="grid grid-cols-2 gap-4">
+              <template x-if="selectedEvent.society">
+                <div><div class="text-[11px] uppercase tracking-wider text-zinc-500">Society</div><div class="text-zinc-200" x-text="selectedEvent.society"></div></div>
+              </template>
+              <template x-if="selectedEvent.type">
+                <div><div class="text-[11px] uppercase tracking-wider text-zinc-500">Type</div><div class="text-zinc-200 capitalize" x-text="selectedEvent.type.replace('_',' ')"></div></div>
+              </template>
+              <template x-if="selectedEvent.tier?.qualis">
+                <div><div class="text-[11px] uppercase tracking-wider text-zinc-500">Qualis</div><div class="text-zinc-200 font-mono" x-text="selectedEvent.tier.qualis"></div></div>
+              </template>
+              <template x-if="selectedEvent.tier?.core">
+                <div><div class="text-[11px] uppercase tracking-wider text-zinc-500">CORE</div><div class="text-zinc-200 font-mono" x-text="selectedEvent.tier.core"></div></div>
+              </template>
+            </div>
+
+            <template x-if="selectedEvent.location && (selectedEvent.location.city || selectedEvent.location.country || selectedEvent.location.mode)">
+              <div>
+                <div class="text-[11px] uppercase tracking-wider text-zinc-500">Location</div>
+                <div class="text-zinc-200">
+                  <span x-text="[selectedEvent.location.city, selectedEvent.location.venue, selectedEvent.location.country].filter(Boolean).join(' · ')"></span>
+                  <template x-if="selectedEvent.location.mode">
+                    <span class="ml-2 text-[10px] uppercase tracking-wider text-zinc-500" x-text="selectedEvent.location.mode"></span>
+                  </template>
+                </div>
+              </div>
+            </template>
+
+            <template x-if="selectedEvent.event_dates?.start">
+              <div>
+                <div class="text-[11px] uppercase tracking-wider text-zinc-500">Event dates</div>
+                <div class="text-zinc-200 font-mono" x-text="formatDateRange(selectedEvent.event_dates.start, selectedEvent.event_dates.end)"></div>
+              </div>
+            </template>
+
+            <template x-if="selectedEvent.deadlines?.length">
+              <div>
+                <div class="text-[11px] uppercase tracking-wider text-zinc-500 mb-1.5">Deadlines</div>
+                <div class="space-y-1">
+                  <template x-for="d in selectedEvent.deadlines" :key="d.kind + d.date">
+                    <div class="flex items-baseline gap-3 text-sm">
+                      <span class="capitalize text-zinc-400 w-32 shrink-0" x-text="d.kind.replace('_',' ')"></span>
+                      <span class="font-mono text-zinc-100" x-text="d.date.slice(0,10)"></span>
+                      <template x-if="d.timezone">
+                        <span class="font-mono text-xs text-zinc-500" x-text="d.timezone"></span>
+                      </template>
+                      <template x-if="d.note">
+                        <span class="text-xs text-zinc-500" x-text="'· ' + d.note"></span>
+                      </template>
+                    </div>
+                  </template>
+                </div>
+              </div>
+            </template>
+
+            <template x-if="selectedEvent.notes">
+              <div>
+                <div class="text-[11px] uppercase tracking-wider text-zinc-500">Notes</div>
+                <div class="text-zinc-300 leading-relaxed" x-text="selectedEvent.notes"></div>
+              </div>
+            </template>
+
+            <div class="text-[11px] text-zinc-600 pt-2 border-t border-zinc-800 flex items-center justify-between gap-2">
+              <span>Last verified <span class="font-mono" x-text="selectedEvent.last_verified"></span> · by <span x-text="selectedEvent.verified_by || 'unknown'"></span></span>
+              <a :href="'https://github.com/muanlartins/labnet-calendar/blob/main/data/events/' + selectedEvent.id + '.yaml'" target="_blank" rel="noopener" class="hover:text-zinc-300 transition">edit on GitHub →</a>
+            </div>
+          </section>
+
+          <footer class="px-6 py-4 border-t border-zinc-800 bg-zinc-950/40 flex flex-wrap items-center gap-3 justify-end">
+            <button @click="downloadIcs(selectedEvent)" class="text-xs px-3 py-1.5 rounded bg-zinc-800 hover:bg-zinc-700 text-zinc-200 transition">Download .ics</button>
+            <template x-if="selectedEvent.cfp_url">
+              <a :href="selectedEvent.cfp_url" target="_blank" rel="noopener" class="text-xs px-3 py-1.5 rounded bg-zinc-800 hover:bg-zinc-700 text-zinc-200 transition">View CFP →</a>
+            </template>
+            <template x-if="selectedEvent.url">
+              <a :href="selectedEvent.url" target="_blank" rel="noopener" class="text-xs px-3 py-1.5 rounded bg-accent-500/20 hover:bg-accent-500/30 text-accent-300 ring-1 ring-accent-500/40 transition">Official site →</a>
+            </template>
+          </footer>
+        </div>
+      </template>
+    </article>
+  </div>
+
+  <footer class="border-t border-zinc-800/80 mt-12">
+    <div class="max-w-[1600px] mx-auto px-6 py-6 text-xs text-zinc-500 flex flex-wrap items-center justify-between gap-4">
+      <div>
+        Built and refreshed by <a href="https://claude.com/product/claude-code" class="hover:text-accent-400 transition">Claude Code</a> on a 15-day cadence.
+        Inspired by <a href="https://aideadlin.es" class="hover:text-accent-400 transition">aideadlin.es</a>.
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/muanlartins/labnet-calendar/issues/new?template=event.md" class="hover:text-zinc-200 transition">Suggest event</a>
+        <a href="https://github.com/muanlartins/labnet-calendar" class="hover:text-zinc-200 transition">GitHub</a>
+        <a href="https://labnet.nce.ufrj.br/" class="hover:text-zinc-200 transition">LabNet</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

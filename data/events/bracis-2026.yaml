@@ -1,0 +1,33 @@
+id: bracis-2026
+series_id: bracis
+name: BRACIS
+full_name: "Brazilian Conference on Intelligent Systems 2026"
+edition: "2026"
+type: conference
+society: SBC
+areas: [ml]
+subareas: [neural-architectures, nlp, vision, fairness]
+region: br
+tier:
+  qualis: A4
+  custom: regional
+location:
+  country: Brazil
+  mode: in-person
+url: https://bracis.sbc.org.br/2026/
+deadlines:
+  - kind: paper
+    date: "2026-07-15T23:59:00"
+    timezone: "America/Sao_Paulo"
+  - kind: notification
+    date: "2026-09-15"
+event_dates:
+  start: "2026-11-16"
+  end: "2026-11-20"
+tags: [sbc, double-blind]
+notes: "Provisional dates — refresh from the BRACIS 2026 site once published."
+sources:
+  - url: https://bracis.sbc.org.br/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

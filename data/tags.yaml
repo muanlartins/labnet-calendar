@@ -1,0 +1,76 @@
+# Canonical vocabularies. validate.mjs injects these as enum constraints before
+# checking events. Adding/removing values here changes what events may declare.
+
+schema_version: 1
+
+areas:
+  - { id: networking,    name: "Networking & Communications" }
+  - { id: ml,            name: "Machine Learning & AI" }
+  - { id: security,      name: "Security & Privacy" }
+  - { id: systems,       name: "Operating Systems & Distributed Systems" }
+  - { id: data,          name: "Databases & Data Management" }
+  - { id: theory,        name: "Theory of Computing" }
+  - { id: hci,           name: "Human-Computer Interaction" }
+  - { id: graphics,      name: "Computer Graphics & Visualization" }
+  - { id: pl,            name: "Programming Languages" }
+  - { id: se,            name: "Software Engineering" }
+  - { id: architecture,  name: "Computer Architecture" }
+  - { id: compilers,     name: "Compilers" }
+  - { id: crypto,        name: "Cryptography" }
+  - { id: bio,           name: "Bioinformatics & Computational Biology" }
+  - { id: quantum,       name: "Quantum Computing" }
+  - { id: education,     name: "CS Education" }
+  - { id: general,       name: "General CS / Society Flagship" }
+
+# Subareas are namespaced under their parent area. validate.mjs checks that
+# every subarea on an event belongs to one of the event's areas.
+subareas:
+  ml:        [vision, nlp, robotics, reinforcement-learning, neural-architectures, fairness, generative]
+  networking: [internet, transport, wireless, mobile, sdn, measurement, performance]
+  security:  [systems-security, network-security, applied-crypto, privacy, web-security]
+  systems:   [distributed, storage, virtualization, edge, cloud, hpc]
+  data:      [olap, oltp, streaming, knowledge-graphs, retrieval]
+  theory:    [algorithms, complexity, geometry, optimization]
+  hci:       [accessibility, ar-vr, ux, cscw]
+  graphics:  [rendering, animation, geometry-processing, vis-analytics]
+
+regions:
+  - { id: br,      name: "Brazil" }
+  - { id: latam,   name: "Latin America" }
+  - { id: us,      name: "North America" }
+  - { id: eu,      name: "Europe" }
+  - { id: asia,    name: "Asia" }
+  - { id: africa,  name: "Africa" }
+  - { id: oceania, name: "Oceania" }
+  - { id: world,   name: "International / Worldwide" }
+
+societies:
+  - ACM
+  - IEEE
+  - USENIX
+  - SBC
+  - AAAI
+  - IFIP
+  - Springer
+  - Elsevier
+  - LNCS
+  - other
+
+tiers:
+  qualis: [A1, A2, A3, A4, B1, B2, B3, B4, C]
+  core:   ["A*", A, B, C, "National"]
+  custom: [top, mid, regional]
+
+modes: [in-person, virtual, hybrid]
+
+deadline_kinds:
+  - abstract
+  - paper
+  - rebuttal
+  - notification
+  - camera_ready
+  - early_registration
+  - registration
+  - workshop_proposal
+  - poster
+  - tutorial_proposal

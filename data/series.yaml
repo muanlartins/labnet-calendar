@@ -1,0 +1,1238 @@
+# Watch list. The /refresh-events skill iterates over this list to discover
+# the next edition of each series. See .claude/skills/refresh-events/series-watchlist.md
+# for schema and conventions.
+
+# ============================================================================
+# SBC — Sociedade Brasileira de Computação
+# ============================================================================
+
+- id: csbc
+  name: CSBC
+  full_name: "Congresso da Sociedade Brasileira de Computação"
+  url_pattern: "csbc.sbc.org.br/{year}/"
+  cadence: annual
+  typical_month: july
+  areas: [general]
+  society: SBC
+  region: br
+  tier: { qualis: B3, custom: regional }
+  notes: "Umbrella event aggregating many SBC symposia."
+
+- id: sbrc
+  name: SBRC
+  full_name: "Simpósio Brasileiro de Redes de Computadores e Sistemas Distribuídos"
+  url_pattern: "sbrc.sbc.org.br/{year}/"
+  cadence: annual
+  typical_month: may
+  areas: [networking, systems]
+  subareas: [internet, wireless, distributed]
+  society: SBC
+  region: br
+  tier: { qualis: B1, custom: regional }
+
+- id: sbseg
+  name: SBSeg
+  full_name: "Simpósio Brasileiro em Segurança da Informação e de Sistemas Computacionais"
+  url_pattern: "sbseg.sbc.org.br/{year}/"
+  cadence: annual
+  typical_month: september
+  areas: [security]
+  society: SBC
+  region: br
+  tier: { qualis: B2, custom: regional }
+
+- id: sbes
+  name: SBES
+  full_name: "Simpósio Brasileiro de Engenharia de Software"
+  url_pattern: "cbsoft.sbc.org.br/{year}/sbes/"
+  cadence: annual
+  typical_month: september
+  areas: [se]
+  society: SBC
+  region: br
+  tier: { qualis: B1, custom: regional }
+  notes: "Held under the CBSoft umbrella with SBLP, SBCARS, SAST."
+
+- id: sbbd
+  name: SBBD
+  full_name: "Simpósio Brasileiro de Banco de Dados"
+  url_pattern: "sbbd.org.br/{year}/"
+  cadence: annual
+  typical_month: october
+  areas: [data]
+  society: SBC
+  region: br
+  tier: { qualis: B1, custom: regional }
+
+- id: bracis
+  name: BRACIS
+  full_name: "Brazilian Conference on Intelligent Systems"
+  url_pattern: "bracis.sbc.org.br/{year}/"
+  cadence: annual
+  typical_month: november
+  areas: [ml]
+  subareas: [neural-architectures, nlp, vision]
+  society: SBC
+  region: br
+  tier: { qualis: A4, custom: regional }
+
+- id: sbac-pad
+  name: SBAC-PAD
+  full_name: "Symposium on Computer Architecture and High Performance Computing"
+  url_pattern: "sbac-pad.org/{year}/"
+  cadence: annual
+  typical_month: october
+  areas: [architecture, systems]
+  subareas: [hpc]
+  society: SBC
+  region: br
+  tier: { qualis: A4, custom: regional }
+  notes: "Has international participation; sometimes published with IEEE."
+
+- id: enia
+  name: ENIA
+  full_name: "Encontro Nacional de Inteligência Artificial e Computacional"
+  url_pattern: "bracis.sbc.org.br/{year}/eniac/"
+  cadence: annual
+  typical_month: november
+  areas: [ml]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+  notes: "Held alongside BRACIS."
+
+- id: wscad
+  name: WSCAD
+  full_name: "Simpósio em Sistemas Computacionais de Alto Desempenho"
+  url_pattern: "wscad.sbc.org.br/{year}/"
+  cadence: annual
+  typical_month: october
+  areas: [architecture, systems]
+  subareas: [hpc]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+
+- id: wperformance
+  name: WPerformance
+  full_name: "Workshop em Desempenho de Sistemas Computacionais e de Comunicação"
+  url_pattern: "csbc.sbc.org.br/{year}/wperformance/"
+  cadence: annual
+  typical_month: july
+  areas: [networking, systems]
+  subareas: [performance]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+
+- id: sblp
+  name: SBLP
+  full_name: "Simpósio Brasileiro de Linguagens de Programação"
+  url_pattern: "cbsoft.sbc.org.br/{year}/sblp/"
+  cadence: annual
+  typical_month: september
+  areas: [pl]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+
+- id: sbsi
+  name: SBSI
+  full_name: "Simpósio Brasileiro de Sistemas de Informação"
+  url_pattern: "sbsi.sbc.org.br/{year}/"
+  cadence: annual
+  typical_month: may
+  areas: [se, hci]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+
+- id: sbqs
+  name: SBQS
+  full_name: "Simpósio Brasileiro de Qualidade de Software"
+  url_pattern: "sbqs.sbc.org.br/{year}/"
+  cadence: annual
+  typical_month: november
+  areas: [se]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+
+- id: sbgames
+  name: SBGames
+  full_name: "Simpósio Brasileiro de Jogos e Entretenimento Digital"
+  url_pattern: "sbgames.org/{year}/"
+  cadence: annual
+  typical_month: november
+  areas: [hci, graphics]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+
+- id: sbesc
+  name: SBESC
+  full_name: "Simpósio Brasileiro de Engenharia de Sistemas Computacionais"
+  url_pattern: "sbesc.sbc.org.br/{year}/"
+  cadence: annual
+  typical_month: november
+  areas: [systems, architecture]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+
+- id: sbcas
+  name: SBCAS
+  full_name: "Simpósio Brasileiro de Computação Aplicada à Saúde"
+  url_pattern: "sbcas.sbc.org.br/{year}/"
+  cadence: annual
+  typical_month: june
+  areas: [bio, ml]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+
+- id: sibgrapi
+  name: SIBGRAPI
+  full_name: "Conference on Graphics, Patterns and Images"
+  url_pattern: "sibgrapi.sbc.org.br/{year}/"
+  cadence: annual
+  typical_month: october
+  areas: [graphics, ml]
+  subareas: [vision]
+  society: SBC
+  region: br
+  tier: { qualis: B1, custom: regional }
+  notes: "Co-published with IEEE."
+
+- id: svr
+  name: SVR
+  full_name: "Symposium on Virtual and Augmented Reality"
+  url_pattern: "svr.sbc.org.br/{year}/"
+  cadence: annual
+  typical_month: november
+  areas: [graphics, hci]
+  subareas: [ar-vr]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+
+- id: sbsc
+  name: SBSC
+  full_name: "Simpósio Brasileiro de Sistemas Colaborativos"
+  url_pattern: "sbsc.sbc.org.br/{year}/"
+  cadence: annual
+  typical_month: october
+  areas: [hci]
+  subareas: [cscw]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+
+- id: sbcm
+  name: SBCM
+  full_name: "Simpósio Brasileiro de Computação Musical"
+  url_pattern: "sbcm.sbc.org.br/{year}/"
+  cadence: biannual
+  typical_month: september
+  areas: [hci]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+
+- id: sbrt
+  name: SBrT
+  full_name: "Simpósio Brasileiro de Telecomunicações e Processamento de Sinais"
+  url_pattern: "sbrt.org.br/sbrt{year}/"
+  cadence: annual
+  typical_month: september
+  areas: [networking]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+
+- id: wtdr
+  name: WTDR
+  full_name: "Workshop de Teses e Dissertações em Redes"
+  url_pattern: "sbrc.sbc.org.br/{year}/wtdr/"
+  cadence: annual
+  typical_month: may
+  areas: [networking]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+  notes: "Student workshop co-located with SBRC."
+
+# ============================================================================
+# Networking & Communications (international)
+# ============================================================================
+
+- id: sigcomm
+  name: SIGCOMM
+  full_name: "ACM SIGCOMM Conference"
+  url_pattern: "conferences.sigcomm.org/sigcomm/{year}/"
+  cadence: annual
+  typical_month: august
+  areas: [networking]
+  subareas: [internet, transport, measurement]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: infocom
+  name: INFOCOM
+  full_name: "IEEE International Conference on Computer Communications"
+  url_pattern: "infocom{year}.ieee-infocom.org/"
+  cadence: annual
+  typical_month: may
+  areas: [networking]
+  society: IEEE
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: nsdi
+  name: NSDI
+  full_name: "USENIX Symposium on Networked Systems Design and Implementation"
+  url_pattern: "usenix.org/conference/nsdi{yy}"
+  cadence: annual
+  typical_month: april
+  areas: [networking, systems]
+  subareas: [distributed]
+  society: USENIX
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: imc
+  name: IMC
+  full_name: "ACM Internet Measurement Conference"
+  url_pattern: "conferences.sigcomm.org/imc/{year}/"
+  cadence: annual
+  typical_month: november
+  areas: [networking]
+  subareas: [measurement, internet]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: A, custom: top }
+
+- id: mobicom
+  name: MobiCom
+  full_name: "ACM International Conference on Mobile Computing and Networking"
+  url_pattern: "sigmobile.org/mobicom/{year}/"
+  cadence: annual
+  typical_month: october
+  areas: [networking]
+  subareas: [mobile, wireless]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: mobihoc
+  name: MobiHoc
+  full_name: "ACM International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing"
+  url_pattern: "sigmobile.org/mobihoc/{year}/"
+  cadence: annual
+  typical_month: october
+  areas: [networking]
+  subareas: [mobile, wireless]
+  society: ACM
+  region: world
+  tier: { qualis: A2, core: A, custom: top }
+
+- id: conext
+  name: CoNEXT
+  full_name: "ACM International Conference on emerging Networking EXperiments and Technologies"
+  url_pattern: "conferences.sigcomm.org/co-next/{year}/"
+  cadence: annual
+  typical_month: december
+  areas: [networking]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: A, custom: top }
+
+- id: icc
+  name: ICC
+  full_name: "IEEE International Conference on Communications"
+  url_pattern: "icc{year}.ieee-icc.org/"
+  cadence: annual
+  typical_month: may
+  areas: [networking]
+  society: IEEE
+  region: world
+  tier: { qualis: A2, core: B, custom: mid }
+  notes: "Rotates location annually."
+
+- id: globecom
+  name: GLOBECOM
+  full_name: "IEEE Global Communications Conference"
+  url_pattern: "globecom{year}.ieee-globecom.org/"
+  cadence: annual
+  typical_month: december
+  areas: [networking]
+  society: IEEE
+  region: world
+  tier: { qualis: A2, core: B, custom: mid }
+
+- id: pam
+  name: PAM
+  full_name: "Passive and Active Measurement Conference"
+  url_pattern: "pam{year}.cs.northwestern.edu/"
+  cadence: annual
+  typical_month: march
+  areas: [networking]
+  subareas: [measurement]
+  society: Springer
+  region: world
+  tier: { qualis: A4, core: A, custom: top }
+
+- id: icnp
+  name: ICNP
+  full_name: "IEEE International Conference on Network Protocols"
+  url_pattern: "icnp{year}.cs.ucr.edu/"
+  cadence: annual
+  typical_month: october
+  areas: [networking]
+  society: IEEE
+  region: world
+  tier: { qualis: A2, core: A, custom: top }
+
+- id: sigmetrics
+  name: SIGMETRICS
+  full_name: "ACM SIGMETRICS / IFIP Performance"
+  url_pattern: "sigmetrics.org/sigmetrics{year}/"
+  cadence: annual
+  typical_month: june
+  areas: [networking, systems]
+  subareas: [performance]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+# ============================================================================
+# Systems & Architecture
+# ============================================================================
+
+- id: sosp
+  name: SOSP
+  full_name: "ACM Symposium on Operating Systems Principles"
+  url_pattern: "sigops.org/s/conferences/sosp/{year}/"
+  cadence: biannual
+  typical_month: october
+  areas: [systems]
+  subareas: [distributed]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+  notes: "Held in odd years; alternates with OSDI."
+
+- id: osdi
+  name: OSDI
+  full_name: "USENIX Symposium on Operating Systems Design and Implementation"
+  url_pattern: "usenix.org/conference/osdi{yy}"
+  cadence: biannual
+  typical_month: july
+  areas: [systems]
+  society: USENIX
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+  notes: "Held in even years; alternates with SOSP."
+
+- id: eurosys
+  name: EuroSys
+  full_name: "European Conference on Computer Systems"
+  url_pattern: "eurosys{year}.org/"
+  cadence: annual
+  typical_month: april
+  areas: [systems]
+  society: ACM
+  region: eu
+  tier: { qualis: A1, core: A, custom: top }
+
+- id: usenix-atc
+  name: "USENIX ATC"
+  full_name: "USENIX Annual Technical Conference"
+  url_pattern: "usenix.org/conference/atc{yy}"
+  cadence: annual
+  typical_month: july
+  areas: [systems]
+  society: USENIX
+  region: world
+  tier: { qualis: A1, core: A, custom: top }
+
+- id: fast
+  name: FAST
+  full_name: "USENIX Conference on File and Storage Technologies"
+  url_pattern: "usenix.org/conference/fast{yy}"
+  cadence: annual
+  typical_month: february
+  areas: [systems]
+  subareas: [storage]
+  society: USENIX
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: asplos
+  name: ASPLOS
+  full_name: "ACM International Conference on Architectural Support for Programming Languages and Operating Systems"
+  url_pattern: "asplos-conference.org/{year}/"
+  cadence: annual
+  typical_month: april
+  areas: [architecture, systems]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: micro
+  name: MICRO
+  full_name: "IEEE/ACM International Symposium on Microarchitecture"
+  url_pattern: "microarch.org/micro{number}/"
+  cadence: annual
+  typical_month: october
+  areas: [architecture]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: isca
+  name: ISCA
+  full_name: "International Symposium on Computer Architecture"
+  url_pattern: "iscaconf.org/isca{year}/"
+  cadence: annual
+  typical_month: june
+  areas: [architecture]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: hpca
+  name: HPCA
+  full_name: "IEEE International Symposium on High-Performance Computer Architecture"
+  url_pattern: "hpca-conf.org/{year}/"
+  cadence: annual
+  typical_month: february
+  areas: [architecture]
+  society: IEEE
+  region: world
+  tier: { qualis: A1, core: A, custom: top }
+
+# ============================================================================
+# Machine Learning & AI
+# ============================================================================
+
+- id: neurips
+  name: NeurIPS
+  full_name: "Conference on Neural Information Processing Systems"
+  url_pattern: "neurips.cc/Conferences/{year}"
+  cadence: annual
+  typical_month: december
+  areas: [ml]
+  subareas: [neural-architectures, generative, reinforcement-learning]
+  society: other
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: icml
+  name: ICML
+  full_name: "International Conference on Machine Learning"
+  url_pattern: "icml.cc/Conferences/{year}"
+  cadence: annual
+  typical_month: july
+  areas: [ml]
+  society: other
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: iclr
+  name: ICLR
+  full_name: "International Conference on Learning Representations"
+  url_pattern: "iclr.cc/Conferences/{year}"
+  cadence: annual
+  typical_month: may
+  areas: [ml]
+  subareas: [neural-architectures, generative]
+  society: other
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: aaai
+  name: AAAI
+  full_name: "AAAI Conference on Artificial Intelligence"
+  url_pattern: "aaai.org/conference/aaai/aaai-{number}/"
+  cadence: annual
+  typical_month: february
+  areas: [ml]
+  society: AAAI
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: ijcai
+  name: IJCAI
+  full_name: "International Joint Conference on Artificial Intelligence"
+  url_pattern: "ijcai-{yy}.org/"
+  cadence: annual
+  typical_month: august
+  areas: [ml]
+  society: other
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: kdd
+  name: KDD
+  full_name: "ACM SIGKDD Conference on Knowledge Discovery and Data Mining"
+  url_pattern: "kdd.org/kdd{year}/"
+  cadence: annual
+  typical_month: august
+  areas: [ml, data]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: aistats
+  name: AISTATS
+  full_name: "International Conference on Artificial Intelligence and Statistics"
+  url_pattern: "aistats.org/aistats{year}/"
+  cadence: annual
+  typical_month: april
+  areas: [ml]
+  society: other
+  region: world
+  tier: { qualis: A2, core: A, custom: top }
+
+- id: uai
+  name: UAI
+  full_name: "Conference on Uncertainty in Artificial Intelligence"
+  url_pattern: "auai.org/uai{year}/"
+  cadence: annual
+  typical_month: august
+  areas: [ml]
+  society: other
+  region: world
+  tier: { qualis: A2, core: A, custom: top }
+
+- id: colt
+  name: COLT
+  full_name: "Conference on Learning Theory"
+  url_pattern: "learningtheory.org/colt{year}/"
+  cadence: annual
+  typical_month: july
+  areas: [ml, theory]
+  society: other
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: ecml-pkdd
+  name: "ECML-PKDD"
+  full_name: "European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases"
+  url_pattern: "ecmlpkdd{year}.org/"
+  cadence: annual
+  typical_month: september
+  areas: [ml, data]
+  society: Springer
+  region: eu
+  tier: { qualis: A1, core: A, custom: top }
+
+# ============================================================================
+# Computer Vision
+# ============================================================================
+
+- id: cvpr
+  name: CVPR
+  full_name: "IEEE/CVF Conference on Computer Vision and Pattern Recognition"
+  url_pattern: "cvpr.thecvf.com/Conferences/{year}"
+  cadence: annual
+  typical_month: june
+  areas: [ml]
+  subareas: [vision]
+  society: IEEE
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: iccv
+  name: ICCV
+  full_name: "IEEE/CVF International Conference on Computer Vision"
+  url_pattern: "iccv.thecvf.com/Conferences/{year}"
+  cadence: biannual
+  typical_month: october
+  areas: [ml]
+  subareas: [vision]
+  society: IEEE
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+  notes: "Held in odd years."
+
+- id: eccv
+  name: ECCV
+  full_name: "European Conference on Computer Vision"
+  url_pattern: "eccv.ecva.net/Conferences/{year}"
+  cadence: biannual
+  typical_month: october
+  areas: [ml]
+  subareas: [vision]
+  society: Springer
+  region: eu
+  tier: { qualis: A1, core: "A*", custom: top }
+  notes: "Held in even years."
+
+- id: bmvc
+  name: BMVC
+  full_name: "British Machine Vision Conference"
+  url_pattern: "bmvc{year}.bmva.org/"
+  cadence: annual
+  typical_month: november
+  areas: [ml]
+  subareas: [vision]
+  society: other
+  region: eu
+  tier: { qualis: A2, core: A, custom: mid }
+
+# ============================================================================
+# NLP
+# ============================================================================
+
+- id: acl
+  name: ACL
+  full_name: "Annual Meeting of the Association for Computational Linguistics"
+  url_pattern: "{year}.aclweb.org/"
+  cadence: annual
+  typical_month: july
+  areas: [ml]
+  subareas: [nlp]
+  society: other
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: emnlp
+  name: EMNLP
+  full_name: "Conference on Empirical Methods in Natural Language Processing"
+  url_pattern: "{year}.emnlp.org/"
+  cadence: annual
+  typical_month: november
+  areas: [ml]
+  subareas: [nlp]
+  society: other
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: naacl
+  name: NAACL
+  full_name: "North American Chapter of the Association for Computational Linguistics"
+  url_pattern: "{year}.naacl.org/"
+  cadence: annual
+  typical_month: june
+  areas: [ml]
+  subareas: [nlp]
+  society: other
+  region: us
+  tier: { qualis: A1, core: A, custom: top }
+
+# ============================================================================
+# Robotics
+# ============================================================================
+
+- id: icra
+  name: ICRA
+  full_name: "IEEE International Conference on Robotics and Automation"
+  url_pattern: "{year}.ieee-icra.org/"
+  cadence: annual
+  typical_month: may
+  areas: [ml]
+  subareas: [robotics]
+  society: IEEE
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: iros
+  name: IROS
+  full_name: "IEEE/RSJ International Conference on Intelligent Robots and Systems"
+  url_pattern: "iros{year}.org/"
+  cadence: annual
+  typical_month: october
+  areas: [ml]
+  subareas: [robotics]
+  society: IEEE
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+# ============================================================================
+# Security & Privacy
+# ============================================================================
+
+- id: usenix-security
+  name: "USENIX Security"
+  full_name: "USENIX Security Symposium"
+  url_pattern: "usenix.org/conference/usenixsecurity{yy}"
+  cadence: annual
+  typical_month: august
+  areas: [security]
+  society: USENIX
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+  notes: "Two-cycle reviewing."
+
+- id: ndss
+  name: NDSS
+  full_name: "Network and Distributed System Security Symposium"
+  url_pattern: "ndss-symposium.org/ndss{year}/"
+  cadence: annual
+  typical_month: february
+  areas: [security]
+  subareas: [network-security]
+  society: other
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: ieee-sp
+  name: "IEEE S&P"
+  full_name: "IEEE Symposium on Security and Privacy"
+  url_pattern: "ieee-security.org/TC/SP{year}/"
+  cadence: annual
+  typical_month: may
+  areas: [security]
+  society: IEEE
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+  notes: "Four-cycle reviewing."
+
+- id: ccs
+  name: CCS
+  full_name: "ACM Conference on Computer and Communications Security"
+  url_pattern: "sigsac.org/ccs/CCS{year}/"
+  cadence: annual
+  typical_month: october
+  areas: [security]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: asiaccs
+  name: AsiaCCS
+  full_name: "ACM Asia Conference on Computer and Communications Security"
+  url_pattern: "asiaccs{year}.sigsac.org/"
+  cadence: annual
+  typical_month: july
+  areas: [security]
+  society: ACM
+  region: asia
+  tier: { qualis: A2, core: A, custom: top }
+
+- id: eurosp
+  name: "EuroS&P"
+  full_name: "IEEE European Symposium on Security and Privacy"
+  url_pattern: "eurosp{year}.ieee-security.org/"
+  cadence: annual
+  typical_month: june
+  areas: [security]
+  society: IEEE
+  region: eu
+  tier: { qualis: A2, core: A, custom: top }
+
+- id: esorics
+  name: ESORICS
+  full_name: "European Symposium on Research in Computer Security"
+  url_pattern: "esorics{year}.org/"
+  cadence: annual
+  typical_month: september
+  areas: [security]
+  society: Springer
+  region: eu
+  tier: { qualis: A2, core: A, custom: top }
+
+# ============================================================================
+# Cryptography
+# ============================================================================
+
+- id: crypto
+  name: CRYPTO
+  full_name: "International Cryptology Conference"
+  url_pattern: "crypto.iacr.org/{year}/"
+  cadence: annual
+  typical_month: august
+  areas: [crypto]
+  society: other
+  region: us
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: eurocrypt
+  name: EUROCRYPT
+  full_name: "Annual International Conference on the Theory and Applications of Cryptographic Techniques"
+  url_pattern: "eurocrypt.iacr.org/{year}/"
+  cadence: annual
+  typical_month: may
+  areas: [crypto]
+  society: other
+  region: eu
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: asiacrypt
+  name: ASIACRYPT
+  full_name: "International Conference on the Theory and Application of Cryptology and Information Security"
+  url_pattern: "asiacrypt.iacr.org/{year}/"
+  cadence: annual
+  typical_month: december
+  areas: [crypto]
+  society: other
+  region: asia
+  tier: { qualis: A1, core: "A*", custom: top }
+
+# ============================================================================
+# Databases & Data Management
+# ============================================================================
+
+- id: sigmod
+  name: SIGMOD
+  full_name: "ACM SIGMOD International Conference on Management of Data"
+  url_pattern: "{year}.sigmod.org/"
+  cadence: annual
+  typical_month: june
+  areas: [data]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: vldb
+  name: VLDB
+  full_name: "International Conference on Very Large Data Bases"
+  url_pattern: "vldb.org/{year}/"
+  cadence: annual
+  typical_month: august
+  areas: [data]
+  society: other
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: icde
+  name: ICDE
+  full_name: "IEEE International Conference on Data Engineering"
+  url_pattern: "icde{year}.ieee.org/"
+  cadence: annual
+  typical_month: april
+  areas: [data]
+  society: IEEE
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: edbt
+  name: EDBT
+  full_name: "International Conference on Extending Database Technology"
+  url_pattern: "edbticdt{year}.cs.uoi.gr/"
+  cadence: annual
+  typical_month: march
+  areas: [data]
+  society: other
+  region: eu
+  tier: { qualis: A2, core: A, custom: top }
+
+- id: cidr
+  name: CIDR
+  full_name: "Conference on Innovative Data Systems Research"
+  url_pattern: "cidrdb.org/cidr{year}/"
+  cadence: annual
+  typical_month: january
+  areas: [data]
+  society: other
+  region: world
+  tier: { qualis: A1, core: A, custom: top }
+
+- id: www
+  name: "TheWebConf"
+  full_name: "ACM Web Conference (formerly WWW)"
+  url_pattern: "{year}.thewebconf.org/"
+  cadence: annual
+  typical_month: april
+  areas: [data, networking]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+# ============================================================================
+# HCI & Visualization
+# ============================================================================
+
+- id: chi
+  name: CHI
+  full_name: "ACM CHI Conference on Human Factors in Computing Systems"
+  url_pattern: "chi{year}.acm.org/"
+  cadence: annual
+  typical_month: april
+  areas: [hci]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: uist
+  name: UIST
+  full_name: "ACM Symposium on User Interface Software and Technology"
+  url_pattern: "uist.acm.org/{year}/"
+  cadence: annual
+  typical_month: october
+  areas: [hci]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: cscw
+  name: CSCW
+  full_name: "ACM Conference on Computer-Supported Cooperative Work and Social Computing"
+  url_pattern: "cscw.acm.org/{year}/"
+  cadence: annual
+  typical_month: november
+  areas: [hci]
+  subareas: [cscw]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: A, custom: top }
+
+- id: ieee-vis
+  name: "IEEE VIS"
+  full_name: "IEEE Visualization Conference"
+  url_pattern: "ieeevis.org/year/{year}/welcome"
+  cadence: annual
+  typical_month: october
+  areas: [graphics]
+  subareas: [vis-analytics]
+  society: IEEE
+  region: world
+  tier: { qualis: A1, core: A, custom: top }
+
+- id: siggraph
+  name: SIGGRAPH
+  full_name: "ACM SIGGRAPH Conference"
+  url_pattern: "s{year}.siggraph.org/"
+  cadence: annual
+  typical_month: august
+  areas: [graphics]
+  subareas: [rendering, animation]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+# ============================================================================
+# Theory of Computing
+# ============================================================================
+
+- id: stoc
+  name: STOC
+  full_name: "ACM Symposium on Theory of Computing"
+  url_pattern: "acm-stoc.org/stoc{year}/"
+  cadence: annual
+  typical_month: june
+  areas: [theory]
+  subareas: [algorithms, complexity]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: focs
+  name: FOCS
+  full_name: "IEEE Symposium on Foundations of Computer Science"
+  url_pattern: "ieee-focs.org/focs-{year}/"
+  cadence: annual
+  typical_month: october
+  areas: [theory]
+  subareas: [algorithms, complexity]
+  society: IEEE
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: soda
+  name: SODA
+  full_name: "ACM-SIAM Symposium on Discrete Algorithms"
+  url_pattern: "siam.org/conferences/cm/conference/soda{yy}"
+  cadence: annual
+  typical_month: january
+  areas: [theory]
+  subareas: [algorithms]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: icalp
+  name: ICALP
+  full_name: "International Colloquium on Automata, Languages, and Programming"
+  url_pattern: "easyconferences.eu/icalp{year}/"
+  cadence: annual
+  typical_month: july
+  areas: [theory]
+  society: Springer
+  region: eu
+  tier: { qualis: A1, core: A, custom: top }
+
+# ============================================================================
+# Programming Languages
+# ============================================================================
+
+- id: popl
+  name: POPL
+  full_name: "ACM SIGPLAN Symposium on Principles of Programming Languages"
+  url_pattern: "popl{year}.sigplan.org/"
+  cadence: annual
+  typical_month: january
+  areas: [pl]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: pldi
+  name: PLDI
+  full_name: "ACM SIGPLAN Conference on Programming Language Design and Implementation"
+  url_pattern: "pldi{year}.sigplan.org/"
+  cadence: annual
+  typical_month: june
+  areas: [pl, compilers]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: oopsla
+  name: OOPSLA
+  full_name: "ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications"
+  url_pattern: "{year}.splashcon.org/track/splash-{year}-oopsla"
+  cadence: annual
+  typical_month: october
+  areas: [pl, se]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: icfp
+  name: ICFP
+  full_name: "ACM SIGPLAN International Conference on Functional Programming"
+  url_pattern: "icfp{year}.sigplan.org/"
+  cadence: annual
+  typical_month: september
+  areas: [pl]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: A, custom: top }
+
+# ============================================================================
+# Software Engineering
+# ============================================================================
+
+- id: icse
+  name: ICSE
+  full_name: "International Conference on Software Engineering"
+  url_pattern: "conf.researchr.org/home/icse-{year}"
+  cadence: annual
+  typical_month: may
+  areas: [se]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: fse
+  name: FSE
+  full_name: "ACM SIGSOFT International Symposium on the Foundations of Software Engineering"
+  url_pattern: "conf.researchr.org/home/fse-{year}"
+  cadence: annual
+  typical_month: november
+  areas: [se]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: "A*", custom: top }
+
+- id: ase
+  name: ASE
+  full_name: "IEEE/ACM International Conference on Automated Software Engineering"
+  url_pattern: "conf.researchr.org/home/ase-{year}"
+  cadence: annual
+  typical_month: october
+  areas: [se]
+  society: IEEE
+  region: world
+  tier: { qualis: A1, core: A, custom: top }
+
+- id: issta
+  name: ISSTA
+  full_name: "ACM SIGSOFT International Symposium on Software Testing and Analysis"
+  url_pattern: "conf.researchr.org/home/issta-{year}"
+  cadence: annual
+  typical_month: july
+  areas: [se]
+  society: ACM
+  region: world
+  tier: { qualis: A1, core: A, custom: top }
+
+# ============================================================================
+# Bioinformatics
+# ============================================================================
+
+- id: ismb
+  name: ISMB
+  full_name: "Intelligent Systems for Molecular Biology"
+  url_pattern: "iscb.org/ismb{year}/"
+  cadence: annual
+  typical_month: july
+  areas: [bio]
+  society: other
+  region: world
+  tier: { qualis: A1, core: A, custom: top }
+
+- id: recomb
+  name: RECOMB
+  full_name: "International Conference on Research in Computational Molecular Biology"
+  url_pattern: "recomb.org/recomb{year}/"
+  cadence: annual
+  typical_month: april
+  areas: [bio]
+  society: other
+  region: world
+  tier: { qualis: A1, core: A, custom: top }
+
+# ============================================================================
+# Top journals (rolling submissions; tracked for visibility)
+# ============================================================================
+
+- id: jmlr
+  name: JMLR
+  full_name: "Journal of Machine Learning Research"
+  cadence: rolling
+  areas: [ml]
+  society: other
+  region: world
+  tier: { qualis: A1, custom: top }
+  notes: "No fixed deadline. Special issues tracked separately as type=special_issue."
+
+- id: ieee-tpami
+  name: "IEEE TPAMI"
+  full_name: "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+  cadence: rolling
+  areas: [ml]
+  subareas: [vision]
+  society: IEEE
+  region: world
+  tier: { qualis: A1, custom: top }
+
+- id: ieee-acm-ton
+  name: "IEEE/ACM ToN"
+  full_name: "IEEE/ACM Transactions on Networking"
+  cadence: rolling
+  areas: [networking]
+  society: IEEE
+  region: world
+  tier: { qualis: A1, custom: top }
+
+- id: acm-tocs
+  name: "ACM TOCS"
+  full_name: "ACM Transactions on Computer Systems"
+  cadence: rolling
+  areas: [systems]
+  society: ACM
+  region: world
+  tier: { qualis: A1, custom: top }
+
+- id: ieee-tnsm
+  name: "IEEE TNSM"
+  full_name: "IEEE Transactions on Network and Service Management"
+  cadence: rolling
+  areas: [networking]
+  society: IEEE
+  region: world
+  tier: { qualis: A2, custom: top }
+
+- id: acm-csur
+  name: "ACM CSUR"
+  full_name: "ACM Computing Surveys"
+  cadence: rolling
+  areas: [general]
+  society: ACM
+  region: world
+  tier: { qualis: A1, custom: top }

@@ -1,0 +1,35 @@
+id: usenix-security-2026
+series_id: usenix-security
+name: "USENIX Security"
+full_name: "35th USENIX Security Symposium"
+edition: "2026"
+edition_number: 35
+type: symposium
+society: USENIX
+areas: [security]
+subareas: [systems-security, network-security, web-security, privacy]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  mode: in-person
+url: https://www.usenix.org/conference/usenixsecurity26
+deadlines:
+  - kind: paper
+    date: "2026-06-04T23:59:00"
+    timezone: AoE
+    note: "Cycle 2 deadline (USENIX Security uses two annual review cycles)."
+  - kind: notification
+    date: "2026-09-10"
+event_dates:
+  start: "2026-08-12"
+  end: "2026-08-14"
+tags: [top-tier, flagship, two-cycle-reviewing]
+notes: "USENIX Security has rolling two-cycle reviewing. Verify cycle deadlines against the current CFP."
+sources:
+  - url: https://www.usenix.org/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

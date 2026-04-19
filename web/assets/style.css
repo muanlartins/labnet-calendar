@@ -1,0 +1,8 @@
+[x-cloak] { display: none !important; }
+
+::selection { background: rgba(45, 212, 191, 0.25); }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgb(39, 39, 42); border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: rgb(63, 63, 70); }
