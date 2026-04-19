@@ -38,11 +38,19 @@ function calendarApp() {
     window: null,
     filtersOpen: false,
     selectedEvent: null,
+    error: null,
     filters: { areas: [], regions: [], types: [], societies: [], qualis: [], modes: [] },
 
     async init() {
-      const r = await fetch("./data/events.json");
-      this.data = await r.json();
+      try {
+        const r = await fetch("./data/events.json", { cache: "no-store" });
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        const j = await r.json();
+        Object.assign(this.data, j);
+      } catch (err) {
+        this.error = String(err);
+        console.error("[labnet-calendar] failed to load events.json:", err);
+      }
     },
 
     toggleQualis(q) {

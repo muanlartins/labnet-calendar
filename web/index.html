@@ -30,8 +30,8 @@
     };
   </script>
   <link rel="stylesheet" href="assets/style.css">
-  <script defer src="https://unpkg.com/alpinejs@3.13.10/dist/cdn.min.js"></script>
   <script defer src="assets/app.js"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.13.10/dist/cdn.min.js"></script>
 </head>
 <body class="bg-zinc-950 text-zinc-100 font-sans antialiased min-h-screen" x-data="calendarApp()" x-init="init()" x-cloak>
 
@@ -179,7 +179,11 @@
         </div>
       </div>
 
-      <div x-show="!data.events.length" class="border border-zinc-800 rounded-lg p-12 text-center text-zinc-500">Loading…</div>
+      <div x-show="error" class="border border-rose-500/30 bg-rose-500/10 rounded-lg p-6 text-rose-200 text-sm">
+        Failed to load <code class="font-mono">data/events.json</code>: <span x-text="error"></span>.
+        <div class="text-xs text-rose-300/70 mt-2">Run <code class="font-mono bg-zinc-900 px-1 py-0.5 rounded">npm run all</code> to regenerate, then reload.</div>
+      </div>
+      <div x-show="!error && !data.events.length" class="border border-zinc-800 rounded-lg p-12 text-center text-zinc-500">Loading…</div>
 
       <div x-show="data.events.length && !filtered.length" class="border border-zinc-800 rounded-lg p-12 text-center text-zinc-500">
         No events match the current filters.
