@@ -22,20 +22,23 @@ url: https://conferences.sigcomm.org/sigcomm/2026/
 cfp_url: https://conferences.sigcomm.org/sigcomm/2026/cfp/
 deadlines:
   - kind: abstract
-    date: "2026-01-21T23:59:00"
+    date: "2026-01-30T23:59:00"
     timezone: AoE
   - kind: paper
-    date: "2026-01-28T23:59:00"
+    date: "2026-02-06T23:59:00"
     timezone: AoE
   - kind: notification
     date: "2026-04-30"
+    note: "Unconfirmed against the 2026-04-18 refresh — official CFP page timed out; previous value retained."
 event_dates:
   start: "2026-08-17"
   end: "2026-08-21"
 tags: [top-tier, flagship]
-notes: "40th edition — paper deadlines have already passed for the main track."
+notes: "40th edition. Previous YAML dates (abstract 2026-01-21, paper 2026-01-28) updated to the published 2026-01-30/2026-02-06 AoE dates; both deadlines have already passed."
 sources:
   - url: https://conferences.sigcomm.org/sigcomm/2026/cfp/
+    fetched_at: "2026-04-18"
+  - url: https://conferenceinc.net/post/sigcomm/
     fetched_at: "2026-04-18"
 last_verified: "2026-04-18"
 verified_by: claude

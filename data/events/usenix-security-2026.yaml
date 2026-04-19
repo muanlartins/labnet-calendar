@@ -14,22 +14,30 @@ tier:
   core: "A*"
   custom: top
 location:
+  city: Baltimore
+  country: USA
   mode: in-person
 url: https://www.usenix.org/conference/usenixsecurity26
+cfp_url: https://www.usenix.org/conference/usenixsecurity26/call-for-papers
 deadlines:
-  - kind: paper
-    date: "2026-06-04T23:59:00"
+  - kind: abstract
+    date: "2026-01-29T23:59:00"
     timezone: AoE
-    note: "Cycle 2 deadline (USENIX Security uses two annual review cycles)."
-  - kind: notification
-    date: "2026-09-10"
+    note: "Cycle 2 registration (title, authors, abstract, topics). Cycle 1 registration was 2025-08-19."
+  - kind: paper
+    date: "2026-02-05T23:59:00"
+    timezone: AoE
+    note: "Cycle 2 submission. Cycle 1 submission was 2025-08-26. USENIX Security uses two annual review cycles; both feed the same proceedings."
+  - kind: camera_ready
+    date: "2026-06-11"
+    timezone: AoE
 event_dates:
   start: "2026-08-12"
   end: "2026-08-14"
 tags: [top-tier, flagship, two-cycle-reviewing]
-notes: "USENIX Security has rolling two-cycle reviewing. Verify cycle deadlines against the current CFP."
+notes: "Both 2026 review cycles have closed as of 2026-04-18; camera-ready is the remaining author deadline. Previously listed paper deadline 2026-06-04 was incorrect (no such cycle). Previously listed notification 2026-09-10 removed — official CFP lists early rejections (2026-03-17 for Cycle 1) but no single author-notification date."
 sources:
-  - url: https://www.usenix.org/
+  - url: https://www.ieee-security.org/Calendar/cfps/cfp-USENIXSec2026.html
     fetched_at: "2026-04-18"
 last_verified: "2026-04-18"
 verified_by: claude
