@@ -1,0 +1,28 @@
+id: edbt-2026
+series_id: edbt
+name: EDBT
+full_name: "International Conference on Extending Database Technology 2026"
+edition: "2026"
+type: conference
+society: other
+areas: [data]
+region: eu
+tier:
+  qualis: A2
+  core: A
+  custom: top
+location:
+  city: Tampere
+  country: Finland
+  mode: in-person
+url: https://edbticdt2026.github.io/
+event_dates:
+  start: "2026-03-24"
+  end: "2026-03-27"
+tags: [top-tier]
+notes: "Held jointly with ICDT. Official site returned ECONNREFUSED on fetch; specific submission deadlines not recovered from official site as of 2026-04-18. Event already concluded at time of refresh."
+sources:
+  - url: https://edbticdt2026.github.io/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

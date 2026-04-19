@@ -1,0 +1,44 @@
+id: hpca-2026
+series_id: hpca
+name: HPCA
+full_name: "IEEE International Symposium on High-Performance Computer Architecture 2026"
+edition: "2026"
+type: symposium
+society: IEEE
+areas: [architecture]
+region: world
+tier:
+  qualis: A1
+  core: A
+  custom: top
+location:
+  city: Sydney
+  country: Australia
+  venue: International Convention Centre Sydney
+  mode: in-person
+url: https://conf.researchr.org/home/hpca-2026
+deadlines:
+  - kind: abstract
+    date: "2025-07-25T19:59:00"
+    timezone: America/New_York
+    note: "Main track registration — already passed."
+  - kind: paper
+    date: "2025-08-01T19:59:00"
+    timezone: America/New_York
+    note: "Main track submission — already passed."
+  - kind: abstract
+    date: "2025-09-12"
+    note: "Industry track abstract — already passed."
+  - kind: paper
+    date: "2025-09-19"
+    note: "Industry track paper — already passed."
+event_dates:
+  start: "2026-01-31"
+  end: "2026-02-04"
+tags: [top-tier, ieee]
+notes: "Main conference redirected from hpca-conf.org/2026 to conf.researchr.org/home/hpca-2026. Event already concluded at time of refresh."
+sources:
+  - url: https://conf.researchr.org/home/hpca-2026
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

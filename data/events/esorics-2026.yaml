@@ -1,0 +1,33 @@
+id: esorics-2026
+series_id: esorics
+name: ESORICS
+full_name: "European Symposium on Research in Computer Security 2026"
+edition: "2026"
+edition_number: 31
+type: symposium
+society: Springer
+areas: [security]
+region: eu
+tier:
+  qualis: A2
+  core: A
+  custom: top
+location:
+  city: Rome
+  country: Italy
+  mode: in-person
+url: https://sites.google.com/di.uniroma1.it/esorics2026/
+deadlines:
+  - kind: paper
+    date: "2026-04-21"
+    note: "Spring cycle submission."
+event_dates:
+  start: "2026-09-14"
+  end: "2026-09-18"
+tags: [top-tier, springer]
+notes: "31st edition, hosted in Rome. Only spring-cycle paper deadline published on the site as of 2026-04-18."
+sources:
+  - url: https://sites.google.com/di.uniroma1.it/esorics2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

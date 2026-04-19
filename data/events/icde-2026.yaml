@@ -1,0 +1,58 @@
+id: icde-2026
+series_id: icde
+name: ICDE
+full_name: "IEEE International Conference on Data Engineering 2026"
+edition: "2026"
+edition_number: 42
+type: conference
+society: IEEE
+areas: [data]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Montreal
+  country: Canada
+  mode: in-person
+url: https://icde2026.github.io/
+cfp_url: https://icde2026.github.io/important-dates.html
+deadlines:
+  - kind: paper
+    date: "2025-06-18"
+    note: "Research track Round 1 submission — already passed."
+  - kind: notification
+    date: "2025-08-18"
+    note: "Round 1 initial notification."
+  - kind: paper
+    date: "2025-09-22"
+    note: "Round 1 revision due — already passed."
+  - kind: notification
+    date: "2025-10-20"
+    note: "Round 1 final notification."
+  - kind: paper
+    date: "2025-10-27"
+    note: "Research track Round 2 submission — already passed."
+  - kind: notification
+    date: "2025-12-22"
+    note: "Round 2 initial notification."
+  - kind: paper
+    date: "2026-01-26"
+    note: "Round 2 revision due — already passed."
+  - kind: notification
+    date: "2026-02-23"
+    note: "Round 2 final notification."
+  - kind: camera_ready
+    date: "2026-03-06"
+    note: "Industry track camera-ready."
+event_dates:
+  start: "2026-05-04"
+  end: "2026-05-08"
+tags: [top-tier, ieee, multi-cycle]
+notes: "42nd edition. Research track has two rounds, each with two reviewing phases."
+sources:
+  - url: https://icde2026.github.io/important-dates.html
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

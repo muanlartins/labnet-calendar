@@ -1,0 +1,20 @@
+id: wscad-2026
+series_id: wscad
+name: WSCAD
+full_name: "Simpósio em Sistemas Computacionais de Alto Desempenho 2026"
+edition: "2026"
+type: symposium
+society: SBC
+areas: [architecture, systems]
+subareas: [hpc]
+region: br
+tier:
+  custom: regional
+url: https://wscad.sbc.org.br/2026/
+tags: [sbc]
+notes: "Series recently renamed SSCAD (as of 2024). Official 2026 site unreachable as of 2026-04-18; CFP and dates not yet published."
+sources:
+  - url: https://wscad.sbc.org.br/2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

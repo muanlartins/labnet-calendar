@@ -1,0 +1,19 @@
+id: sbesc-2026
+series_id: sbesc
+name: SBESC
+full_name: "Simpósio Brasileiro de Engenharia de Sistemas Computacionais 2026"
+edition: "2026"
+type: symposium
+society: SBC
+areas: [systems, architecture]
+region: br
+tier:
+  custom: regional
+url: https://sbesc.sbc.org.br/2026/
+tags: [sbc]
+notes: "Official 2026 site unreachable as of 2026-04-18; CFP and dates not yet published."
+sources:
+  - url: https://sbesc.sbc.org.br/2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

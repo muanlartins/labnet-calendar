@@ -1,0 +1,39 @@
+id: conext-2026
+series_id: conext
+name: CoNEXT
+full_name: "ACM International Conference on emerging Networking EXperiments and Technologies 2026"
+edition: "2026"
+type: conference
+society: ACM
+areas: [networking]
+region: world
+tier:
+  qualis: A1
+  core: A
+  custom: top
+location:
+  city: Utrecht
+  country: Netherlands
+  mode: in-person
+url: https://conferences.sigcomm.org/co-next/2026/
+deadlines:
+  - kind: abstract
+    date: "2025-12-05"
+    note: "Paper registration — already passed."
+  - kind: paper
+    date: "2025-12-12"
+    note: "Submission — already passed."
+  - kind: notification
+    date: "2026-03-31"
+  - kind: camera_ready
+    date: "2026-04-30"
+event_dates:
+  start: "2026-12-07"
+  end: "2026-12-11"
+tags: [top-tier, acm]
+notes: "Official site timed out on fetch; dates confirmed via RIPE RACI mailing list and Connectionists announcement of the 2026 CFP."
+sources:
+  - url: https://conferences.sigcomm.org/co-next/2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

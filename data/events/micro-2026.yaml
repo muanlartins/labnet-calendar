@@ -1,0 +1,23 @@
+id: micro-2026
+series_id: micro
+name: MICRO
+full_name: "IEEE/ACM International Symposium on Microarchitecture 2026"
+edition: "2026"
+edition_number: 59
+type: symposium
+society: ACM
+areas: [architecture]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+url: https://www.microarch.org/micro59/
+cfp_url: https://www.microarch.org/micro59/submit/papers.php
+tags: [top-tier, acm, ieee]
+notes: "59th edition. Official CFP page timed out on fetch. Search results mention a submission deadline around 2026-02-01 but we could not confirm on official pages in this refresh; event dates/location and firm deadlines not yet captured."
+sources:
+  - url: https://www.microarch.org/micro59/submit/papers.php
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

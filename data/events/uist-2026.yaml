@@ -1,0 +1,47 @@
+id: uist-2026
+series_id: uist
+name: UIST
+full_name: "ACM Symposium on User Interface Software and Technology 2026"
+edition: "2026"
+type: symposium
+society: ACM
+areas: [hci]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Detroit
+  country: USA
+  mode: in-person
+url: https://uist.acm.org/2026/
+cfp_url: https://uist.acm.org/2026/cfp/
+deadlines:
+  - kind: abstract
+    date: "2026-03-24"
+  - kind: paper
+    date: "2026-03-31"
+    note: "Paper PDF (max 10pp + refs)."
+  - kind: paper
+    date: "2026-04-09"
+    note: "Paper materials."
+  - kind: notification
+    date: "2026-06-27"
+    note: "Conditional acceptance."
+  - kind: camera_ready
+    date: "2026-07-10"
+    note: "Full submission/final paper."
+  - kind: notification
+    date: "2026-08-14"
+    note: "Acceptance notification."
+event_dates:
+  start: "2026-11-02"
+  end: "2026-11-05"
+tags: [top-tier, acm]
+notes: "Official CFP page timed out on fetch; dates from UIST 2026 CFP announcement."
+sources:
+  - url: https://uist.acm.org/2026/cfp/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

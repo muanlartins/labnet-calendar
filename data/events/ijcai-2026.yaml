@@ -1,0 +1,50 @@
+id: ijcai-2026
+series_id: ijcai
+name: IJCAI
+full_name: "International Joint Conference on Artificial Intelligence 2026 (IJCAI-ECAI 2026)"
+edition: "2026"
+edition_number: 35
+type: conference
+society: other
+areas: [ml]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Bremen
+  country: Germany
+  mode: in-person
+url: https://2026.ijcai.org/
+cfp_url: https://2026.ijcai.org/important-dates/
+deadlines:
+  - kind: abstract
+    date: "2026-01-12"
+    timezone: AoE
+    note: "Abstract submission — already passed."
+  - kind: paper
+    date: "2026-01-19"
+    timezone: AoE
+    note: "Full paper submission — already passed."
+  - kind: notification
+    date: "2026-03-04"
+    note: "Phase I notification."
+  - kind: rebuttal
+    date: "2026-04-10"
+    note: "Author response window 2026-04-07 to 2026-04-10."
+  - kind: notification
+    date: "2026-04-29"
+    note: "Final paper notification."
+  - kind: camera_ready
+    date: "2026-05-15"
+event_dates:
+  start: "2026-08-15"
+  end: "2026-08-21"
+tags: [top-tier]
+notes: "35th edition, joint with ECAI. Workshops/tutorials 2026-08-15 to 2026-08-17; main conference 2026-08-18 to 2026-08-21."
+sources:
+  - url: https://2026.ijcai.org/important-dates/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

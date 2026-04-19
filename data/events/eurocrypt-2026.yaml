@@ -1,0 +1,35 @@
+id: eurocrypt-2026
+series_id: eurocrypt
+name: EUROCRYPT
+full_name: "Annual International Conference on the Theory and Applications of Cryptographic Techniques 2026"
+edition: "2026"
+edition_number: 45
+type: conference
+society: other
+areas: [crypto]
+region: eu
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Rome
+  country: Italy
+  mode: in-person
+url: https://eurocrypt.iacr.org/2026/
+cfp_url: https://eurocrypt.iacr.org/2026/callforpapers.php
+deadlines:
+  - kind: paper
+    date: "2026-01-23T23:59:00"
+    timezone: AoE
+    note: "Paper submission — already passed."
+event_dates:
+  start: "2026-05-10"
+  end: "2026-05-14"
+tags: [top-tier, iacr]
+notes: "45th edition. Official CFP page returned 403 on fetch; deadline confirmed via IACR calendar."
+sources:
+  - url: https://eurocrypt.iacr.org/2026/callforpapers.php
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

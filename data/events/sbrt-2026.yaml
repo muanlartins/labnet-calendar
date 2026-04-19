@@ -1,0 +1,36 @@
+id: sbrt-2026
+series_id: sbrt
+name: SBrT
+full_name: "Simpósio Brasileiro de Telecomunicações e Processamento de Sinais 2026"
+edition: "2026"
+edition_number: 44
+type: symposium
+society: SBC
+areas: [networking]
+region: br
+tier:
+  custom: regional
+location:
+  city: Salvador
+  country: Brazil
+  venue: Universidade Federal da Bahia (UFBA)
+  mode: in-person
+url: https://sbrt2026.sbrt.org.br/
+deadlines:
+  - kind: paper
+    date: "2026-04-25"
+    note: "Submission window 2026-03-25 to 2026-04-25."
+  - kind: notification
+    date: "2026-05-30"
+  - kind: camera_ready
+    date: "2026-06-20"
+event_dates:
+  start: "2026-09-29"
+  end: "2026-10-02"
+tags: [sbrt]
+notes: "XLIV edition, hosted by UFBA. Organized by Sociedade Brasileira de Telecomunicações (listed as SBC in series definition)."
+sources:
+  - url: https://sbrt2026.sbrt.org.br/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

@@ -1,0 +1,42 @@
+id: cvpr-2026
+series_id: cvpr
+name: CVPR
+full_name: "IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026"
+edition: "2026"
+type: conference
+society: IEEE
+areas: [ml]
+subareas: [vision]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Denver
+  country: USA
+  venue: Colorado Convention Center
+  mode: in-person
+url: https://cvpr.thecvf.com/Conferences/2026
+deadlines:
+  - kind: abstract
+    date: "2025-11-07"
+    timezone: AoE
+    note: "Abstract (extended 24h) — already passed."
+  - kind: paper
+    date: "2025-11-13"
+    timezone: AoE
+    note: "Paper submission — already passed; firm."
+  - kind: workshop_proposal
+    date: "2025-11-03"
+    note: "Already passed."
+event_dates:
+  start: "2026-06-03"
+  end: "2026-06-07"
+tags: [top-tier, ieee, vision]
+notes: "Call for Demos: 2026-03-20. Early registration: 2026-04-23. Cancellation: 2026-05-13."
+sources:
+  - url: https://cvpr.thecvf.com/Conferences/2026
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

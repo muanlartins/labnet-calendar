@@ -1,0 +1,44 @@
+id: icfp-2026
+series_id: icfp
+name: ICFP
+full_name: "ACM SIGPLAN International Conference on Functional Programming 2026"
+edition: "2026"
+edition_number: 31
+type: conference
+society: ACM
+areas: [pl]
+region: world
+tier:
+  qualis: A1
+  core: A
+  custom: top
+location:
+  city: Indianapolis
+  country: USA
+  mode: in-person
+url: https://icfp26.sigplan.org/
+deadlines:
+  - kind: paper
+    date: "2026-02-19"
+    timezone: AoE
+    note: "Paper submission — already passed."
+  - kind: rebuttal
+    date: "2026-04-24"
+    note: "Author response 96h starting 2026-04-20 AoE."
+  - kind: notification
+    date: "2026-05-14"
+    note: "Conditional acceptance."
+  - kind: notification
+    date: "2026-06-10"
+    timezone: AoE
+    note: "Final notification."
+event_dates:
+  start: "2026-08-23"
+  end: "2026-08-29"
+tags: [top-tier, acm]
+notes: "31st edition. Full double-blind reviewing. Official site timed out on fetch; details confirmed via SIGPLAN announcement."
+sources:
+  - url: https://icfp26.sigplan.org/track/icfp-2026-icfp-papers
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

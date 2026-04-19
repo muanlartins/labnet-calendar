@@ -1,0 +1,32 @@
+id: infocom-2026
+series_id: infocom
+name: INFOCOM
+full_name: "IEEE International Conference on Computer Communications 2026"
+edition: "2026"
+type: conference
+society: IEEE
+areas: [networking]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Tokyo
+  country: Japan
+  mode: in-person
+url: https://infocom2026.ieee-infocom.org/
+deadlines:
+  - kind: paper
+    date: "2025-12-08"
+    note: "Submission deadline has already passed."
+event_dates:
+  start: "2026-05-18"
+  end: "2026-05-21"
+tags: [top-tier, ieee]
+notes: "Official site timed out during fetch; dates confirmed via IEEE ComSoc announcements. Deadline 2025-12-08 from IEEE ComSoc Facebook."
+sources:
+  - url: https://infocom2026.ieee-infocom.org/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

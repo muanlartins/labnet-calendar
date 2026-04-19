@@ -1,0 +1,30 @@
+id: mobihoc-2026
+series_id: mobihoc
+name: MobiHoc
+full_name: "ACM International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing 2026"
+edition: "2026"
+edition_number: 27
+type: symposium
+society: ACM
+areas: [networking]
+subareas: [mobile, wireless]
+region: world
+tier:
+  qualis: A2
+  core: A
+  custom: top
+url: https://www.sigmobile.org/mobihoc/2026/
+deadlines:
+  - kind: abstract
+    date: "2026-03-30"
+    timezone: AoE
+  - kind: paper
+    date: "2026-04-06"
+    timezone: AoE
+tags: [top-tier, acm]
+notes: "27th edition. Official site timed out during fetch; dates from SIGMOBILE MobiHoc 2026 announcements on LinkedIn/HotCRP. Event dates and location not yet on the official site as of 2026-04-18."
+sources:
+  - url: https://www.sigmobile.org/mobihoc/2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

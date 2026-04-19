@@ -1,0 +1,48 @@
+id: bmvc-2026
+series_id: bmvc
+name: BMVC
+full_name: "British Machine Vision Conference 2026"
+edition: "2026"
+edition_number: 37
+type: conference
+society: other
+areas: [ml]
+subareas: [vision]
+region: eu
+tier:
+  qualis: A2
+  core: A
+  custom: mid
+location:
+  city: Lancaster
+  country: United Kingdom
+  venue: Lancaster Town Hall (hosted by Lancaster University)
+  mode: in-person
+url: https://bmvc2026.bmva.org/
+cfp_url: https://bmvc2026.bmva.org/calls/call-for-papers/
+deadlines:
+  - kind: abstract
+    date: "2026-05-22T23:59:00"
+    timezone: AoE
+  - kind: paper
+    date: "2026-05-29T23:59:00"
+    timezone: AoE
+  - kind: rebuttal
+    date: "2026-07-10"
+    note: "Rebuttal period 2026-07-03 to 2026-07-10."
+  - kind: notification
+    date: "2026-08-07"
+  - kind: camera_ready
+    date: "2026-08-28"
+event_dates:
+  start: "2026-11-23"
+  end: "2026-11-26"
+tags: [vision]
+notes: "37th edition. Double-blind. Submissions via OpenReview."
+sources:
+  - url: https://bmvc2026.bmva.org/
+    fetched_at: "2026-04-18"
+  - url: https://bmvc2026.bmva.org/dates/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

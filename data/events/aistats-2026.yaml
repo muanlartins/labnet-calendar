@@ -1,0 +1,43 @@
+id: aistats-2026
+series_id: aistats
+name: AISTATS
+full_name: "International Conference on Artificial Intelligence and Statistics 2026"
+edition: "2026"
+edition_number: 29
+type: conference
+society: other
+areas: [ml]
+region: world
+tier:
+  qualis: A2
+  core: A
+  custom: top
+location:
+  city: Tangier
+  country: Morocco
+  mode: in-person
+url: https://aistats.org/aistats2026/
+cfp_url: https://virtual.aistats.org/Conferences/2026/CallForPapers
+deadlines:
+  - kind: abstract
+    date: "2025-09-25T23:59:00"
+    timezone: AoE
+    note: "Abstract deadline — already passed."
+  - kind: paper
+    date: "2025-10-02T23:59:00"
+    timezone: AoE
+    note: "Full paper deadline — already passed."
+  - kind: notification
+    date: "2026-01-22"
+  - kind: camera_ready
+    date: "2026-03-31"
+event_dates:
+  start: "2026-05-02"
+  end: "2026-05-05"
+tags: [top-tier]
+notes: "29th edition. Submissions via OpenReview."
+sources:
+  - url: https://aistats.org/aistats2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

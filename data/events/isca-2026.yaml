@@ -1,0 +1,47 @@
+id: isca-2026
+series_id: isca
+name: ISCA
+full_name: "International Symposium on Computer Architecture 2026"
+edition: "2026"
+edition_number: 53
+type: symposium
+society: ACM
+areas: [architecture]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Raleigh
+  country: USA
+  mode: in-person
+url: https://iscaconf.org/isca2026/
+cfp_url: https://www.iscaconf.org/isca2026/submit/callforpapers.php
+deadlines:
+  - kind: abstract
+    date: "2025-11-10"
+    timezone: AoE
+    note: "Main track abstract — already passed."
+  - kind: paper
+    date: "2025-11-17"
+    timezone: AoE
+    note: "Main track paper — already passed."
+  - kind: abstract
+    date: "2025-12-05"
+    timezone: AoE
+    note: "Industry track abstract — already passed."
+  - kind: paper
+    date: "2025-12-12"
+    timezone: AoE
+    note: "Industry track paper — already passed."
+event_dates:
+  start: "2026-06-27"
+  end: "2026-07-01"
+tags: [top-tier, acm, ieee]
+notes: "53rd edition. Official CFP page timed out on fetch; deadlines cross-checked via casys-kaist deadlines tracker and ISCA 2026 HotCRP."
+sources:
+  - url: https://www.iscaconf.org/isca2026/submit/callforpapers.php
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

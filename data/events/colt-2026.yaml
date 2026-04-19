@@ -1,0 +1,35 @@
+id: colt-2026
+series_id: colt
+name: COLT
+full_name: "Conference on Learning Theory 2026"
+edition: "2026"
+edition_number: 39
+type: conference
+society: other
+areas: [ml, theory]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: San Diego
+  country: USA
+  mode: in-person
+url: https://learningtheory.org/colt2026/
+cfp_url: https://learningtheory.org/colt2026/cfp.html
+deadlines:
+  - kind: paper
+    date: "2026-02-04"
+    timezone: AoE
+    note: "Paper submission — already passed."
+event_dates:
+  start: "2026-06-29"
+  end: "2026-07-03"
+tags: [top-tier]
+notes: "39th edition. Submissions via CMT."
+sources:
+  - url: https://learningtheory.org/colt2026/cfp.html
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

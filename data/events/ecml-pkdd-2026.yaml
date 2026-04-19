@@ -1,0 +1,35 @@
+id: ecml-pkdd-2026
+series_id: ecml-pkdd
+name: "ECML-PKDD"
+full_name: "European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases 2026"
+edition: "2026"
+type: conference
+society: Springer
+areas: [ml, data]
+region: eu
+tier:
+  qualis: A1
+  core: A
+  custom: top
+location:
+  city: Naples
+  country: Italy
+  mode: in-person
+url: https://ecmlpkdd.org/2026/
+deadlines:
+  - kind: paper
+    date: "2025-10-30"
+    note: "Journal track first submission — already passed."
+  - kind: paper
+    date: "2026-01-15"
+    note: "Journal track second submission — already passed."
+event_dates:
+  start: "2026-09-07"
+  end: "2026-09-11"
+tags: [top-tier, springer]
+notes: "Held in Naples, Italy. Research-track specific deadlines not recovered from official pages in this refresh; only journal-track deadlines were published. Event dates approximate based on Applied Data Science Track CFP mention (Sept 7-11)."
+sources:
+  - url: https://ecmlpkdd.org/2026/submissions-journal-track/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

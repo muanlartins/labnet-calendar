@@ -1,0 +1,28 @@
+id: kdd-2026
+series_id: kdd
+name: KDD
+full_name: "ACM SIGKDD Conference on Knowledge Discovery and Data Mining 2026"
+edition: "2026"
+type: conference
+society: ACM
+areas: [ml, data]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Jeju
+  country: South Korea
+  mode: in-person
+url: https://kdd2026.kdd.org/
+event_dates:
+  start: "2026-08-09"
+  end: "2026-08-13"
+tags: [top-tier, acm, multi-cycle]
+notes: "KDD 2026 uses two annual submission cycles. Official KDD page not fetched due to domain errors; cycle-specific deadlines not recovered from official site as of 2026-04-18."
+sources:
+  - url: https://kdd2026.kdd.org/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

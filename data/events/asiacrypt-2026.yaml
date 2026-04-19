@@ -1,0 +1,29 @@
+id: asiacrypt-2026
+series_id: asiacrypt
+name: ASIACRYPT
+full_name: "International Conference on the Theory and Application of Cryptology and Information Security 2026"
+edition: "2026"
+type: conference
+society: other
+areas: [crypto]
+region: asia
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Hong Kong
+  country: China
+  mode: in-person
+url: https://asiacrypt.iacr.org/2026/
+cfp_url: https://asiacrypt.iacr.org/2026/callforpapers.php
+event_dates:
+  start: "2026-12-07"
+  end: "2026-12-11"
+tags: [top-tier, iacr]
+notes: "Official CFP page returned 403 on fetch; specific paper submission deadline not confirmable from official site as of 2026-04-18. Event dates from IACR calendar."
+sources:
+  - url: https://asiacrypt.iacr.org/2026/callforpapers.php
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

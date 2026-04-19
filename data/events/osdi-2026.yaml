@@ -1,0 +1,43 @@
+id: osdi-2026
+series_id: osdi
+name: OSDI
+full_name: "USENIX Symposium on Operating Systems Design and Implementation 2026"
+edition: "2026"
+edition_number: 20
+type: symposium
+society: USENIX
+areas: [systems]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Seattle
+  country: USA
+  mode: in-person
+url: https://www.usenix.org/conference/osdi26
+cfp_url: https://www.usenix.org/conference/osdi26/call-for-papers
+deadlines:
+  - kind: abstract
+    date: "2025-12-04T17:59:00"
+    timezone: America/New_York
+    note: "Abstract registration — already passed."
+  - kind: paper
+    date: "2025-12-11T17:59:00"
+    timezone: America/New_York
+    note: "Full paper submission — already passed."
+  - kind: notification
+    date: "2026-03-26"
+  - kind: camera_ready
+    date: "2026-06-09"
+event_dates:
+  start: "2026-07-13"
+  end: "2026-07-15"
+tags: [top-tier, usenix]
+notes: "20th edition. OSDI is biannual (even years). USENIX CFP page returned 403 on fetch; dates cross-checked via USENIX announcement PDF (osdi26_cfp_120325.pdf)."
+sources:
+  - url: https://www.usenix.org/conference/osdi26/call-for-papers
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

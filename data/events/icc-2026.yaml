@@ -1,0 +1,35 @@
+id: icc-2026
+series_id: icc
+name: ICC
+full_name: "IEEE International Conference on Communications 2026"
+edition: "2026"
+type: conference
+society: IEEE
+areas: [networking]
+region: world
+tier:
+  qualis: A2
+  core: B
+  custom: mid
+location:
+  city: Glasgow
+  country: United Kingdom
+  mode: in-person
+url: https://icc2026.ieee-icc.org/
+deadlines:
+  - kind: paper
+    date: "2025-11-10"
+    note: "Symposia papers firm deadline — already passed."
+  - kind: paper
+    date: "2026-01-31"
+    note: "Workshop papers extended firm deadline — already passed."
+event_dates:
+  start: "2026-05-24"
+  end: "2026-05-28"
+tags: [ieee]
+notes: "Official site fetch failed (SSL error); dates cross-checked via IEEE ComSoc announcements and the ICC 2026 CFP flyer."
+sources:
+  - url: https://icc2026.ieee-icc.org/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

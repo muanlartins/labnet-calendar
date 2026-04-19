@@ -1,0 +1,38 @@
+id: enia-2026
+series_id: enia
+name: ENIA
+full_name: "Encontro Nacional de Inteligência Artificial e Computacional 2026"
+edition: "2026"
+type: conference
+parent_id: bracis-2026
+society: SBC
+areas: [ml]
+region: br
+tier:
+  custom: regional
+location:
+  city: Cuiabá
+  country: Brazil
+  venue: Centro de Eventos do UniSENAI
+  mode: in-person
+url: https://bracis.sbc.org.br/2026/eniac/
+deadlines:
+  - kind: paper
+    date: "2026-06-08"
+    timezone: AoE
+  - kind: notification
+    date: "2026-07-20"
+    timezone: AoE
+  - kind: camera_ready
+    date: "2026-08-24"
+    timezone: AoE
+event_dates:
+  start: "2026-10-19"
+  end: "2026-10-22"
+tags: [sbc]
+notes: "Held alongside BRACIS 2026 in Cuiabá."
+sources:
+  - url: https://bracis.sbc.org.br/2026/eniac/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

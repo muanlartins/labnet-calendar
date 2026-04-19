@@ -1,0 +1,40 @@
+id: ndss-2026
+series_id: ndss
+name: NDSS
+full_name: "Network and Distributed System Security Symposium 2026"
+edition: "2026"
+edition_number: 33
+type: symposium
+society: other
+areas: [security]
+subareas: [network-security]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: San Diego
+  country: USA
+  mode: in-person
+url: https://www.ndss-symposium.org/ndss2026/
+cfp_url: https://www.ndss-symposium.org/ndss2026/submissions/call-for-papers/
+deadlines:
+  - kind: paper
+    date: "2025-04-23T23:59:00"
+    timezone: AoE
+    note: "Summer cycle — already passed."
+  - kind: paper
+    date: "2025-08-06T23:59:00"
+    timezone: AoE
+    note: "Fall cycle — already passed."
+event_dates:
+  start: "2026-02-23"
+  end: "2026-02-27"
+tags: [top-tier, multi-cycle]
+notes: "33rd edition. Two submission cycles (Summer/Fall). Event already concluded at time of refresh."
+sources:
+  - url: https://www.ndss-symposium.org/ndss2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

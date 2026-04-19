@@ -1,0 +1,48 @@
+id: eurosp-2026
+series_id: eurosp
+name: "EuroS&P"
+full_name: "IEEE European Symposium on Security and Privacy 2026"
+edition: "2026"
+type: symposium
+society: IEEE
+areas: [security]
+region: eu
+tier:
+  qualis: A2
+  core: A
+  custom: top
+location:
+  city: Lisbon
+  country: Portugal
+  mode: in-person
+url: https://eurosp2026.ieee-security.org/
+deadlines:
+  - kind: abstract
+    date: "2025-11-13"
+    timezone: AoE
+    note: "Paper registration — already passed."
+  - kind: paper
+    date: "2025-11-20"
+    timezone: AoE
+    note: "Paper submission — already passed."
+  - kind: notification
+    date: "2026-01-16"
+    note: "Early rejection notifications."
+  - kind: rebuttal
+    date: "2026-02-16"
+    note: "Rebuttal 2026-02-11 to 2026-02-16."
+  - kind: notification
+    date: "2026-03-05"
+    note: "Author notifications."
+  - kind: camera_ready
+    date: "2026-04-23"
+event_dates:
+  start: "2026-07-06"
+  end: "2026-07-10"
+tags: [top-tier, ieee]
+notes: "Held in Lisbon. All deadlines AoE (UTC-12)."
+sources:
+  - url: https://eurosp2026.ieee-security.org/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

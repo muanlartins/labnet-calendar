@@ -1,0 +1,35 @@
+id: eurosys-2026
+series_id: eurosys
+name: EuroSys
+full_name: "European Conference on Computer Systems 2026"
+edition: "2026"
+type: conference
+society: ACM
+areas: [systems]
+region: eu
+tier:
+  qualis: A1
+  core: A
+  custom: top
+url: https://2026.eurosys.org/
+cfp_url: https://2026.eurosys.org/cfp.html
+deadlines:
+  - kind: abstract
+    date: "2025-05-08"
+    timezone: AoE
+    note: "Spring cycle abstract — already passed."
+  - kind: paper
+    date: "2025-05-15"
+    timezone: AoE
+    note: "Spring cycle paper — already passed."
+  - kind: paper
+    date: "2025-09-25"
+    timezone: AoE
+    note: "Fall cycle paper submission — already passed."
+tags: [top-tier, acm, multi-cycle]
+notes: "Dual-deadline (Spring/Fall) format. Official site unreachable on fetch; dates confirmed via SIGARCH/TCCA announcements. Event dates and location for EuroSys 2026 not yet on a publicly scraped page as of 2026-04-18."
+sources:
+  - url: https://2026.eurosys.org/cfp.html
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

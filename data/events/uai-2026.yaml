@@ -1,0 +1,35 @@
+id: uai-2026
+series_id: uai
+name: UAI
+full_name: "Conference on Uncertainty in Artificial Intelligence 2026"
+edition: "2026"
+edition_number: 42
+type: conference
+society: other
+areas: [ml]
+region: world
+tier:
+  qualis: A2
+  core: A
+  custom: top
+location:
+  city: Amsterdam
+  country: Netherlands
+  mode: hybrid
+url: https://www.auai.org/uai2026/
+cfp_url: https://www.auai.org/uai2026/call_for_papers
+deadlines:
+  - kind: paper
+    date: "2026-02-25T23:59:00"
+    timezone: AoE
+    note: "Paper submission — already passed."
+event_dates:
+  start: "2026-08-17"
+  end: "2026-08-21"
+tags: [top-tier]
+notes: "42nd edition. In-person with virtual elements. Submissions via OpenReview."
+sources:
+  - url: https://www.auai.org/uai2026/call_for_papers
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

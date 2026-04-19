@@ -1,0 +1,22 @@
+id: sibgrapi-2026
+series_id: sibgrapi
+name: SIBGRAPI
+full_name: "Conference on Graphics, Patterns and Images 2026"
+edition: "2026"
+edition_number: 39
+type: conference
+society: SBC
+areas: [graphics, ml]
+subareas: [vision]
+region: br
+tier:
+  qualis: B1
+  custom: regional
+url: https://sibgrapi.sbc.org.br/2026/
+tags: [sbc, ieee]
+notes: "39th edition. Co-published with IEEE. Official 2026 site unreachable as of 2026-04-18; CFP and dates not yet published."
+sources:
+  - url: https://sibgrapi.sbc.org.br/2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

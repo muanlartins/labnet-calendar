@@ -1,0 +1,36 @@
+id: ismb-2026
+series_id: ismb
+name: ISMB
+full_name: "Intelligent Systems for Molecular Biology 2026"
+edition: "2026"
+type: conference
+society: other
+areas: [bio]
+region: world
+tier:
+  qualis: A1
+  core: A
+  custom: top
+location:
+  city: Washington
+  country: USA
+  mode: in-person
+url: https://www.iscb.org/ismb2026/
+cfp_url: https://www.iscb.org/ismb2026/call-for-submissions/proceedings
+deadlines:
+  - kind: paper
+    date: "2026-01-20T23:59:00"
+    note: "Proceedings submission — already passed."
+  - kind: abstract
+    date: "2026-04-09"
+    note: "Abstracts for talks and posters."
+event_dates:
+  start: "2026-07-14"
+  end: "2026-07-15"
+tags: [top-tier, iscb]
+notes: "Proceedings submissions (full papers) due 2026-01-20 in any time zone of authors' choice. Abstract track for talks/posters has a later deadline."
+sources:
+  - url: https://www.iscb.org/ismb2026/key-dates
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

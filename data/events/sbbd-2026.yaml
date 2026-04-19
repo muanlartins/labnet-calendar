@@ -1,0 +1,29 @@
+id: sbbd-2026
+series_id: sbbd
+name: SBBD
+full_name: "Simpósio Brasileiro de Banco de Dados 2026"
+edition: "2026"
+edition_number: 41
+type: symposium
+society: SBC
+areas: [data]
+region: br
+tier:
+  qualis: B1
+  custom: regional
+location:
+  city: São Carlos
+  country: Brazil
+  venue: ICMC - Instituto de Ciências Matemáticas e de Computação, USP
+  mode: in-person
+url: https://sbbd.org.br/2026/
+event_dates:
+  start: "2026-09-08"
+  end: "2026-09-11"
+tags: [sbc]
+notes: "41st edition, hosted at ICMC-USP in São Carlos. Calls are open but specific main-track deadlines are not published on the homepage as of 2026-04-18."
+sources:
+  - url: https://sbbd.org.br/2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

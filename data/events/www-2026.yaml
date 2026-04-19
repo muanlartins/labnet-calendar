@@ -1,0 +1,48 @@
+id: www-2026
+series_id: www
+name: "TheWebConf"
+full_name: "ACM Web Conference 2026"
+edition: "2026"
+type: conference
+society: ACM
+areas: [data, networking]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Dubai
+  country: United Arab Emirates
+  mode: in-person
+url: https://www2026.thewebconf.org/
+cfp_url: https://www2026.thewebconf.org/important-dates.html
+deadlines:
+  - kind: abstract
+    date: "2025-09-30"
+    timezone: AoE
+    note: "Research/Industry abstract — already passed."
+  - kind: paper
+    date: "2025-10-07"
+    timezone: AoE
+    note: "Research/Industry full paper — already passed."
+  - kind: abstract
+    date: "2025-11-10"
+    timezone: AoE
+    note: "Short papers abstract — already passed."
+  - kind: paper
+    date: "2025-11-17"
+    timezone: AoE
+    note: "Short papers submission — already passed."
+  - kind: notification
+    date: "2026-01-13"
+event_dates:
+  start: "2026-04-13"
+  end: "2026-04-17"
+tags: [top-tier, acm]
+notes: "Official site returned ECONNREFUSED during fetch; dates cross-checked via @TheWebConf social posts and calls page."
+sources:
+  - url: https://www2026.thewebconf.org/important-dates.html
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

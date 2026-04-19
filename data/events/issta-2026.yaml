@@ -1,0 +1,48 @@
+id: issta-2026
+series_id: issta
+name: ISSTA
+full_name: "ACM SIGSOFT International Symposium on Software Testing and Analysis 2026"
+edition: "2026"
+edition_number: 35
+type: symposium
+society: ACM
+areas: [se]
+region: world
+tier:
+  qualis: A1
+  core: A
+  custom: top
+location:
+  city: Oakland
+  country: USA
+  venue: Oakland Marriott City Center
+  mode: in-person
+url: https://conf.researchr.org/home/issta-2026
+deadlines:
+  - kind: paper
+    date: "2026-01-29"
+    note: "Submission opens."
+  - kind: rebuttal
+    date: "2026-03-26"
+    note: "Author response 2026-03-24 to 2026-03-26."
+  - kind: notification
+    date: "2026-04-16"
+    note: "Initial decisions."
+  - kind: paper
+    date: "2026-05-21"
+    note: "Major revisions."
+  - kind: notification
+    date: "2026-06-25"
+    note: "Final notification."
+  - kind: camera_ready
+    date: "2026-07-23"
+event_dates:
+  start: "2026-10-03"
+  end: "2026-10-09"
+tags: [top-tier, acm]
+notes: "35th edition. Co-located with SPLASH."
+sources:
+  - url: https://conf.researchr.org/dates/issta-2026
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

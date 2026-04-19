@@ -1,0 +1,50 @@
+id: ase-2026
+series_id: ase
+name: ASE
+full_name: "IEEE/ACM International Conference on Automated Software Engineering 2026"
+edition: "2026"
+type: conference
+society: IEEE
+areas: [se]
+region: world
+tier:
+  qualis: A1
+  core: A
+  custom: top
+location:
+  city: Munich
+  country: Germany
+  venue: Holiday Inn Munich – City Center
+  mode: in-person
+url: https://conf.researchr.org/home/ase-2026
+deadlines:
+  - kind: paper
+    date: "2026-03-26"
+    note: "Research Papers submission — already passed."
+  - kind: rebuttal
+    date: "2026-05-27"
+    note: "Author response 2026-05-25 to 2026-05-27."
+  - kind: notification
+    date: "2026-05-25"
+    note: "Early rejection notifications."
+  - kind: notification
+    date: "2026-06-18"
+    note: "Initial notification."
+  - kind: paper
+    date: "2026-07-16"
+    note: "Major revision submissions."
+  - kind: notification
+    date: "2026-07-29"
+    note: "Final notification for revised papers."
+  - kind: camera_ready
+    date: "2026-08-03"
+event_dates:
+  start: "2026-10-12"
+  end: "2026-10-16"
+tags: [top-tier, ieee, acm]
+notes: "Held at Holiday Inn Munich – City Center."
+sources:
+  - url: https://conf.researchr.org/home/ase-2026
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

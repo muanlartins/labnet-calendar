@@ -1,0 +1,29 @@
+id: csbc-2026
+series_id: csbc
+name: CSBC
+full_name: "Congresso da Sociedade Brasileira de Computação 2026"
+edition: "2026"
+edition_number: 46
+type: conference
+society: SBC
+areas: [general]
+region: br
+tier:
+  qualis: B3
+  custom: regional
+location:
+  city: Gramado
+  country: Brazil
+  venue: Centro de Eventos de Gramado
+  mode: in-person
+url: https://csbc.sbc.org.br/2026/
+event_dates:
+  start: "2026-07-19"
+  end: "2026-07-23"
+tags: [sbc, umbrella]
+notes: "46th edition. Umbrella congress aggregating many SBC symposia; individual tracks have their own deadlines. No single main-track submission deadline on the umbrella site as of 2026-04-18."
+sources:
+  - url: https://csbc.sbc.org.br/2026/
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude

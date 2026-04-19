@@ -1,0 +1,44 @@
+id: nsdi-2026
+series_id: nsdi
+name: NSDI
+full_name: "USENIX Symposium on Networked Systems Design and Implementation 2026"
+edition: "2026"
+edition_number: 23
+type: symposium
+society: USENIX
+areas: [networking, systems]
+subareas: [distributed]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Renton
+  country: USA
+  mode: in-person
+url: https://www.usenix.org/conference/nsdi26
+cfp_url: https://www.usenix.org/conference/nsdi26/call-for-papers
+deadlines:
+  - kind: abstract
+    date: "2025-09-11"
+    note: "Fall cycle — deadline already passed."
+  - kind: paper
+    date: "2025-09-18"
+    note: "Fall cycle — deadline already passed."
+  - kind: notification
+    date: "2025-12-09"
+    note: "Fall cycle notification."
+  - kind: camera_ready
+    date: "2026-03-05"
+    note: "Fall cycle final paper files due."
+event_dates:
+  start: "2026-05-04"
+  end: "2026-05-06"
+tags: [top-tier, usenix, multi-cycle]
+notes: "23rd edition. NSDI uses two review cycles: Spring (2025-04-25, passed) and Fall (2025-09-18, passed). USENIX CFP page returned 403; dates cross-checked via USENIX announcement PDF and search."
+sources:
+  - url: https://www.usenix.org/conference/nsdi26/call-for-papers
+    fetched_at: "2026-04-18"
+last_verified: "2026-04-18"
+verified_by: claude
