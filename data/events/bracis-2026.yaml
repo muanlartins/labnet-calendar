@@ -3,6 +3,7 @@ series_id: bracis
 name: BRACIS
 full_name: "Brazilian Conference on Intelligent Systems 2026"
 edition: "2026"
+edition_number: 36
 type: conference
 society: SBC
 areas: [ml]
@@ -12,22 +13,36 @@ tier:
   qualis: A4
   custom: regional
 location:
+  city: Cuiabá
   country: Brazil
+  venue: Centro de Eventos do UniSENAI
   mode: in-person
 url: https://bracis.sbc.org.br/2026/
+cfp_url: https://bracis.sbc.org.br/2026/bracis/
 deadlines:
+  - kind: abstract
+    date: "2026-04-27T23:59:00"
+    timezone: AoE
+    note: "Paper registration (extended from 2026-04-13)."
   - kind: paper
-    date: "2026-07-15T23:59:00"
-    timezone: "America/Sao_Paulo"
+    date: "2026-05-04T23:59:00"
+    timezone: AoE
+    note: "Extended from 2026-04-20."
   - kind: notification
-    date: "2026-09-15"
+    date: "2026-06-08"
+    note: "Notification window 2026-06-01 to 2026-06-08; using the later end of the range."
+  - kind: camera_ready
+    date: "2026-06-29"
+    timezone: AoE
 event_dates:
-  start: "2026-11-16"
-  end: "2026-11-20"
+  start: "2026-10-19"
+  end: "2026-10-22"
 tags: [sbc, double-blind]
-notes: "Provisional dates — refresh from the BRACIS 2026 site once published."
+notes: "36th edition. Previous YAML (event 2026-11-16/20, paper 2026-07-15, notification 2026-09-15) replaced with the official 2026 site data confirmed on 2026-04-18. Paper deadline was extended from 2026-04-20 to 2026-05-04."
 sources:
-  - url: https://bracis.sbc.org.br/
+  - url: https://bracis.sbc.org.br/2026/
+    fetched_at: "2026-04-18"
+  - url: https://bracis.sbc.org.br/2026/bracis/
     fetched_at: "2026-04-18"
 last_verified: "2026-04-18"
 verified_by: claude

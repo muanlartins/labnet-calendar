@@ -14,23 +14,25 @@ tier:
   custom: top
 location:
   mode: in-person
+  venue: "Multi-city: Sydney (Dec 6–12), Atlanta (Dec 8–13), Paris (Dec 9–13)"
 url: https://neurips.cc/Conferences/2026
 deadlines:
   - kind: abstract
-    date: "2026-05-11T23:59:00"
+    date: "2026-05-04T23:59:00"
     timezone: AoE
   - kind: paper
-    date: "2026-05-15T23:59:00"
+    date: "2026-05-06T23:59:00"
     timezone: AoE
   - kind: notification
-    date: "2026-09-25"
+    date: "2026-09-24"
+    timezone: AoE
 event_dates:
-  start: "2026-12-07"
+  start: "2026-12-06"
   end: "2026-12-13"
-tags: [top-tier, flagship]
-notes: "Provisional dates pending confirmation from NeurIPS 2026 organizers — refresh once the official site goes live."
+tags: [top-tier, flagship, multi-site]
+notes: "NeurIPS 2026 runs as three concurrent regional events: Sydney (2026-12-06 to 2026-12-12), Atlanta (2026-12-08 to 2026-12-13), and Paris (2026-12-09 to 2026-12-13). event_dates cover the union. Previous YAML dates (abstract 2026-05-11, paper 2026-05-15, notification 2026-09-25) updated to the values on the official site."
 sources:
-  - url: https://neurips.cc/
+  - url: https://neurips.cc/Conferences/2026
     fetched_at: "2026-04-18"
 last_verified: "2026-04-18"
 verified_by: claude

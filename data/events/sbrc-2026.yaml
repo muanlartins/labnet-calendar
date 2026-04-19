@@ -3,6 +3,7 @@ series_id: sbrc
 name: SBRC
 full_name: "Simpósio Brasileiro de Redes de Computadores e Sistemas Distribuídos 2026"
 edition: "2026"
+edition_number: 44
 type: symposium
 society: SBC
 areas: [networking, systems]
@@ -12,22 +13,34 @@ tier:
   qualis: B1
   custom: regional
 location:
+  city: Praia do Forte
   country: Brazil
+  venue: Praia do Forte Convention Center
   mode: in-person
 url: https://sbrc.sbc.org.br/2026/
+cfp_url: https://sbrc.sbc.org.br/2026/trilha-principal/
 deadlines:
-  - kind: paper
-    date: "2026-02-15T23:59:00"
+  - kind: abstract
+    date: "2026-02-02"
     timezone: "America/Sao_Paulo"
+    note: "Paper registration (extended from 2026-01-12). Timezone inferred."
+  - kind: paper
+    date: "2026-02-05"
+    timezone: "America/Sao_Paulo"
+    note: "Extended from 2026-01-19. Timezone inferred."
   - kind: notification
-    date: "2026-04-10"
+    date: "2026-03-20"
+  - kind: camera_ready
+    date: "2026-04-03"
 event_dates:
   start: "2026-05-25"
   end: "2026-05-29"
 tags: [sbc, brazilian-flagship]
-notes: "SBC's flagship networking symposium. Provisional dates — refresh from the SBRC 2026 site once published."
+notes: "44th edition. Main track dates confirmed against sbrc.sbc.org.br/2026/trilha-principal/ on 2026-04-18; all submission deadlines have passed. Main technical sessions run 2026-05-25 through 2026-05-28; full event ends 2026-05-29."
 sources:
-  - url: https://sbrc.sbc.org.br/
+  - url: https://sbrc.sbc.org.br/2026/
+    fetched_at: "2026-04-18"
+  - url: https://sbrc.sbc.org.br/2026/trilha-principal/
     fetched_at: "2026-04-18"
 last_verified: "2026-04-18"
 verified_by: claude
