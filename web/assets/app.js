@@ -39,7 +39,7 @@ function calendarApp() {
     filtersOpen: false,
     selectedEvent: null,
     error: null,
-    filters: { areas: [], regions: [], types: [], societies: [], qualis: [], modes: [] },
+    filters: { areas: [], regions: [], types: [], societies: [], qualis: [], modes: [], hidePast: true },
 
     async init() {
       try {
@@ -107,9 +107,36 @@ function calendarApp() {
     },
 
     resetFilters() {
-      this.filters = { areas: [], regions: [], types: [], societies: [], qualis: [], modes: [] };
+      this.filters = { areas: [], regions: [], types: [], societies: [], qualis: [], modes: [], hidePast: true };
       this.window = null;
       this.q = "";
+    },
+
+    parseIsoDate(s) {
+      if (!s) return null;
+      const d = new Date(s.length === 10 ? s + "T00:00:00Z" : s);
+      return Number.isNaN(d.getTime()) ? null : d;
+    },
+
+    nextDeadline(e) {
+      const nowMs = Date.now();
+      let best = null;
+      for (const d of (e.deadlines || [])) {
+        const t = this.parseIsoDate(d.date)?.getTime();
+        if (t == null || t < nowMs) continue;
+        if (!best || t < best._t) best = { ...d, _t: t };
+      }
+      return best;
+    },
+
+    daysUntil(iso) {
+      const d = this.parseIsoDate(iso);
+      return d ? Math.ceil((d.getTime() - Date.now()) / 86400000) : null;
+    },
+
+    isPast(e) {
+      const end = this.parseIsoDate(e.event_dates?.end || e.event_dates?.start);
+      return end ? end.getTime() < Date.now() : false;
     },
 
     areaName(id) {
@@ -143,6 +170,7 @@ function calendarApp() {
     },
 
     matches(e) {
+      if (this.filters.hidePast && this.isPast(e)) return false;
       if (this.filters.areas.length && !this.filters.areas.some((a) => e.areas.includes(a))) return false;
       if (this.filters.regions.length && !this.filters.regions.includes(e.region)) return false;
       if (this.filters.types.length && !this.filters.types.includes(e.type)) return false;
@@ -150,7 +178,7 @@ function calendarApp() {
       if (this.filters.qualis.length && !this.filters.qualis.includes(e.tier?.qualis)) return false;
       if (this.filters.modes.length && !this.filters.modes.includes(e.location?.mode)) return false;
       if (this.window) {
-        const days = e.derived?.next_deadline?.days_until;
+        const days = this.daysUntil(this.nextDeadline(e)?.date);
         if (days == null || days < 0 || days > this.window) return false;
       }
       if (this.q) {
@@ -166,7 +194,8 @@ function calendarApp() {
       const dateOf = (e) => {
         if (this.sort === "name") return null;
         if (this.sort === "event_start") return e.event_dates?.start ? new Date(e.event_dates.start) : new Date("9999");
-        return e.derived?.next_deadline ? new Date(e.derived.next_deadline.date) : new Date(e.event_dates?.start || "9999");
+        const nd = this.nextDeadline(e);
+        return nd ? new Date(nd.date) : new Date(e.event_dates?.start || "9999");
       };
       if (this.sort === "name") arr.sort((a, b) => a.name.localeCompare(b.name));
       else arr.sort((a, b) => dateOf(a) - dateOf(b));

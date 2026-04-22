@@ -89,6 +89,10 @@
               class="text-xs px-2.5 py-1 rounded border transition" x-text="w.label"></button>
           </template>
         </div>
+        <label class="flex items-center gap-2 text-sm cursor-pointer group mt-3">
+          <input type="checkbox" x-model="filters.hidePast" class="accent-accent-500">
+          <span class="grow truncate" :class="filters.hidePast ? 'text-zinc-100' : 'text-zinc-400 group-hover:text-zinc-200'">Hide past events</span>
+        </label>
       </section>
 
       <section>
@@ -235,19 +239,19 @@
             </div>
 
             <div class="col-span-6 md:col-span-4 min-w-0">
-              <template x-if="e.derived?.next_deadline">
-                <div class="flex items-center gap-2">
+              <template x-if="nextDeadline(e)">
+                <div x-data="{ nd: nextDeadline(e) }" class="flex items-center gap-2">
                   <div class="text-xs">
-                    <div class="text-zinc-500 capitalize" x-text="e.derived.next_deadline.kind.replace('_',' ') + ' deadline'"></div>
-                    <div class="font-mono text-zinc-200" x-text="e.derived.next_deadline.date.slice(0,10) + (e.derived.next_deadline.timezone ? ' · ' + e.derived.next_deadline.timezone : '')"></div>
+                    <div class="text-zinc-500 capitalize" x-text="nd.kind.replace('_',' ') + ' deadline'"></div>
+                    <div class="font-mono text-zinc-200" x-text="nd.date.slice(0,10) + (nd.timezone ? ' · ' + nd.timezone : '')"></div>
                   </div>
                   <div class="ml-auto text-right">
-                    <div class="text-2xl font-mono font-semibold tabular-nums leading-none" :class="countdownColor(e.derived.next_deadline.days_until)" x-text="e.derived.next_deadline.days_until + 'd'"></div>
+                    <div class="text-2xl font-mono font-semibold tabular-nums leading-none" :class="countdownColor(daysUntil(nd.date))" x-text="daysUntil(nd.date) + 'd'"></div>
                   </div>
                 </div>
               </template>
-              <template x-if="!e.derived?.next_deadline">
-                <div class="text-xs text-zinc-600" x-text="e.derived?.status === 'past' ? 'Event has passed' : 'No open deadline'"></div>
+              <template x-if="!nextDeadline(e)">
+                <div class="text-xs text-zinc-600" x-text="isPast(e) ? 'Event has passed' : 'No open deadline'"></div>
               </template>
             </div>
 
