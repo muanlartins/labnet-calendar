@@ -47,10 +47,51 @@ function calendarApp() {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
         const j = await r.json();
         Object.assign(this.data, j);
+        this._applyHash();
+        window.addEventListener("hashchange", () => this._applyHash());
+        window.addEventListener("popstate", () => this._applyHash());
       } catch (err) {
         this.error = String(err);
         console.error("[labnet-calendar] failed to load events.json:", err);
       }
+    },
+
+    openEvent(e) {
+      if (!e) return;
+      this.selectedEvent = e;
+      this._syncHash();
+    },
+
+    openEventById(id) {
+      const e = this.data.events.find((x) => x.id === id);
+      if (e) this.openEvent(e);
+    },
+
+    closeOverlay() {
+      this.selectedEvent = null;
+      this._syncHash();
+    },
+
+    _syncHash() {
+      const h = this.selectedEvent ? `#/event/${this.selectedEvent.id}` : "";
+      const url = location.pathname + location.search + h;
+      if (location.pathname + location.search + location.hash !== url) {
+        history.replaceState(null, "", url);
+      }
+    },
+
+    _applyHash() {
+      const raw = (location.hash || "").replace(/^#\/?/, "");
+      if (!raw) { this.selectedEvent = null; return; }
+      const slash = raw.indexOf("/");
+      const kind = slash < 0 ? raw : raw.slice(0, slash);
+      const id   = slash < 0 ? ""  : raw.slice(slash + 1);
+      if (kind === "event" && id) {
+        const e = this.data.events.find((x) => x.id === id);
+        if (e) { this.selectedEvent = e; return; }
+      }
+      this.selectedEvent = null;
+      history.replaceState(null, "", location.pathname + location.search);
     },
 
     toggleQualis(q) {
