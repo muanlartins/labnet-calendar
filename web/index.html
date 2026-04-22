@@ -89,6 +89,10 @@
               class="text-xs px-2.5 py-1 rounded border transition" x-text="w.label"></button>
           </template>
         </div>
+        <label class="flex items-center gap-2 text-sm cursor-pointer group mt-3">
+          <input type="checkbox" x-model="filters.hidePast" class="accent-accent-500">
+          <span class="grow truncate" :class="filters.hidePast ? 'text-zinc-100' : 'text-zinc-400 group-hover:text-zinc-200'">Hide past events</span>
+        </label>
       </section>
 
       <section>
@@ -235,24 +239,24 @@
             </div>
 
             <div class="col-span-6 md:col-span-4 min-w-0">
-              <template x-if="e.derived?.next_deadline">
-                <div class="flex items-center gap-2">
+              <template x-if="nextDeadline(e)">
+                <div x-data="{ nd: nextDeadline(e) }" class="flex items-center gap-2">
                   <div class="text-xs">
-                    <div class="text-zinc-500 capitalize" x-text="e.derived.next_deadline.kind.replace('_',' ') + ' deadline'"></div>
-                    <div class="font-mono text-zinc-200" x-text="e.derived.next_deadline.date.slice(0,10) + (e.derived.next_deadline.timezone ? ' · ' + e.derived.next_deadline.timezone : '')"></div>
+                    <div class="text-zinc-500 capitalize" x-text="nd.kind.replace('_',' ') + ' deadline'"></div>
+                    <div class="font-mono text-zinc-200" x-text="nd.date.slice(0,10) + (nd.timezone ? ' · ' + nd.timezone : '')"></div>
                   </div>
                   <div class="ml-auto text-right">
-                    <div class="text-2xl font-mono font-semibold tabular-nums leading-none" :class="countdownColor(e.derived.next_deadline.days_until)" x-text="e.derived.next_deadline.days_until + 'd'"></div>
+                    <div class="text-2xl font-mono font-semibold tabular-nums leading-none" :class="countdownColor(daysUntil(nd.date))" x-text="daysUntil(nd.date) + 'd'"></div>
                   </div>
                 </div>
               </template>
-              <template x-if="!e.derived?.next_deadline">
-                <div class="text-xs text-zinc-600" x-text="e.derived?.status === 'past' ? 'Event has passed' : 'No open deadline'"></div>
+              <template x-if="!nextDeadline(e)">
+                <div class="text-xs text-zinc-600" x-text="isPast(e) ? 'Event has passed' : 'No open deadline'"></div>
               </template>
             </div>
 
             <div class="col-span-12 md:col-span-1 flex justify-end">
-              <button @click="selectedEvent = e" class="text-xs text-zinc-500 hover:text-accent-400 transition">Details →</button>
+              <button @click="openEvent(e)" class="text-xs text-zinc-500 hover:text-accent-400 transition">Details →</button>
             </div>
 
           </article>
@@ -280,7 +284,7 @@
                       <div class="text-[11px] font-mono" :class="cell.isToday ? 'text-accent-400 font-semibold' : 'text-zinc-500'" x-text="cell.day"></div>
                       <div class="flex flex-wrap gap-0.5 mt-1">
                         <template x-for="(item, i) in cell.deadlines.slice(0, 5)" :key="i">
-                          <button @click="selectedEvent = item.event"
+                          <button @click="openEvent(item.event)"
                                   :title="item.event.name + ' — ' + item.deadline.kind"
                                   class="w-2 h-2 rounded-full hover:scale-150 transition-transform cursor-pointer"
                                   :class="dotColor(item.event.areas[0])"></button>
@@ -288,7 +292,7 @@
                         <span x-show="cell.deadlines.length > 5" class="text-[9px] text-zinc-500 font-mono ml-0.5" x-text="'+' + (cell.deadlines.length - 5)"></span>
                       </div>
                       <template x-for="(span, i) in cell.eventSpans" :key="i">
-                        <button @click="selectedEvent = span.event"
+                        <button @click="openEvent(span.event)"
                                 class="absolute left-0 right-0 h-1 hover:h-1.5 transition-all cursor-pointer"
                                 :class="dotColor(span.event.areas[0])"
                                 :style="'bottom: ' + (4 + i * 6) + 'px; opacity: 0.7;'"
@@ -306,8 +310,8 @@
     </section>
   </main>
 
-  <div x-show="selectedEvent" x-transition.opacity @keydown.escape.window="selectedEvent = null"
-       class="fixed inset-0 z-40 bg-zinc-950/80 backdrop-blur-sm grid place-items-center p-4 sm:p-8" @click.self="selectedEvent = null">
+  <div x-show="selectedEvent" x-transition.opacity @keydown.escape.window="closeOverlay()"
+       class="fixed inset-0 z-40 bg-zinc-950/80 backdrop-blur-sm grid place-items-center p-4 sm:p-8" @click.self="closeOverlay()">
     <article x-show="selectedEvent" x-transition
              class="bg-zinc-900 border border-zinc-800 rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto" @click.stop>
       <template x-if="selectedEvent">
@@ -328,7 +332,7 @@
                 </template>
               </div>
             </div>
-            <button @click="selectedEvent = null" class="shrink-0 text-zinc-500 hover:text-zinc-100 transition" aria-label="Close">
+            <button @click="closeOverlay()" class="shrink-0 text-zinc-500 hover:text-zinc-100 transition" aria-label="Close">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 5l10 10M15 5l-10 10"/></svg>
             </button>
           </header>
