@@ -1,0 +1,43 @@
+id: sbcars-2026
+series_id: sbcars
+name: SBCARS
+full_name: "Brazilian Symposium on Software Components, Architectures, and Reuse 2026"
+edition: "2026"
+type: symposium
+society: SBC
+areas: [se]
+region: br
+tier:
+  custom: regional
+location:
+  city: São Paulo
+  country: Brazil
+  venue: IME-USP
+  mode: in-person
+url: https://cbsoft.sbc.org.br/2026/
+cfp_url: https://cbsoft.sbc.org.br/2026/en/symposiums/sbcars/call/
+deadlines:
+  - kind: abstract
+    date: "2026-06-19"
+    timezone: "America/Sao_Paulo"
+    note: "Timezone inferred."
+  - kind: paper
+    date: "2026-06-26"
+    timezone: "America/Sao_Paulo"
+    note: "Timezone inferred."
+  - kind: notification
+    date: "2026-08-03"
+  - kind: camera_ready
+    date: "2026-08-10"
+event_dates:
+  start: "2026-09-08"
+  end: "2026-09-11"
+tags: [sbc]
+notes: "Held under the CBSoft 2026 umbrella at IME-USP, São Paulo (Sep 8-11). SBCARS symposium day scheduled for Sep 9, 2026."
+sources:
+  - url: https://cbsoft.sbc.org.br/2026/
+    fetched_at: "2026-05-16"
+  - url: https://cbsoft.sbc.org.br/2026/en/symposiums/sbcars/call/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

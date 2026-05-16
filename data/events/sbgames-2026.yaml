@@ -19,9 +19,13 @@ event_dates:
   start: "2026-09-29"
   end: "2026-10-02"
 tags: [sbc]
-notes: "25th edition. Portal points to the 2026 site; detailed paper/track deadlines not fully published on the homepage as of 2026-04-18."
+notes: "25th edition. Portal points to the 2026 site; detailed paper/track deadlines not fully published on the homepage as of 2026-04-18. Verified 2026-05-16; no new info on official site."
 sources:
   - url: https://sbgames.org/2026/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://sbgames.org/2026/
+    fetched_at: "2026-05-16"
+  - url: https://www.sbgames.org/sbgames2026/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

@@ -1,0 +1,37 @@
+id: fast-2027
+series_id: fast
+name: FAST
+full_name: "USENIX Conference on File and Storage Technologies 2027"
+edition: "2027"
+edition_number: 25
+type: conference
+society: USENIX
+areas: [systems]
+subareas: [storage]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Renton
+  country: USA
+  venue: Hyatt Regency Lake Washington
+  mode: in-person
+url: https://www.usenix.org/conference/fast27
+cfp_url: https://www.usenix.org/conference/fast27/call-for-papers
+deadlines:
+  - kind: paper
+    date: "2026-09-15"
+    timezone: AoE
+    note: "Fall cycle paper submission."
+event_dates:
+  start: "2027-02-23"
+  end: "2027-02-25"
+tags: [top-tier, usenix, multi-cycle]
+notes: "25th edition. Two submission cycles (Spring and Fall). USENIX CFP page returned 403; Fall deadline confirmed via search of USENIX FAST '27 CFP. Spring deadline not yet recovered."
+sources:
+  - url: https://www.usenix.org/conference/fast27/call-for-papers
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

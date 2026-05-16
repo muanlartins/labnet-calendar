@@ -1,0 +1,40 @@
+id: wei-2026
+series_id: wei
+name: WEI
+full_name: "Workshop sobre Educação em Computação 2026"
+edition: "2026"
+edition_number: 34
+type: workshop
+society: SBC
+areas: [education]
+region: br
+tier:
+  custom: regional
+location:
+  city: Gramado
+  country: Brazil
+  venue: Centro de Eventos de Gramado
+  mode: in-person
+url: https://csbc.sbc.org.br/2026/wei/
+cfp_url: https://csbc.sbc.org.br/2026/wei/
+deadlines:
+  - kind: paper
+    date: "2026-03-16"
+    timezone: "America/Sao_Paulo"
+    note: "Extended deadline (NOVA DATA). Timezone inferred."
+  - kind: notification
+    date: "2026-05-04"
+  - kind: camera_ready
+    date: "2026-05-18"
+event_dates:
+  start: "2026-07-19"
+  end: "2026-07-23"
+tags: [sbc]
+notes: "34th edition, base event of CSBC 2026 in Gramado. All submission deadlines have passed as of 2026-05-16."
+sources:
+  - url: https://csbc.sbc.org.br/2026/wei/
+    fetched_at: "2026-05-16"
+  - url: https://csbc.sbc.org.br/2026/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

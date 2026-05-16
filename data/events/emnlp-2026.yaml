@@ -45,5 +45,7 @@ notes: "Held as a hybrid conference in Budapest. All deadlines 23:59 UTC-12 (AoE
 sources:
   - url: https://2026.emnlp.org/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://2026.emnlp.org/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

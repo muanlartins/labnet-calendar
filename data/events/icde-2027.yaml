@@ -1,0 +1,57 @@
+id: icde-2027
+series_id: icde
+name: ICDE
+full_name: "IEEE International Conference on Data Engineering 2027"
+edition: "2027"
+edition_number: 43
+type: conference
+society: IEEE
+areas: [data]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Copenhagen
+  country: Denmark
+  mode: in-person
+url: https://icde2027.github.io/
+cfp_url: https://icde2027.github.io/cf-research-papers.html
+deadlines:
+  - kind: paper
+    date: "2026-06-11"
+    timezone: America/Los_Angeles
+    note: "Research track Round 1 submission (5:00 PM PT)."
+  - kind: rebuttal
+    date: "2026-08-15"
+    note: "Round 1 author rebuttal: 2026-08-08 to 2026-08-15."
+  - kind: notification
+    date: "2026-09-10"
+    note: "Round 1 notification."
+  - kind: camera_ready
+    date: "2026-10-10"
+    note: "Round 1 camera-ready."
+  - kind: paper
+    date: "2026-11-11"
+    timezone: America/Los_Angeles
+    note: "Research track Round 2 submission (5:00 PM PT)."
+  - kind: rebuttal
+    date: "2027-01-15"
+    note: "Round 2 author rebuttal: 2027-01-08 to 2027-01-15."
+  - kind: notification
+    date: "2027-02-10"
+    note: "Round 2 notification."
+  - kind: camera_ready
+    date: "2027-03-10"
+    note: "Round 2 camera-ready."
+event_dates:
+  start: "2027-05-17"
+  end: "2027-05-21"
+tags: [top-tier, ieee, multi-cycle]
+notes: "43rd edition. Research track uses two submission rounds; both rounds provide accept/reject decisions without revision opportunities."
+sources:
+  - url: https://icde2027.github.io/cf-research-papers.html
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

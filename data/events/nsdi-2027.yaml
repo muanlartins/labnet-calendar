@@ -1,0 +1,41 @@
+id: nsdi-2027
+series_id: nsdi
+name: NSDI
+full_name: "USENIX Symposium on Networked Systems Design and Implementation 2027"
+edition: "2027"
+edition_number: 24
+type: symposium
+society: USENIX
+areas: [networking, systems]
+subareas: [distributed]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Providence
+  country: USA
+  mode: in-person
+url: https://www.usenix.org/conference/nsdi27
+cfp_url: https://www.usenix.org/conference/nsdi27/call-for-papers
+deadlines:
+  - kind: paper
+    date: "2026-04-23T23:59:59"
+    timezone: America/New_York
+    note: "Spring cycle paper submission."
+  - kind: abstract
+    date: "2026-09-10"
+    note: "Fall cycle paper title and abstract."
+event_dates:
+  start: "2027-05-11"
+  end: "2027-05-13"
+tags: [top-tier, usenix, multi-cycle]
+notes: "24th edition. Three tracks: research, frontiers, and operational systems. Authors may submit up to 8 papers across all deadlines. USENIX CFP page returned 403; details cross-checked via USENIX NSDI '27 CFP PDF."
+sources:
+  - url: https://www.usenix.org/conference/nsdi27/call-for-papers
+    fetched_at: "2026-05-16"
+  - url: https://www.usenix.org/sites/default/files/nsdi27_cfp_020326.pdf
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

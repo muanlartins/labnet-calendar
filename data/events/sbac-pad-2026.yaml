@@ -3,7 +3,7 @@ series_id: sbac-pad
 name: SBAC-PAD
 full_name: "International Symposium on Computer Architecture and High Performance Computing 2026"
 edition: "2026"
-edition_number: 39
+edition_number: 38
 type: symposium
 society: SBC
 areas: [architecture, systems]
@@ -16,14 +16,35 @@ location:
   city: Madrid
   country: Spain
   mode: in-person
-url: https://sbac-pad.org/2026/
+url: https://coco-arcos.github.io/sbac-pad2026/
+cfp_url: https://easychair.org/cfp/SBAC-PAD2026
+deadlines:
+  - kind: abstract
+    date: "2026-05-15"
+    timezone: AoE
+    note: "Abstract registration. Added 2026-05-16 from official site."
+  - kind: paper
+    date: "2026-05-22"
+    timezone: AoE
+    note: "Paper submission. Added 2026-05-16 from official site."
+  - kind: rebuttal
+    date: "2026-07-27"
+    note: "Rebuttal period 2026-07-22 to 2026-07-27."
+  - kind: notification
+    date: "2026-08-03"
+  - kind: camera_ready
+    date: "2026-09-05"
 event_dates:
   start: "2026-10-14"
   end: "2026-10-16"
 tags: [sbc, ieee]
-notes: "39th edition, hosted in Madrid. Official site unreachable as of 2026-04-18; dates confirmed via SBC/ConfRoll announcement. CFP submission deadline not yet published on official site."
+notes: "38th edition (IEEE/SBC), hosted at Campus Puerta Toledo, Universidad Carlos III de Madrid. Previous YAML noted official site unreachable; on 2026-05-16 the canonical site was found at coco-arcos.github.io/sbac-pad2026 and EasyChair CFP listing — deadlines and venue added."
 sources:
   - url: https://sbac-pad.org/2026/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://coco-arcos.github.io/sbac-pad2026/
+    fetched_at: "2026-05-16"
+  - url: https://easychair.org/cfp/SBAC-PAD2026
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

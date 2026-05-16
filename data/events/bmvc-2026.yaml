@@ -44,5 +44,7 @@ sources:
     fetched_at: "2026-04-18"
   - url: https://bmvc2026.bmva.org/dates/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://bmvc2026.bmva.org/dates/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

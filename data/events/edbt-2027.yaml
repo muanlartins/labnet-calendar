@@ -1,0 +1,28 @@
+id: edbt-2027
+series_id: edbt
+name: EDBT
+full_name: "International Conference on Extending Database Technology 2027"
+edition: "2027"
+type: conference
+society: other
+areas: [data]
+region: eu
+tier:
+  qualis: A2
+  core: A
+  custom: top
+location:
+  city: Lille
+  country: France
+  mode: in-person
+url: https://edbticdt2027.github.io/
+event_dates:
+  start: "2027-04-06"
+  end: "2027-04-09"
+tags: [top-tier]
+notes: "Held jointly with ICDT. Specific track submission deadlines not yet published on the official site as of 2026-05-16."
+sources:
+  - url: https://edbticdt2027.github.io/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

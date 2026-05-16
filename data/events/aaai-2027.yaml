@@ -1,0 +1,49 @@
+id: aaai-2027
+series_id: aaai
+name: AAAI
+full_name: "AAAI Conference on Artificial Intelligence 2027 (AAAI-27)"
+edition: "2027"
+edition_number: 41
+type: conference
+society: AAAI
+areas: [ml]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Montréal
+  country: Canada
+  mode: in-person
+url: https://aaai.org/conference/aaai/aaai-27/
+deadlines:
+  - kind: abstract
+    date: "2026-07-21T23:59:00"
+    timezone: AoE
+    note: "Main track abstract submission."
+  - kind: paper
+    date: "2026-07-28T23:59:00"
+    timezone: AoE
+    note: "Main track full paper submission."
+  - kind: notification
+    date: "2026-09-24"
+    note: "Phase 1 rejection notifications."
+  - kind: rebuttal
+    date: "2026-10-25"
+    note: "Author feedback window: 2026-10-19 to 2026-10-25."
+  - kind: notification
+    date: "2026-11-30"
+    note: "Final acceptance/rejection decisions."
+  - kind: camera_ready
+    date: "2026-12-14"
+event_dates:
+  start: "2027-02-16"
+  end: "2027-02-23"
+tags: [top-tier, aaai]
+notes: "41st annual AAAI. Individual track deadlines may vary from the main conference schedule."
+sources:
+  - url: https://aaai.org/conference/aaai/aaai-27/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

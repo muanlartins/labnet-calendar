@@ -1,0 +1,31 @@
+id: ladc-2026
+series_id: ladc
+name: LADC
+full_name: "Latin-American Symposium on Dependable and Secure Computing 2026"
+edition: "2026"
+edition_number: 15
+type: symposium
+society: SBC
+areas: [systems, security]
+region: latam
+tier:
+  qualis: B3
+  custom: regional
+location:
+  city: Salvador
+  country: Brazil
+  mode: in-person
+url: https://ladc.sbc.org.br/2026/
+cfp_url: https://ladc.sbc.org.br/2026/for-authors/
+event_dates:
+  start: "2026-11-24"
+  end: "2026-11-27"
+tags: [sbc]
+notes: "15th edition, promoted by SBC's CE-TF. Site lists event dates and location; specific submission deadlines not published on the homepage or For Authors landing page as of 2026-05-16."
+sources:
+  - url: https://ladc.sbc.org.br/2026/
+    fetched_at: "2026-05-16"
+  - url: https://ladc.sbc.org.br/2026/for-authors/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

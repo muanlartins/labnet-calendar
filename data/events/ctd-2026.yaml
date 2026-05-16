@@ -1,0 +1,42 @@
+id: ctd-2026
+series_id: ctd
+name: CTD
+full_name: "Concurso de Teses e Dissertações 2026"
+edition: "2026"
+edition_number: 39
+type: workshop
+society: SBC
+areas: [general]
+region: br
+tier:
+  custom: regional
+location:
+  city: Gramado
+  country: Brazil
+  venue: Centro de Eventos de Gramado
+  mode: in-person
+url: https://csbc.sbc.org.br/2026/index.php/ctd/
+cfp_url: https://csbc.sbc.org.br/2026/index.php/ctd/
+deadlines:
+  - kind: abstract
+    date: "2026-01-31"
+    timezone: "America/Sao_Paulo"
+    note: "Previous registration close. Timezone inferred."
+  - kind: paper
+    date: "2026-03-09"
+    timezone: "America/Sao_Paulo"
+    note: "Extended deadline (NOVA DATA). Timezone inferred."
+  - kind: notification
+    date: "2026-05-04"
+  - kind: camera_ready
+    date: "2026-05-18"
+event_dates:
+  start: "2026-07-22"
+  end: "2026-07-22"
+tags: [sbc]
+notes: "39th edition. Awards 3 best PhD theses + 3 best MSc dissertations defended in 2025. Held on Wednesday 2026-07-22 within CSBC 2026 (Jul 19-23)."
+sources:
+  - url: https://csbc.sbc.org.br/2026/index.php/ctd/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

@@ -78,6 +78,7 @@ const output = {
     total: enriched.length,
     by_area: Object.fromEntries(tags.areas.map((a) => [a.id, enriched.filter((e) => e.areas.includes(a.id)).length])),
     by_region: Object.fromEntries(tags.regions.map((r) => [r.id, enriched.filter((e) => e.region === r.id).length])),
+    by_society: Object.fromEntries(tags.societies.map((s) => [s, enriched.filter((e) => e.society === s).length])),
     by_status: enriched.reduce((acc, e) => { acc[e.derived.status] = (acc[e.derived.status] || 0) + 1; return acc; }, {}),
   },
 };

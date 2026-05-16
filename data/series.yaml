@@ -262,6 +262,179 @@
   tier: { custom: regional }
   notes: "Student workshop co-located with SBRC."
 
+- id: ladc
+  name: LADC
+  full_name: "Latin-American Symposium on Dependable and Secure Computing"
+  url_pattern: "ladc.sbc.org.br/{year}/"
+  cadence: biannual
+  typical_month: november
+  areas: [systems, security]
+  society: SBC
+  region: latam
+  tier: { qualis: B3, custom: regional }
+  notes: "Promoted by SBC's CE-TF (Special Committee on Fault-Tolerant Systems)."
+
+- id: lars
+  name: LARS
+  full_name: "Latin American Robotics Symposium"
+  url_pattern: "robotica.robocup.org.br/"
+  cadence: annual
+  typical_month: november
+  areas: [ml]
+  subareas: [robotics]
+  society: SBC
+  region: latam
+  tier: { custom: regional }
+  notes: "Co-located with SBR (Brazilian Robotics Symposium) under the Robótica umbrella."
+
+- id: sbcars
+  name: SBCARS
+  full_name: "Brazilian Symposium on Software Components, Architectures, and Reuse"
+  url_pattern: "cbsoft.sbc.org.br/{year}/sbcars/"
+  cadence: annual
+  typical_month: september
+  areas: [se]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+  notes: "Held under the CBSoft umbrella with SBES, SBLP, SAST."
+
+- id: wei
+  name: WEI
+  full_name: "Workshop sobre Educação em Computação"
+  url_pattern: "csbc.sbc.org.br/{year}/wei/"
+  cadence: annual
+  typical_month: july
+  areas: [education]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+  notes: "Base event of CSBC; organized by SBC's Education Commission."
+
+- id: brasnam
+  name: BraSNAM
+  full_name: "Brazilian Workshop on Social Network Analysis and Mining"
+  url_pattern: "csbc.sbc.org.br/{year}/brasnam/"
+  cadence: annual
+  typical_month: july
+  areas: [data, ml]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+  notes: "Event of SBC's GIMARS interest group, co-located with CSBC."
+
+- id: latin
+  name: LATIN
+  full_name: "Latin American Theoretical Informatics Symposium"
+  url_pattern: "latintcs.org/"
+  cadence: biannual
+  typical_month: april
+  areas: [theory]
+  subareas: [algorithms, complexity]
+  society: SBC
+  region: latam
+  tier: { qualis: A4, custom: regional }
+  notes: "Founded 1992; triennial originally, now ~biennial. Springer LNCS proceedings."
+
+- id: erad-rs
+  name: ERAD-RS
+  full_name: "Escola Regional de Alto Desempenho da Região Sul"
+  url_pattern: "cradrs.github.io/eradrs{year}/"
+  cadence: annual
+  typical_month: may
+  areas: [architecture, systems]
+  subareas: [hpc]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+  notes: "Regional HPC school promoted by SBC's CE-ACPAD and CRAD/RS."
+
+- id: wso
+  name: WSO
+  full_name: "Workshop em Sistemas Operacionais"
+  url_pattern: "csbc.sbc.org.br/{year}/wso/"
+  cadence: annual
+  typical_month: july
+  areas: [systems]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+  notes: "Operating systems workshop, base event of CSBC."
+
+- id: ctd
+  name: CTD
+  full_name: "Concurso de Teses e Dissertações"
+  url_pattern: "csbc.sbc.org.br/{year}/ctd/"
+  cadence: annual
+  typical_month: july
+  areas: [general]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+  notes: "SBC's national thesis and dissertation competition, held during CSBC."
+
+- id: wcama
+  name: WCAMA
+  full_name: "Workshop de Computação Aplicada à Gestão do Meio Ambiente e Recursos Naturais"
+  url_pattern: "csbc.sbc.org.br/{year}/wcama/"
+  cadence: annual
+  typical_month: july
+  areas: [general, data]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+  notes: "Environmental computing workshop, base event of CSBC."
+
+- id: semish
+  name: SEMISH
+  full_name: "Seminário Integrado de Software e Hardware"
+  url_pattern: "csbc.sbc.org.br/{year}/semish/"
+  cadence: annual
+  typical_month: july
+  areas: [general]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+  notes: "Main scientific forum of CSBC; oldest base event (since 1974)."
+
+- id: sbr
+  name: SBR
+  full_name: "Simpósio Brasileiro de Robótica"
+  url_pattern: "robotica.robocup.org.br/"
+  cadence: annual
+  typical_month: november
+  areas: [ml]
+  subareas: [robotics]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+  notes: "Co-located with LARS under the Robótica umbrella event."
+
+- id: wcga
+  name: WCGA
+  full_name: "Workshop em Clouds e Aplicações"
+  url_pattern: "sbrc.sbc.org.br/{year}/wcga/"
+  cadence: annual
+  typical_month: may
+  areas: [systems, networking]
+  subareas: [cloud, edge]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+  notes: "Cloud/edge/fog computing workshop, co-located with SBRC since 2003 (originally Grid/Clouds)."
+
+- id: wgrs
+  name: WGRS
+  full_name: "Workshop de Gerência e Operação de Redes e Serviços"
+  url_pattern: "sbrc.sbc.org.br/{year}/workshop-wgrs/"
+  cadence: annual
+  typical_month: may
+  areas: [networking]
+  society: SBC
+  region: br
+  tier: { custom: regional }
+  notes: "Network management workshop, co-located with SBRC."
+
 # ============================================================================
 # Networking & Communications (international)
 # ============================================================================

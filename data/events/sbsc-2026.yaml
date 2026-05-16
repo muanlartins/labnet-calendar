@@ -18,21 +18,25 @@ location:
 url: https://sbsc.sbc.org.br/2026/
 deadlines:
   - kind: paper
-    date: "2026-02-09"
-    note: "Deadline already passed."
+    date: "2026-03-01"
+    note: "Paper deadline extended from 2026-02-22 to 2026-03-01 per official site on 2026-05-16 (deadline already passed)."
   - kind: notification
-    date: "2026-03-31"
-  - kind: camera_ready
     date: "2026-04-10"
+    note: "Notification updated from 2026-03-31 to 2026-04-10 per official site on 2026-05-16."
+  - kind: camera_ready
+    date: "2026-04-20"
+    note: "Camera-ready updated from 2026-04-10 to 2026-04-20 per official site on 2026-05-16."
 event_dates:
   start: "2026-06-08"
   end: "2026-06-12"
 tags: [sbc]
-notes: "21st edition, hosted by UFRGS in Porto Alegre. Deadlines taken from the UFRGS announcement of the SBSC 2026 CFP."
+notes: "21st edition, hosted by UFRGS in Porto Alegre. Deadlines taken from the UFRGS announcement of the SBSC 2026 CFP. Deadlines updated on 2026-05-16 from sbsc.sbc.org.br/2026/trilha-principal/."
 sources:
   - url: https://sbsc.sbc.org.br/2026/
     fetched_at: "2026-04-18"
   - url: https://www.inf.ufrgs.br/site/noticia/chamada-de-trabalhos-sbsc-2026/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://sbsc.sbc.org.br/2026/index.php/trilha-principal/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

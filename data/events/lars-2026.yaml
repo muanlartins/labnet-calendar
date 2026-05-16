@@ -1,0 +1,30 @@
+id: lars-2026
+series_id: lars
+name: LARS
+full_name: "Latin American Robotics Symposium 2026"
+edition: "2026"
+type: symposium
+society: SBC
+areas: [ml]
+subareas: [robotics]
+region: latam
+tier:
+  custom: regional
+location:
+  city: João Pessoa
+  country: Brazil
+  venue: João Pessoa Convention Center
+  mode: in-person
+url: https://robotica.robocup.org.br/
+event_dates:
+  start: "2026-11-23"
+  end: "2026-11-29"
+tags: [sbc]
+notes: "Held under the Robótica 2026 umbrella in João Pessoa (Nov 23-29). Earlier announcements also linked a LARS/LARC 2026 edition in Bogotá (Universidad Militar Nueva Granada) — this YAML tracks the Brazilian Robótica edition where SBR is co-located. Specific submission deadlines not published as of 2026-05-16."
+sources:
+  - url: https://robotica.robocup.org.br/?page_id=2188
+    fetched_at: "2026-05-16"
+  - url: https://cbr.robocup.org.br/index.php/2026/05/03/joao-pessoa-recebe-a-competicao-brasileira-de-robotica-petrobras-2026/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

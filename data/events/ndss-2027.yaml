@@ -1,0 +1,68 @@
+id: ndss-2027
+series_id: ndss
+name: NDSS
+full_name: "Network and Distributed System Security Symposium 2027"
+edition: "2027"
+edition_number: 34
+type: symposium
+society: other
+areas: [security]
+subareas: [network-security]
+region: asia
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Seoul
+  country: South Korea
+  mode: in-person
+url: https://www.ndss-symposium.org/ndss2027/
+cfp_url: https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/
+deadlines:
+  - kind: paper
+    date: "2026-05-06T23:59:00"
+    timezone: AoE
+    note: "Summer cycle paper submission."
+  - kind: notification
+    date: "2026-06-12"
+    note: "Summer cycle early reject / Round 2 notification."
+  - kind: notification
+    date: "2026-07-22"
+    note: "Summer cycle author notification."
+  - kind: paper
+    date: "2026-08-19T23:59:00"
+    timezone: AoE
+    note: "Fall cycle paper submission (also Summer Major Revision resubmission)."
+  - kind: notification
+    date: "2026-09-02"
+    note: "Summer Major Revision author notification."
+  - kind: camera_ready
+    date: "2026-09-30"
+    note: "Summer cycle camera-ready."
+  - kind: notification
+    date: "2026-09-25"
+    note: "Fall cycle early reject / Round 2 notification."
+  - kind: notification
+    date: "2026-11-04"
+    note: "Fall cycle author notification."
+  - kind: paper
+    date: "2026-12-02T23:59:00"
+    timezone: AoE
+    note: "Fall cycle Major Revision resubmission."
+  - kind: notification
+    date: "2026-12-16"
+    note: "Fall cycle Major Revision author notification."
+  - kind: camera_ready
+    date: "2027-01-06"
+    note: "Fall cycle camera-ready."
+event_dates:
+  start: "2027-03-22"
+  end: "2027-03-26"
+tags: [top-tier, multi-cycle]
+notes: "34th edition. Two submission cycles (Summer/Fall). All deadlines are 23:59 AoE (UTC-12)."
+sources:
+  - url: https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

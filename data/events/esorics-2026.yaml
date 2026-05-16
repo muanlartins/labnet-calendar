@@ -29,5 +29,7 @@ notes: "31st edition, hosted in Rome. Only spring-cycle paper deadline published
 sources:
   - url: https://sites.google.com/di.uniroma1.it/esorics2026/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://sites.google.com/di.uniroma1.it/esorics2026/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

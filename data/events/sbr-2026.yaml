@@ -1,0 +1,31 @@
+id: sbr-2026
+series_id: sbr
+name: SBR
+full_name: "Simpósio Brasileiro de Robótica 2026"
+edition: "2026"
+edition_number: 12
+type: symposium
+society: SBC
+areas: [ml]
+subareas: [robotics]
+region: br
+tier:
+  custom: regional
+location:
+  city: João Pessoa
+  country: Brazil
+  venue: João Pessoa Convention Center
+  mode: in-person
+url: https://robotica.robocup.org.br/
+event_dates:
+  start: "2026-11-23"
+  end: "2026-11-29"
+tags: [sbc]
+notes: "12th edition, part of Robótica 2026 in João Pessoa (Nov 23-29), co-located with LARS, CBR, OBR, MNR. Specific submission deadlines not yet published as of 2026-05-16."
+sources:
+  - url: https://robotica.robocup.org.br/?page_id=2188
+    fetched_at: "2026-05-16"
+  - url: https://cbr.robocup.org.br/index.php/2026/05/03/joao-pessoa-recebe-a-competicao-brasileira-de-robotica-petrobras-2026/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

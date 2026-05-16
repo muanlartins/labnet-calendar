@@ -1,0 +1,41 @@
+id: erad-rs-2026
+series_id: erad-rs
+name: ERAD-RS
+full_name: "Escola Regional de Alto Desempenho da Região Sul 2026"
+edition: "2026"
+edition_number: 26
+type: workshop
+society: SBC
+areas: [architecture, systems]
+subareas: [hpc]
+region: br
+tier:
+  custom: regional
+location:
+  city: Bagé
+  country: Brazil
+  venue: UNIPAMPA Campus Bagé
+  mode: in-person
+url: https://cradrs.github.io/eradrs2026/
+cfp_url: https://cradrs.github.io/eradrs2026/
+deadlines:
+  - kind: paper
+    date: "2026-03-08"
+    timezone: "America/Sao_Paulo"
+    note: "IC & PG forums. Timezone inferred."
+  - kind: notification
+    date: "2026-03-23"
+  - kind: camera_ready
+    date: "2026-03-30"
+event_dates:
+  start: "2026-05-06"
+  end: "2026-05-08"
+tags: [sbc]
+notes: "26th edition (XXIV in some sources), regional HPC school covering RS, SC, PR. Promoted by SBC's CE-ACPAD and CRAD/RS."
+sources:
+  - url: https://cradrs.github.io/eradrs2026/
+    fetched_at: "2026-05-16"
+  - url: https://www.sbc.org.br/evento/xxiv-escola-regional-de-alto-desempenho-da-regiao-sul-erad-rs-2026/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude
