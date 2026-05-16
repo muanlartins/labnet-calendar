@@ -21,9 +21,11 @@ event_dates:
   start: "2026-07-19"
   end: "2026-07-23"
 tags: [sbc, umbrella]
-notes: "46th edition. Umbrella congress aggregating many SBC symposia; individual tracks have their own deadlines. No single main-track submission deadline on the umbrella site as of 2026-04-18."
+notes: "46th edition. Umbrella congress aggregating many SBC symposia; individual tracks have their own deadlines. No single main-track submission deadline on the umbrella site as of 2026-04-18. Re-verified 2026-05-16: dates and venue confirmed."
 sources:
   - url: https://csbc.sbc.org.br/2026/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://csbc.sbc.org.br/2026/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

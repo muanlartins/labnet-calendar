@@ -1,0 +1,35 @@
+id: wgrs-2026
+series_id: wgrs
+name: WGRS
+full_name: "Workshop de Gerência e Operação de Redes e Serviços 2026"
+edition: "2026"
+edition_number: 31
+type: workshop
+society: SBC
+areas: [networking]
+region: br
+tier:
+  custom: regional
+location:
+  city: Praia do Forte
+  country: Brazil
+  mode: in-person
+url: https://sbrc.sbc.org.br/2026/workshop-wgrs/
+cfp_url: https://sbrc.sbc.org.br/2026/workshops/
+deadlines:
+  - kind: paper
+    date: "2026-03-20"
+    timezone: "America/Sao_Paulo"
+    note: "SBRC 2026 unified workshop paper deadline. Timezone inferred."
+  - kind: notification
+    date: "2026-04-17"
+event_dates:
+  start: "2026-05-25"
+  end: "2026-05-29"
+tags: [sbc]
+notes: "31st edition, satellite workshop of SBRC 2026 (Praia do Forte, Bahia)."
+sources:
+  - url: https://sbrc.sbc.org.br/2026/workshops/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

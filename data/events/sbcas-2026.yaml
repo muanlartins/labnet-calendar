@@ -16,13 +16,26 @@ location:
   venue: Centro de Artes e Convenções da UFOP
   mode: in-person
 url: https://www.sbcas2026.com/
+cfp_url: https://www.sbcas2026.com/trilhaprincipal
+deadlines:
+  - kind: paper
+    date: "2026-03-09"
+    note: "Main track hard deadline (extended from 2026-03-02). Added on 2026-05-16 from sbcas2026.com/trilhaprincipal."
+  - kind: notification
+    date: "2026-04-15"
+  - kind: camera_ready
+    date: "2026-04-30"
 event_dates:
   start: "2026-06-01"
   end: "2026-06-04"
 tags: [sbc]
-notes: "26th edition, hosted by DECOM/UFOP. Track CFP pages list submission tracks (Main, CTIC, FA@SBCAS, Workshops) but specific deadlines were not published on the homepage as of 2026-04-18."
+notes: "26th edition, hosted by DECOM/UFOP. Track CFP pages list submission tracks (Main, CTIC, FA@SBCAS, Workshops) but specific deadlines were not published on the homepage as of 2026-04-18. Main track deadlines added on 2026-05-16 from sbcas2026.com/trilhaprincipal (all already passed)."
 sources:
   - url: https://www.sbcas2026.com/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://www.sbcas2026.com/
+    fetched_at: "2026-05-16"
+  - url: https://www.sbcas2026.com/trilhaprincipal
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

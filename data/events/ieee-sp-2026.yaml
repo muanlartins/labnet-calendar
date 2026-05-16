@@ -27,5 +27,7 @@ notes: "47th edition. IEEE S&P uses four review cycles per year — specific 202
 sources:
   - url: https://sp2026.ieee-security.org/cfpapers.html
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://sp2026.ieee-security.org/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

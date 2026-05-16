@@ -29,9 +29,11 @@ event_dates:
   start: "2026-11-10"
   end: "2026-11-13"
 tags: [sbc]
-notes: "Hosted by UEM in Maringá. Secondary tracks (WTDQS/CTDQS/CTICQS) have later deadlines (abstract 2026-07-20, paper 2026-07-27, notification 2026-08-26). Years inferred from event date (2026-11)."
+notes: "Hosted by UEM in Maringá. Secondary tracks (WTDQS/CTDQS/CTICQS) have later deadlines (abstract 2026-07-20, paper 2026-07-27, notification 2026-08-26). Years inferred from event date (2026-11). Re-verified 2026-05-16: deadlines unchanged; camera-ready still not listed on official site."
 sources:
   - url: https://sbqs.sbc.org.br/2026/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://sbqs.sbc.org.br/2026/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

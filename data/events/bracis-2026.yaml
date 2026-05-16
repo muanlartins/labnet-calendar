@@ -38,11 +38,13 @@ event_dates:
   start: "2026-10-19"
   end: "2026-10-22"
 tags: [sbc, double-blind]
-notes: "36th edition. Previous YAML (event 2026-11-16/20, paper 2026-07-15, notification 2026-09-15) replaced with the official 2026 site data confirmed on 2026-04-18. Paper deadline was extended from 2026-04-20 to 2026-05-04."
+notes: "36th edition. Previous YAML (event 2026-11-16/20, paper 2026-07-15, notification 2026-09-15) replaced with the official 2026 site data confirmed on 2026-04-18. Paper deadline was extended from 2026-04-20 to 2026-05-04. Re-verified 2026-05-16: deadlines unchanged."
 sources:
   - url: https://bracis.sbc.org.br/2026/
     fetched_at: "2026-04-18"
   - url: https://bracis.sbc.org.br/2026/bracis/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://bracis.sbc.org.br/2026/bracis/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

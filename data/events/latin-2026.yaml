@@ -1,0 +1,45 @@
+id: latin-2026
+series_id: latin
+name: LATIN
+full_name: "Latin American Theoretical Informatics Symposium 2026"
+edition: "2026"
+edition_number: 17
+type: symposium
+society: SBC
+areas: [theory]
+subareas: [algorithms, complexity]
+region: latam
+tier:
+  qualis: A4
+  custom: regional
+location:
+  city: Florianópolis
+  country: Brazil
+  mode: in-person
+url: https://latin2026.ufsc.br/
+cfp_url: https://easychair.org/cfp/LATIN2026
+deadlines:
+  - kind: abstract
+    date: "2025-10-13"
+    timezone: "AoE"
+    note: "Short abstract submission."
+  - kind: paper
+    date: "2025-10-20"
+    timezone: "AoE"
+  - kind: notification
+    date: "2026-01-09"
+  - kind: camera_ready
+    date: "2026-02-16"
+    timezone: "AoE"
+event_dates:
+  start: "2026-04-13"
+  end: "2026-04-17"
+tags: [sbc]
+notes: "17th edition; minicourses begin April 12. Springer LNCS proceedings. Main paper deadlines passed."
+sources:
+  - url: https://latin2026.ufsc.br/
+    fetched_at: "2026-05-16"
+  - url: https://easychair.org/cfp/LATIN2026
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

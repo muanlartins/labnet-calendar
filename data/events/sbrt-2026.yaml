@@ -28,9 +28,11 @@ event_dates:
   start: "2026-09-29"
   end: "2026-10-02"
 tags: [sbrt]
-notes: "XLIV edition, hosted by UFBA. Organized by Sociedade Brasileira de Telecomunicações (listed as SBC in series definition)."
+notes: "XLIV edition, hosted by UFBA. Organized by Sociedade Brasileira de Telecomunicações (listed as SBC in series definition). Verified 2026-05-16; official site timed out, no new info available."
 sources:
   - url: https://sbrt2026.sbrt.org.br/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://sbrt2026.sbrt.org.br/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

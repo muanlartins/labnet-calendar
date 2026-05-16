@@ -39,7 +39,7 @@ function calendarApp() {
     filtersOpen: false,
     selectedEvent: null,
     error: null,
-    filters: { areas: [], regions: [], types: [], societies: [], qualis: [], modes: [], hidePast: true },
+    filters: { areas: [], regions: [], types: [], societies: [], qualis: [], modes: [], hidePast: true, onlySBC: false },
 
     async init() {
       try {
@@ -107,7 +107,7 @@ function calendarApp() {
     },
 
     resetFilters() {
-      this.filters = { areas: [], regions: [], types: [], societies: [], qualis: [], modes: [], hidePast: true };
+      this.filters = { areas: [], regions: [], types: [], societies: [], qualis: [], modes: [], hidePast: true, onlySBC: false };
       this.window = null;
       this.q = "";
     },
@@ -171,6 +171,7 @@ function calendarApp() {
 
     matches(e) {
       if (this.filters.hidePast && this.isPast(e)) return false;
+      if (this.filters.onlySBC && e.society !== "SBC") return false;
       if (this.filters.areas.length && !this.filters.areas.some((a) => e.areas.includes(a))) return false;
       if (this.filters.regions.length && !this.filters.regions.includes(e.region)) return false;
       if (this.filters.types.length && !this.filters.types.includes(e.type)) return false;

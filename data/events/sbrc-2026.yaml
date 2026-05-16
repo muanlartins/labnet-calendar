@@ -36,11 +36,15 @@ event_dates:
   start: "2026-05-25"
   end: "2026-05-29"
 tags: [sbc, brazilian-flagship]
-notes: "44th edition. Main track dates confirmed against sbrc.sbc.org.br/2026/trilha-principal/ on 2026-04-18; all submission deadlines have passed. Main technical sessions run 2026-05-25 through 2026-05-28; full event ends 2026-05-29."
+notes: "44th edition. Main track dates confirmed against sbrc.sbc.org.br/2026/trilha-principal/ on 2026-04-18; all submission deadlines have passed. Main technical sessions run 2026-05-25 through 2026-05-28; full event ends 2026-05-29. Re-verified 2026-05-16: program and dates unchanged, event begins in 9 days."
 sources:
   - url: https://sbrc.sbc.org.br/2026/
     fetched_at: "2026-04-18"
   - url: https://sbrc.sbc.org.br/2026/trilha-principal/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://sbrc.sbc.org.br/2026/
+    fetched_at: "2026-05-16"
+  - url: https://sbrc.sbc.org.br/2026/trilha-principal/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

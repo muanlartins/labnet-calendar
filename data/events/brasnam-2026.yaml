@@ -1,0 +1,38 @@
+id: brasnam-2026
+series_id: brasnam
+name: BraSNAM
+full_name: "Brazilian Workshop on Social Network Analysis and Mining 2026"
+edition: "2026"
+edition_number: 15
+type: workshop
+society: SBC
+areas: [data, ml]
+region: br
+tier:
+  custom: regional
+location:
+  city: Gramado
+  country: Brazil
+  venue: Centro de Eventos de Gramado
+  mode: in-person
+url: https://csbc.sbc.org.br/2026/brasnam/
+cfp_url: https://csbc.sbc.org.br/2026/brasnam/
+deadlines:
+  - kind: paper
+    date: "2026-03-30"
+    timezone: "America/Sao_Paulo"
+    note: "Final deadline (PRAZO FINAL). Timezone inferred."
+  - kind: notification
+    date: "2026-05-04"
+  - kind: camera_ready
+    date: "2026-05-18"
+event_dates:
+  start: "2026-07-19"
+  end: "2026-07-23"
+tags: [sbc]
+notes: "15th edition, event of SBC's GIMARS interest group, co-located with CSBC 2026 in Gramado."
+sources:
+  - url: https://csbc.sbc.org.br/2026/brasnam/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

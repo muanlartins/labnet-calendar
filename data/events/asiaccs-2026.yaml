@@ -34,5 +34,7 @@ notes: "Hosted by IIT Kharagpur in Bangalore. Official site timed out during fet
 sources:
   - url: https://asiaccs2026.cse.iitkgp.ac.in/call-for-papers/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://asiaccs2026.cse.iitkgp.ac.in/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

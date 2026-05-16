@@ -34,5 +34,7 @@ notes: "NeurIPS 2026 runs as three concurrent regional events: Sydney (2026-12-0
 sources:
   - url: https://neurips.cc/Conferences/2026
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://neurips.cc/Conferences/2026
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

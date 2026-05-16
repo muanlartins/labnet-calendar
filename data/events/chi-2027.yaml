@@ -1,0 +1,31 @@
+id: chi-2027
+series_id: chi
+name: CHI
+full_name: "ACM CHI Conference on Human Factors in Computing Systems 2027"
+edition: "2027"
+type: conference
+society: ACM
+areas: [hci]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Pittsburgh
+  country: USA
+  venue: David L. Lawrence Convention Center
+  mode: in-person
+url: https://chi2027.acm.org/
+event_dates:
+  start: "2027-05-10"
+  end: "2027-05-14"
+tags: [top-tier, acm]
+notes: "Conference theme: Bridges. Submission categories include Papers, Panels, Meetups, Posters, Workshops, and Interactive Demos. Specific submission deadlines not yet published on the official site as of 2026-05-16."
+sources:
+  - url: https://chi2027.acm.org/
+    fetched_at: "2026-05-16"
+  - url: https://sigchi.org/events/chi-2027/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

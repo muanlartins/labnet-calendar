@@ -36,9 +36,11 @@ event_dates:
   start: "2026-09-08"
   end: "2026-09-11"
 tags: [sbc, cbsoft]
-notes: "40th edition. Held under the CBSoft umbrella. CBSoft page indicates 2026-09-08 to 2026-09-11."
+notes: "40th edition. Held under the CBSoft umbrella. CBSoft page indicates 2026-09-08 to 2026-09-11. Re-verified 2026-05-16: deadlines unchanged."
 sources:
   - url: https://cbsoft.sbc.org.br/2026/pt/symposiums/sbes/call/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://cbsoft.sbc.org.br/2026/pt/symposiums/sbes/call/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

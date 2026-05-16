@@ -25,9 +25,11 @@ deadlines:
   - kind: camera_ready
     date: "2026-05-18"
 tags: [sbc, csbc]
-notes: "Held under CSBC 2026 in Gramado. Submissions via JEMS; papers in Portuguese or English (12 pages full, 6 pages short)."
+notes: "Held under CSBC 2026 in Gramado. Submissions via JEMS; papers in Portuguese or English (12 pages full, 6 pages short). Re-verified 2026-05-16: camera-ready deadline 2026-05-18 still upcoming; author registration also due 2026-05-18."
 sources:
   - url: https://csbc.sbc.org.br/2026/wperformance/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://csbc.sbc.org.br/2026/wperformance/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

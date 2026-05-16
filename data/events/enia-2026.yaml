@@ -30,9 +30,11 @@ event_dates:
   start: "2026-10-19"
   end: "2026-10-22"
 tags: [sbc]
-notes: "Held alongside BRACIS 2026 in Cuiabá."
+notes: "Held alongside BRACIS 2026 in Cuiabá. Re-verified 2026-05-16: deadlines unchanged."
 sources:
   - url: https://bracis.sbc.org.br/2026/eniac/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://bracis.sbc.org.br/2026/eniac/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

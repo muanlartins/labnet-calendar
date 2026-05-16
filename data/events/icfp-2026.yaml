@@ -33,12 +33,14 @@ deadlines:
     timezone: AoE
     note: "Final notification."
 event_dates:
-  start: "2026-08-23"
+  start: "2026-08-24"
   end: "2026-08-29"
 tags: [top-tier, acm]
-notes: "31st edition. Full double-blind reviewing. Official site timed out on fetch; details confirmed via SIGPLAN announcement."
+notes: "31st edition. Full double-blind reviewing. Event start 2026-08-23 → 2026-08-24 per official site on 2026-05-16."
 sources:
   - url: https://icfp26.sigplan.org/track/icfp-2026-icfp-papers
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://icfp26.sigplan.org/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

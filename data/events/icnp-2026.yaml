@@ -18,16 +18,27 @@ location:
   mode: in-person
 url: https://icnp26.cs.ucr.edu/
 deadlines:
-  - kind: paper
+  - kind: abstract
     date: "2026-05-15"
-    note: "11:00 PM (timezone not specified on the site)."
+    timezone: AoE
+    note: "Title/abstract registration."
+  - kind: paper
+    date: "2026-05-22"
+    timezone: AoE
+    note: "Full paper submission."
+  - kind: notification
+    date: "2026-07-21"
+  - kind: camera_ready
+    date: "2026-08-25"
 event_dates:
   start: "2026-10-05"
   end: "2026-10-08"
 tags: [ieee]
-notes: "34th edition. Official URL in series.yaml (icnp{year}.cs.ucr.edu) is a typo; actual site is icnp26.cs.ucr.edu. Arizona State University announcement confirms the deadline."
+notes: "34th edition. Official URL in series.yaml (icnp{year}.cs.ucr.edu) is a typo; actual site is icnp26.cs.ucr.edu. Paper deadline 2026-05-15 → 2026-05-22 per official site on 2026-05-16 (date split into abstract registration 2026-05-15 and full paper submission 2026-05-22 AoE). Added notification 2026-07-21 and camera-ready 2026-08-25 per official site on 2026-05-16."
 sources:
   - url: https://icnp26.cs.ucr.edu/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://icnp26.cs.ucr.edu/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

@@ -46,5 +46,7 @@ notes: "Held at Holiday Inn Munich – City Center."
 sources:
   - url: https://conf.researchr.org/home/ase-2026
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://conf.researchr.org/home/ase-2026
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

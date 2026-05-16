@@ -1,0 +1,60 @@
+id: icse-2027
+series_id: icse
+name: ICSE
+full_name: "International Conference on Software Engineering 2027"
+edition: "2027"
+type: conference
+society: ACM
+areas: [se]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Dublin
+  country: Ireland
+  venue: The Convention Centre Dublin
+  mode: in-person
+url: https://conf.researchr.org/home/icse-2027
+cfp_url: https://conf.researchr.org/dates/icse-2027
+deadlines:
+  - kind: workshop_proposal
+    date: "2026-06-12"
+    timezone: AoE
+  - kind: abstract
+    date: "2026-06-23"
+    timezone: AoE
+    note: "Research track abstract (mandatory)."
+  - kind: paper
+    date: "2026-06-30"
+    timezone: AoE
+    note: "Research track full paper."
+  - kind: notification
+    date: "2026-10-20"
+    note: "Research track notification."
+  - kind: paper
+    date: "2026-10-23"
+    timezone: AoE
+    note: "SEET, Tutorials, Tools, SEIS, NIER, SEIP submission."
+  - kind: paper
+    date: "2026-10-30"
+    timezone: AoE
+    note: "Journal-first papers."
+  - kind: paper
+    date: "2026-11-27"
+    timezone: AoE
+    note: "Workshop papers."
+  - kind: camera_ready
+    date: "2027-01-20"
+    note: "Camera-ready deadline for multiple tracks."
+event_dates:
+  start: "2027-04-25"
+  end: "2027-05-01"
+tags: [top-tier, acm]
+notes: "Core conference days 2027-04-28 to 2027-04-30. Single-cycle research track. Held in Dublin for the second time (first was Limerick in 2000)."
+sources:
+  - url: https://conf.researchr.org/dates/icse-2027
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

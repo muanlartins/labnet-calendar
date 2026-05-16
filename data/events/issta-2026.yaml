@@ -44,5 +44,7 @@ notes: "35th edition. Co-located with SPLASH."
 sources:
   - url: https://conf.researchr.org/dates/issta-2026
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://conf.researchr.org/dates/issta-2026
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

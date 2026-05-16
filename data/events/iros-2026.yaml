@@ -38,5 +38,7 @@ notes: "Official site gave limited content; dates cross-checked via IROS 2026 CF
 sources:
   - url: https://2026.ieee-iros.org/contribute/call-for-papers/
     fetched_at: "2026-04-18"
-last_verified: "2026-04-18"
+  - url: https://2026.ieee-iros.org/contribute/call-for-papers/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
 verified_by: claude

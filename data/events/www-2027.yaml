@@ -1,0 +1,25 @@
+id: www-2027
+series_id: www
+name: "TheWebConf"
+full_name: "ACM Web Conference 2027"
+edition: "2027"
+type: conference
+society: ACM
+areas: [data, networking]
+region: eu
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Dublin
+  country: Ireland
+  mode: in-person
+url: https://www2027.thewebconf.org/
+tags: [top-tier, acm]
+notes: "Venue announced by SIGWEB; specific dates and submission deadlines not yet officially published as of 2026-05-16. General Co-chairs: Owen Conlan (TCD), Cathal Gurrin (DCU), Geert-Jan Houben (TU Delft)."
+sources:
+  - url: https://www.sigweb.org/conferences/upcoming/60-announcement-of-venues-webconf-2026-and-2027
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude

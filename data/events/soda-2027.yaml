@@ -1,0 +1,36 @@
+id: soda-2027
+series_id: soda
+name: SODA
+full_name: "ACM-SIAM Symposium on Discrete Algorithms 2027"
+edition: "2027"
+type: symposium
+society: ACM
+areas: [theory]
+subareas: [algorithms]
+region: world
+tier:
+  qualis: A1
+  core: "A*"
+  custom: top
+location:
+  city: Philadelphia
+  country: USA
+  venue: Sheraton Philadelphia Downtown
+  mode: in-person
+url: https://www.siam.org/conferences-events/siam-conferences/soda27/
+deadlines:
+  - kind: paper
+    date: "2026-07-09"
+    note: "Paper submission deadline."
+  - kind: early_registration
+    date: "2026-12-21"
+event_dates:
+  start: "2027-01-24"
+  end: "2027-01-27"
+tags: [top-tier, acm, siam]
+notes: "Held jointly with SIAM Symposium on Algorithm Engineering and Experiments (ALENEX) and SIAM Symposium on Simplicity in Algorithms (SOSA)."
+sources:
+  - url: https://www.siam.org/conferences-events/siam-conferences/soda27/
+    fetched_at: "2026-05-16"
+last_verified: "2026-05-16"
+verified_by: claude
